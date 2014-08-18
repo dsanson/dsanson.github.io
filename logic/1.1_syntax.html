@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>1.1. Negations and Conditionals: Syntax</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../css/texts.css" />
+        <link rel="shortcut icon" href="../favicon.ico" />
+        <link rel="apple-touch-icon" href="../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+        <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../css/logic.css" />
+    </head>
+    <body>
+        <header>
+        <nav> 
+            <ul>
+                <li class="texts left">
+                    <a href="../logic/index.html">← More Logic</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="content">
+           <div id="page">
+             <h1 id="title">
+                1.1. Negations and Conditionals: Syntax
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to sections 1.1 and 1.2 of the Logic Text. You should read those <em>before</em> you read this.</p>
+<h1 id="conditionals-and-negations">Conditionals and Negations</h1>
+<p>Chapter 1 introduces a fragment of <strong>Sentential Logic</strong>, focusing just on the logic of ‘if’ and ‘not’. The rest of Sentential Logic—including the logic of ‘and’, ‘or’, and ‘if and only if’—is introduced in chapter 2. We start with just this fragment to keep things simple, so you can get a sense of how logic works without getting overwhelmed by a large number of new symbols and rules.</p>
+<p>You just read the first two sections of Chapter 1. The first section introduces a new symbolic notation—two new symbols, ‘<span class="math">\({\mathord{\sim}}\)</span>’ and ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’—together with some rules for combining those symbols with <strong>sentence letters</strong>—capital letters P through Z—and parentheses to produce <strong>symbolic sentences</strong>.</p>
+<p>The second section explains what the new symbols mean. ‘<span class="math">\({\mathord{\sim}}\)</span>’ is the negation sign, and we use it to symbolize ‘it is not the case that’. ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’ is the conditional sign, and we use it to symbolize ‘if…then…’.</p>
+<h1 id="review-negations">Review: Negations</h1>
+<p>Our symbolic sentences are built up out of the two new symbols, the sentence letters, and parentheses.</p>
+<p>We use the sentence letters—capital letters P through Z—to represent simple sentences. (we will use capital letters A through O later for another purpose.)</p>
+<p>We use the ‘<span class="math">\({\mathord{\sim}}\)</span>’ to symbolize negations. A negation is a sentence that is true just in case the sentence it negates is false.</p>
+<p>Suppose we are at a party, and you ask for a beer, and I say,</p>
+<ul>
+<li>There are some beers in the refrigerator.</li>
+</ul>
+<p>You go look, but you don’t find any beer. So you say,</p>
+<ul>
+<li>There are not any beers in the refrigerator.</li>
+</ul>
+<p>At this point, we would probably send somebody on a beer run. But maybe the party is a logic party, so we decide to translate our conversation into symbols instead.</p>
+<p>We can represent my sentence with a single sentence letter,</p>
+<ul>
+<li><span class="math">\(R\)</span>: There are some beers in the refrigerator.</li>
+</ul>
+<p>Your sentence is the <strong>negation</strong> of my sentence. What you said was true just case what I said was false, and vice versa. So, using our negation sign, we can represent your sentence as,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}R\)</span></li>
+</ul>
+<p>Here are some other examples of sentences and their negations, together with appropriate symbolizations:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Sentence</th>
+<th align="left">Negation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math">\(S\)</span>: Snow is white</td>
+<td align="left"><span class="math">\({\mathord{\sim}}S\)</span>: Snow is not white</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math">\(T\)</span>: Frozen is the greatest musical of all time</td>
+<td align="left"><span class="math">\({\mathord{\sim}}T\)</span>: Frozen isn’t the greatest musical of all time</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math">\(R\)</span>: The NSA respects the rights of US citizens</td>
+<td align="left"><span class="math">\({\mathord{\sim}}R\)</span>: The NSA fails to respect the rights of US citizens</td>
+</tr>
+</tbody>
+</table>
+<p>As these examples show, in English we tend to express negations by including a ‘not’ somewhere in the middle of the sentence, but we can also use contractions or expressions like ‘fails to’.</p>
+<p>Not all sentences that involve negativity are negations. Consider:</p>
+<ol style="list-style-type: decimal">
+<li>Canada is the best!</li>
+<li>Canada is the worst!</li>
+</ol>
+<p>(2) is not the negation of (1), because (2) is not true just in case (1) is false. Maybe Canada is neither the best nor the worst. The negation of (1) is</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Canada is not the best.</li>
+</ol>
+<p>Not all sentences that differ just by a ‘not’ are negations. Consider:</p>
+<ol style="list-style-type: decimal">
+<li>I want to eat a cupcake.</li>
+<li>I want to not eat a cupcake.</li>
+</ol>
+<p>Again, (2) isn’t the negation of (1), because (2) is not true just in case (1) is false: maybe I am indifferent about cupcakes. The negation of (1) is:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>I don’t want to eat a cupcake.</li>
+</ol>
+<p>So, if you are not sure whether one sentence is the negation of the other, ask yourself: is it true just in case the other is false?</p>
+<h2 id="test-your-understanding">Test Your Understanding</h2>
+<ol style="list-style-type: upper-roman">
+<li>Suppose <span class="math">\(Z\)</span> stands for ‘The level of zooplankton in the Great Lakes is dangerously high.’ What English sentence does <span class="math">\({\mathord{\sim}}Z\)</span> symbolize?</li>
+</ol>
+<div class="answers">
+It symbolizes the sentence, ‘The level of zooplankton in the Great Lakes is not dangerously high’.
+</div>
+<ol start="2" style="list-style-type: upper-roman">
+<li>What English sentence expresses the negation of ‘Satan is evil’?</li>
+</ol>
+<div class="answers">
+<p>‘Satan is good’ is not the negation of ‘Satan is evil’: maybe Satan is neither good nor evil, but so-so. So the negation of ‘Satan is evil’ is ‘Satan is not evil’, or ‘Satan fails to be evil’.</p>
+</div>
+<ol start="3" style="list-style-type: upper-roman">
+<li>How would you symbolize, ‘It is not the case that the levels of zooplankton in the Great Lakes are not dangerously high’?</li>
+</ol>
+<div class="answers">
+<p>‘It is not the case’ adds a second negation, so the natural way to symbolize this is as <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span>, which is the negation of <span class="math">\({\mathord{\sim}}Z\)</span>.</p>
+<p><span class="math">\(Z\)</span> and <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span> stand in an interesting logical relationship. <span class="math">\(Z\)</span> is true just in case its negation, <span class="math">\({\mathord{\sim}}Z\)</span>, is false. And <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span> is false just in case <em>its</em> negation, <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span>, is true. So <span class="math">\(Z\)</span> is true just in case <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span>. In other words, they are <em>logically equivalent</em>.</p>
+</div>
+<h1 id="review-conditionals">Review: Conditionals</h1>
+<p>We use the conditional sign, ‘<span class="math">\({\mathord{\sim}}\)</span>’, to represent conditionals. A <strong>conditional</strong> is an if…then… statement, like</p>
+<ol style="list-style-type: example">
+<li>If you eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>The <strong>antecedent</strong> of the conditional is the “if” part, so, in this case,</p>
+<ul>
+<li><span class="math">\(P\)</span>: You eat all the popcorn.</li>
+</ul>
+<p>The <strong>consequent</strong> is the “then” part, so,</p>
+<ul>
+<li><span class="math">\(S\)</span>: I will be sad.</li>
+</ul>
+<p>So we can represent (1) as</p>
+<ol start="2" style="list-style-type: example">
+<li><span class="math">\((P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>Now suppose I want to deny (1): my happiness does not depend on your eating habits! I can do this by expressing the negation of the conditional,</p>
+<ol start="3" style="list-style-type: example">
+<li><span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>or, in English,</p>
+<ol start="4" style="list-style-type: example">
+<li>It is not the case that if you eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>The parentheses are important. Maybe my happiness <em>does</em> depend on your eating habits, but not in the way that (1) suggests. Maybe I <em>want</em> you to eat all the popcorn, and if you don’t, I am going to be sad. That is,</p>
+<ol start="5" style="list-style-type: example">
+<li>If you don’t eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>(5) is a conditional. Its antecedent is,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}P\)</span>: You don’t eat all the popcorn,</li>
+</ul>
+<p>and its consequent is,</p>
+<ul>
+<li><span class="math">\(S\)</span></li>
+</ul>
+<p>So we can symbolize (5) as,</p>
+<ol start="6" style="list-style-type: example">
+<li><span class="math">\(({\mathord{\sim}}P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>Study the difference between (3) and (6). In (3), the negation sign is inside the parentheses. In (6), it is outside. Can you see how that captures the difference between (4)—the denial of the truth of the conditional—and (5)—a conditional with a negation as its antecedent? If we didn’t have parentheses, we could not capture this distinction.</p>
+<p>English is often ambiguous. The same word can have multiple meanings: ‘bank’, for example, can mean <em>financial institution</em>, or it can mean <em>side of a river</em>. English is also <em>syntactically</em> ambiguous—the same sentence, with the same grammar and punctuation, can have multiple interpretations. An internet search for “syntactically ambiguous newspaper headlines” will give you several examples, including:</p>
+<div class="figure">
+<img src="../images/grandparents.jpg" alt="Students Cook and Serve Grandparents" /><p class="caption">Students Cook and Serve Grandparents</p>
+</div>
+<ul>
+<li>British Left Waffles on Falkland Islands</li>
+<li>Dr. Ruth to Talk about Sex with Newspaper Editors</li>
+<li>Squad Helps Dog Bite Victim</li>
+<li>Stolen Painting Found by Tree</li>
+<li>Enraged Cow Injures Farmer with Ax</li>
+</ul>
+<p>We don’t want ambiguity like this in our symbolic language. Parentheses are the tool we use to avoid it.</p>
+<h2 id="test-your-understanding-1">Test Your Understanding</h2>
+<ol style="list-style-type: upper-roman">
+<li>What is the antecedent of this conditional: ‘If you can’t love the one you want, love the one you’re with’?</li>
+</ol>
+<div class="answers">
+The antecedent is ‘You can’t love the one you want’.
+</div>
+<ol start="2" style="list-style-type: upper-roman">
+<li>What is the consequent of this conditional: <span class="math">\(((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}R)\)</span></li>
+</ol>
+<div class="answers">
+The consequent is <span class="math">\(R\)</span>. The antecedent is <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span>. Do you see how the parentheses help guide you here?
+</div>
+<h2 id="review-informal-notation">Review: Informal Notation</h2>
+<p>Parentheses are <em>really</em> important! Without them, our symbolic sentences would be ambiguous. But they can make our sentences look cluttered and hard to read. So sometimes we allow ourselves to write sentences in <strong>informal notation</strong>, which means we get to leave some of the parentheses out.</p>
+<p>But informal notation does not mean anything goes. We have strict rules concerning when parentheses can be omitted. For now, we only have one rule:</p>
+<ul>
+<li>If the symbolic sentence, in formal notation, begins with a left parenthesis and ends with a right parenthesis, you can omit them.</li>
+</ul>
+<p>So, a sentence like <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> can be written as <span class="math">\(P{\mathbin{\rightarrow}}Q\)</span>. But you cannot omit any of the parentheses from a sentence like <span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}Q)\)</span>, because it does not begin with a parenthesis—it begins with a negation sign.</p>
+<p>Also, please note that there is no convention or rule—formal or informal—that lets you <em>add</em> parentheses willy-nilly. <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> is a symbolic sentence; <span class="math">\(((P{\mathbin{\rightarrow}}Q))\)</span> is not.</p>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>
