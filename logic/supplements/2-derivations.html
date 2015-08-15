@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Derivations without Derived Rules (2.5)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body>
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Derivations without Derived Rules (2.5)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="strategic-hints">Strategic Hints</h1>
+<p>You can find strategic hints for constructing derivations throughout chapter 2. They are set off in boxes. See the top of p. 15 for an example.</p>
+<p>There are also two places in the chapter where several several strategic hints are collected together: p. 33 and pp. 43-44.</p>
+<p>You can also find strategic hints in the “Strategic Advice” document, available via the “Advice” button at the bottom of the derivation module.</p>
+<p>These are all good resources. But they all presuppose the use of derived rules, and we have not yet introduced derived rules. With that in mind, below you will find collected strategic advice for completing chapter 2 derivations without the help of derived rules.</p>
+<h1 id="two-questions">Two Questions</h1>
+<p>All the hints are organized around a sharp distinction between two questions that you can ask yourself at any stage of constructing a derivation:</p>
+<ul>
+<li>What sentence or sentences do I <strong>need to get</strong>?
+<ul>
+<li>The answer to this question is dictated by what sentence is on your show line, and what justification (DD, CD, or ID) you plan to use for boxing and canceling.</li>
+</ul></li>
+<li>What sentences are <strong>available</strong> for me to <strong>use</strong>?
+<ul>
+<li>These will be the premises and the sentences on available lines—lines above the line you are working on that are not boxed and are not uncanceled show lines.</li>
+</ul></li>
+</ul>
+<h1 id="advice-for-constructing-ch-2-derivations-without-derived-rules">Advice for Constructing Ch 2 Derivations Without Derived Rules</h1>
+<p>Here is the advice:</p>
+<ol style="list-style-type: decimal">
+<li><p>Never enter a show line for a sentence you already <em>have</em> on an available line or as a premise. This will not get you anywhere.</p></li>
+<li><p>Before beginning the derivation, try to think it through: can you see why, if the premises were true, the conclusion would have to be true too?</p></li>
+<li><p>Enter show lines related to what you need to <em>get</em> <strong>before</strong> entering show lines related what you need to <em>use</em>.</p></li>
+<li><p>Strategies for <strong>getting</strong> what you need:</p>
+<ol style="list-style-type: lower-alpha">
+<li>If you need a conjunction, <span class="math">\({\mathbin{◻}}{\mathbin{\wedge}}{\mathbin{○}}\)</span>, derive each conjunct separately, then used ADJ to join them together (you may find the ‘show conj’ show command useful)</li>
+<li>If you need a disjunction, <span class="math">\({\mathbin{◻}}{\mathbin{\vee}}{\mathbin{○}}\)</span>
+<ul>
+<li>derive one of the disjuncts and use ADD (but this won’t always be possible)</li>
+<li>enter it on a show line, assume <span class="math">\({\mathbin{\sim}}{\mathbin{◻}}{\mathbin{\vee}}{\mathbin{○}}\)</span>, and complete an indirect derivation</li>
+</ul></li>
+<li>If you need a conditional, <span class="math">\({\mathbin{◻}}{\mathbin{\rightarrow}}{\mathbin{○}}\)</span>, enter it on a show line, assume <span class="math">\({\mathbin{◻}}\)</span>, and complete a conditional derivation (you may find the ‘show cons’ show command useful)</li>
+<li>If you need a biconditional, <span class="math">\({\mathbin{◻}}{\mathbin{\leftrightarrow}}{\mathbin{○}}\)</span>, derive each conditional separately, then use CB to join them together (you may find the ‘show cond’ show command useful)</li>
+<li>If you need an atomic sentence, <span class="math">\(P\)</span>, or a negation <span class="math">\({\mathbin{\sim}}{\mathbin{◻}}\)</span>, and it is not obvious how to derive it directly, enter it on a show line, take your assumption, and complete an indirect derivation.</li>
+</ol></li>
+<li><p>Strategies for <strong>using</strong> what you have:</p>
+<ol style="list-style-type: lower-alpha">
+<li>To use a conjunction, <span class="math">\({\mathbin{◻}}{\mathbin{\wedge}}{\mathbin{○}}\)</span>, use S to get both conjuncts.</li>
+<li>To use a disjunction, <span class="math">\({\mathbin{◻}}{\mathbin{\vee}}{\mathbin{○}}\)</span>, derive the negation of one of the disjuncts, and use MTP (you may find the ‘show negdisj’ show command useful)</li>
+<li>To use a conditional, <span class="math">\({\mathbin{◻}}{\mathbin{\rightarrow}}{\mathbin{○}}\)</span>, derive the antecedent and use MP, or derive the negation of the consequent and use MT (you may find the ‘show ant’ or ‘show negcons’ commands useful)</li>
+<li>To use a biconditional, <span class="math">\({\mathbin{◻}}{\mathbin{\leftrightarrow}}{\mathbin{○}}\)</span>, use BC to get both conditionals.</li>
+<li>To use a negation, <span class="math">\({\mathbin{\sim}}{\mathbin{◻}}\)</span> (so, for example, <span class="math">\({\mathbin{\sim}}({\mathbin{◻}}{\mathbin{\rightarrow}}{\mathbin{○}})\)</span>, <span class="math">\({\mathbin{\sim}}({\mathbin{◻}}{\mathbin{\wedge}}{\mathbin{○}})\)</span>, <span class="math">\({\mathbin{\sim}}({\mathbin{◻}}{\mathbin{\vee}}{\mathbin{○}})\)</span>, <span class="math">\({\mathbin{\sim}}({\mathbin{◻}}{\mathbin{\leftrightarrow}}{\mathbin{○}})\)</span>), try to show its unnegation (you may find the ‘show unneg’ command useful)</li>
+</ol></li>
+<li><p>Sometimes you need to get a contradiction, but it is not clear what contradiction you should try to get, and you’ve exhausted all the strategies for using what you have. As a last ditch strategy,</p>
+<ul>
+<li>Enter a show line for one of the sentence letters in the derivation, or the negation of one of the sentence letters. Take your assumption for indirect derivation. If you succeed at boxing and canceling, next try to show the negation of that same sentence letter.</li>
+</ul></li>
+</ol>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

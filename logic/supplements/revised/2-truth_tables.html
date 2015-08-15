@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <meta name="author" content="David Sanson" />
+        
+        <title>'Truth Tables (2.10 and 2.11)'</title>
+        <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/texts.css" />
+        <link rel="shortcut icon" href="../../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+        <script src="../../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../../css/logic.css" />
+    </head>
+    <body>
+        <header>
+        <nav> 
+            <ul>
+                <li class="texts left">
+                    <a href="../../../logic/supplements/">← Logic Supplements</a>
+                </li>
+                <li class="texts" style="float:right; font-weight:bold"> 
+                    'Truth Tables (2.10 and 2.11)'
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="content">
+           <div id="page">
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to section 2.10 of the Logic Text. You should read that <em>before</em> you read this. Section 2.10 introduces truth tables, and explains how we can use truth tables to determine whether or not a sentence is a tautology, and whether or not an argument is tautologically valid.</p>
+<h1 id="truth-functions">Truth Functions</h1>
+<p>Each of our connectives can be thought of as expressing a <em>truth-function</em>. A truth-function is a function that takes one or more truth values as inputs, and outputs a truth value. So, for example, the rule for negation is:</p>
+<ul>
+<li>if the input, the truth value of <span class="math">\({\mathord{◻}}\)</span>, is T, then the output, the truth value of <span class="math">\({\mathord{\sim}}{\mathord{◻}}\)</span>, is F.</li>
+<li>if the input is F, then the output is T</li>
+</ul>
+<p>We can summarize this with the following table:</p>
+<div class="tt1sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}{\mathord{◻}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The first row of the table corresponds to our first bullet point: the truth value assigned to <span class="math">\({\mathord{◻}}\)</span> is T, so the truth value assigned to <span class="math">\({\mathord{\sim}}{\mathord{◻}}\)</span> is F. The second row corresponds to the second bullet point.</p>
+<p>The following table summarizes the truth-functions expressed by each of our binary connectives:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\wedge}}{\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\vee}}{\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathbin{\rightarrow}}{\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\leftrightarrow}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Again, each row represents a possible input—in the first row, we assign T to both <span class="math">\({\mathord{◻}}\)</span> and <span class="math">\({\mathord{○}}\)</span>, for example—and each column represents the outputs given those inputs.</p>
+<h1 id="formal-validity-and-logical-truth">Formal Validity and Logical Truth</h1>
+<p><em>Validity</em> is a property of <em>arguments</em>. <em>Truth</em> is a property of <em>sentences</em>.</p>
+<p>Some sentences are <em>true in virtue of their logical form</em>. We call these sentences <strong>logical truths</strong>:</p>
+<dl>
+<dt>Logical Truth</dt>
+<dd>A sentence is a <strong>logical truth</strong> just in case <em>no sentence that has its logical form</em> is false.
+</dd>
+</dl>
+<p>Some arguments are <em>valid in virtue of their logical form</em>. We call these arguments <strong>formally valid</strong>:</p>
+<dl>
+<dt>Formal Validity</dt>
+<dd>An argument is <strong>formally valid</strong> just in case <em>no argument with the same logical form</em> has true premises but a false conclusion.
+</dd>
+</dl>
+<p>You cannot apply these definitions if you don’t have a theory of logical form. We now have a theory of <em>sentential</em> logical form—that is, logical form due to truth-functional sentential connectives, like and and ‘or’ and ‘if…then’. So we can now apply these definitions.</p>
+<p>We call a sentence that is a logical truth in virtue of its <em>sentential logical form</em> a <strong>tautology</strong>. We can show that a sentence is a tautology by showing that it is assigned <strong>T</strong> on <strong>every row</strong> of its truth table. That shows that no sentence with that sentential logical form can ever be false.</p>
+<p>We call an argument that is formally valid in virtue of its <em>sentential logical form</em> <strong>tautologically valid</strong>. We can show that an argument is tautologically valid by showing that <strong>no row</strong> of its truth table assigns <strong>T</strong> to all of its premises, but <strong>F</strong> to its conclusion. That shows that no argument with thhis form can ever have true premises and a false conclusion.</p>
+<h1 id="tautologies">Tautologies</h1>
+<p>Here are some tautologies:</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}P\)</span></li>
+<li><span class="math">\(P{\mathord{\vee}}{\mathord{\sim}}P\)</span></li>
+<li><span class="math">\(P{\mathord{\leftrightarrow}}P\)</span></li>
+<li><span class="math">\({\mathord{\sim}}(P{\mathord{\wedge}}{\mathord{\sim}}P)\)</span></li>
+</ul>
+<p>Try plugging in sentences for <span class="math">\(P\)</span>, and see if you can come up with any that strike you as false:</p>
+<dl>
+<dt><span class="math">\(P{\mathbin{\rightarrow}}P\)</span></dt>
+<dd>If <input class="copyMe P slot" type="text" placeholder="P">, then <input class="copyMe P slot" type="text" placeholder="P">.
+</dd>
+<dt><span class="math">\(P{\mathord{\vee}}{\mathord{\sim}}P\)</span></dt>
+<dd>Either <input class="copyMe P slot" type="text" placeholder="P">, or it is not the case that <input class="copyMe P slot" type="text" placeholder="P">
+</dd>
+<dt><span class="math">\(P{\mathord{\leftrightarrow}}P\)</span></dt>
+<dd><input class="copyMe P slot" type="text" placeholder="P"> just in case <input class="copyMe P slot" type="text" placeholder="P">
+</dd>
+<dt><span class="math">\({\mathord{\sim}}(P{\mathord{\wedge}}{\mathord{\sim}}P)\)</span></dt>
+<dd>Both it is not the case that (<input class="copyMe P slot" type="text" placeholder="P"> and it is not the case that <input class="copyMe P slot" type="text" placeholder="P">)
+</dd>
+</dl>
+<p>To show that a sentence is a tautology, we construct its truth table, and show that the sentence is assigned T on every row of its truth table. For example, here is the truth table for <span class="math">\(P{\mathord{\vee}}{\mathord{\sim}}P\)</span>:</p>
+<div class="tt1sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P{\mathord{\vee}}{\mathord{\sim}}P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">?</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The truth table for a sentence first lists each sentence letter contained in the sentence—so here, just <span class="math">\(P\)</span>—followed by the sentence itself. Each row of the truth table represents a possible assignment of truth values to the sentence letters. The truth table for the sentence must have one row for each possible assignment. Here there are two possible assignments, and so two rows: T to <span class="math">\(P\)</span>, or F to <span class="math">\(P\)</span>.</p>
+<p>We calculate the truth value for the sentence on the first row as follows. First, we write the truth value assigned to the sentence letter under each of its occurrences:</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Next, we note that <span class="math">\({\mathord{\sim}}P\)</span> is F when <span class="math">\(P\)</span> is T:</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Finally, we note that the disjunction is T when its first disjunct is T and its second disjunct is F (I’ve put the F in boldface to indicate that it is the truth-value of the whole sentence):</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We calculate the second row in similar fashion. First, we note that <span class="math">\(P\)</span> is assigned <span class="math">\(F\)</span>:</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Next, we calculate the truth value of <span class="math">\({\mathord{\sim}}P\)</span>:</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Finally, we calculate the truth value of the disjunction:</p>
+<div class="tt1slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\vee}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since the sentence is true on all the rows of its truth table, it is a tautology.</p>
+<p>Here are some sentences that are not tautologies. Try finding English sentences that make them false:</p>
+<p><span class="math">\(P{\mathord{\wedge}}{\mathord{\sim}}Q\)</span> Both <input class="copyMe P slot" type="text" placeholder="P"> and it is not the case that <input class="copyMe Q slot" type="text" placeholder="Q">.</p>
+<p><span class="math">\(P{\mathbin{\rightarrow}}(P{\mathord{\wedge}}Q)\)</span> If <input class="copyMe P slot" type="text" placeholder="P">, then both <input class="copyMe P slot" type="text" placeholder="P"> and <input class="copyMe Q slot" type="text" placeholder="Q">.</p>
+<p>Here is the truth table for the first of these:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P{\mathord{\wedge}}{\mathord{\sim}}Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">?</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">?</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">?</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Again, we calculate the truth value of the sentence for each row.</p>
+<p>First, we write down the assigned truth value beneath each occurrence of a sentence letter:</p>
+<div class="tt2slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\wedge}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Next, we calculate the truth value of <span class="math">\({\mathord{\sim}}Q\)</span>:</p>
+<div class="tt2slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\wedge}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Finally, we calculate the truth value of the conjunction. It is F, because the right conjunct is F:</p>
+<div class="tt2slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\wedge}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>F</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since the sentence is assigned F on at least one row of its truth table, it is not a logical truth. Can you find English sentences that are <em>both true</em>, that make this sentence false?</p>
+<p>We don’t <em>need</em> to continue: we have shown that the sentence is not a tautology. But let’s complete the table anyway:</p>
+<div class="tt2slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathord{\wedge}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center"><strong>F</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center"><strong>T</strong></td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center"><strong>F</strong></td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center"><strong>F</strong></td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This table shows that the sentence is false if both <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are true (row 1), that it is true if <span class="math">\(P\)</span> is true and <span class="math">\(Q\)</span> is false (row 2), and it is true if <span class="math">\(P\)</span> is false and <span class="math">\(Q\)</span> is true (row 3), or if <span class="math">\(P\)</span> is false and <span class="math">\(Q\)</span> is false (row 4).</p>
+<p>Test this result by plugging in English sentences with those truth values into the form, and thinking about the truth value of the resulting complex English sentence:</p>
+<p>Both <input class="copyMe P slot" type="text" placeholder="P"> and it is not the case that <input class="copyMe Q slot" type="text" placeholder="Q">.</p>
+<h1 id="tautological-validity">Tautological Validity</h1>
+<p>Sentences are true or false. Arguments are valid or invalid. So sentences are the sorts of things that can be logically true, and so tautologies. Arguments are the sorts of things that can be logically valid, and so tautologically valid.</p>
+<p>Here are some tautologically valid arguments:</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\ .\ P {\therefore\ }Q\)</span></li>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\ .\ {\mathord{\sim}}Q {\therefore\ }{\mathord{\sim}}P\)</span></li>
+<li><span class="math">\(P{\mathord{\wedge}}Q {\therefore\ }P\)</span></li>
+<li><span class="math">\(P{\mathord{\vee}}Q\ .\ {\mathord{\sim}}Q {\therefore\ }P\)</span></li>
+<li><span class="math">\(P{\mathord{\wedge}}Q\ .\ Q{\mathbin{\rightarrow}}R {\therefore\ }R\)</span></li>
+</ul>
+<p>You might recognize the first two as instances of MP and MT, respectively.</p>
+<p>We show that an argument is tautologically valid by constructing its truth-table, and showing that there are no rows of the table that assign T to all of the premises, but F to the conclusion.</p>
+<p>Here is the truth-table for our first example above:</p>
+<div class="tt2slcalc">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></th>
+<th align="center"><span class="math">\(Q\)</span> .</th>
+<th align="center"><span class="math">\(P\)</span> .</th>
+<th align="center"><span class="math">\(Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T .</td>
+<td align="center">T .</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F .</td>
+<td align="center">T .</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T .</td>
+<td align="center">F .</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F .</td>
+<td align="center">F .</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Consider this table row by row.</p>
+<ul>
+<li>On the first row, the premises are all true, but so is the conclusion. So this is not a row that has all true premises and a false conclusion.</li>
+<li>On the second row, the first premise is false. So this is not a row that has all true premises and a false conclusion.</li>
+<li>On the third row, the second premise is false. So this is not a row that has all true premises and a false conclusion.</li>
+<li>On the fourth row, the second premise is false. So this is not a row that has all true premises and a false conclusion.</li>
+</ul>
+<p>What this tells us is that there is no way that all the premises could be true but the conclusion false. So the argument is tautologically valid.</p>
+<h2 id="test-your-understanding">Test Your Understanding</h2>
+<ol style="list-style-type: decimal">
+<li><p>Construct truth-tables to convince yourself that MP, MT, and DN are tautologically valid.</p></li>
+<li><p>Construct truth-tables to convince yourself that Denying the Antecedent and Affirming the Consequent are not tautologically valid.</p></li>
+<li><p>Construct a truth-table that shows that <em>anything</em> follows from a contradiction.</p></li>
+</ol>
+           </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

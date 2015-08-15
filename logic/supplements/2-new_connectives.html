@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>New Connectives (2.1)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body>
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                New Connectives (2.1)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to section 2.1 of the Logic Text. You should read that <em>before</em> you read this.</p>
+<p>Section 2.1 introduces three new two-place connectives: conjunction, disjunction, and the biconditional. It briefly discusses what they mean and how to parse sentences containing them.</p>
+<h1 id="new-connectives">New Connectives</h1>
+<p>To briefly review, the <strong>conjunction sign</strong> is ‘<span class="math">\({\mathord{\wedge}}\)</span>’, and is read as ‘and’, so ‘<span class="math">\((P{\mathord{\wedge}}Q)\)</span>’ is read as ‘<span class="math">\(P\)</span> and <span class="math">\(Q\)</span>’. The two parts of a conjunction (here, <span class="math">\(P\)</span> and <span class="math">\(Q\)</span>) are called its <strong>conjuncts</strong>. The <strong>disjunction sign</strong> is ‘<span class="math">\({\mathord{\vee}}\)</span>’, read this as ‘or’, so ‘<span class="math">\((P{\mathord{\vee}}Q)\)</span>’ is read as ‘<span class="math">\(P\)</span> or <span class="math">\(Q\)</span>’. The two parts of a disjunction (here, <span class="math">\(P\)</span> and <span class="math">\(Q\)</span>) are called its <strong>disjuncts</strong>. The <strong>biconditional sign</strong> is ‘<span class="math">\({\mathord{\leftrightarrow}}\)</span>’, read this as ‘if and only if’, so ‘<span class="math">\((P{\mathord{\leftrightarrow}}Q)\)</span>’ is read as ‘<span class="math">\(P\)</span> if and only if <span class="math">\(Q\)</span>’. The two parts of a biconditional are called its <strong>constituents</strong>.</p>
+<h2 id="test-your-understanding">Test Your Understanding</h2>
+<ol style="list-style-type: decimal">
+<li>What do we call the sentence <span class="math">\(P\)</span> when it occurs in the conjunction, <span class="math">\((P{\mathord{\wedge}}Q)\)</span>?</li>
+</ol>
+<div class="answers">
+<p>We say that <span class="math">\(P\)</span> is a <em>conjunct</em>. If we want to be more specific, we can say that it is the <em>left conjunct</em>.</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>What do we call the sentence <span class="math">\(Q\)</span> when it occurs in the disjunction, <span class="math">\((P{\mathord{\vee}}Q)\)</span>?</li>
+</ol>
+<div class="answers">
+<p>We say that <span class="math">\(Q\)</span> is a <em>disjunct</em>. If we want to be more specific, we can say that it is the <em>right disjunct</em>.</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>How would you symbolize the sentence, ‘Penny sits and Quinn runs’?</li>
+</ol>
+<div class="answers">
+<p>You’d need to decide on a scheme of abbreviation. Let’s use <span class="math">\(P\)</span> for ‘Penny sits’ and <span class="math">\(Q\)</span> for ‘Quinn runs’. Then the sentence is symbolized as ‘<span class="math">\((P{\mathord{\wedge}}Q)\)</span>’.</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>What do we call the sentence <span class="math">\((S{\mathbin{\rightarrow}}R)\)</span>, when it occurs in the biconditional, <span class="math">\(((S{\mathbin{\rightarrow}}R){\mathord{\leftrightarrow}}Q)\)</span>?</li>
+</ol>
+<div class="answers">
+<p>We call it a constituent, or, more precisely, the <em>left constituent</em>. It is also, of course, a conditional.</p>
+</div>
+<h1 id="syntax">Syntax</h1>
+<p>These new connectives have the same syntax as the conditional. To create a sentence using one of them, you stick it between two sentences, and surround the whole thing in parentheses:</p>
+<ul>
+<li>if <span class="math">\({\mathord{◻}}\)</span> and <span class="math">\({\mathord{○}}\)</span> are both symbolic sentences, then so are <span class="math">\(({\mathord{◻}}{\mathbin{\rightarrow}}{\mathord{○}})\)</span>, <span class="math">\(({\mathord{◻}}{\mathord{\wedge}}{\mathord{○}})\)</span>, <span class="math">\(({\mathord{◻}}{\mathord{\vee}}{\mathord{○}})\)</span>, and <span class="math">\(({\mathord{◻}}{\mathord{\leftrightarrow}}{\mathord{○}})\)</span>.</li>
+</ul>
+<p>As before, we have conventions for dropping parentheses, and writing sentences in informal notation. The new conventions are summarized in the box on page 2 of chapter 2.</p>
+<h2 id="test-your-understanding-1">Test Your Understanding</h2>
+<p>For each of the following sentences, determine whether or not it is in official notation, informal notation, or not well-formed:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math">\((P{\mathord{\wedge}}Q\)</span></li>
+<li><span class="math">\(A{\mathord{\leftrightarrow}}B\)</span></li>
+<li><span class="math">\((P{\mathord{\vee}}Q)\)</span></li>
+<li><span class="math">\(P{\mathord{\wedge}}R\)</span></li>
+<li><span class="math">\(P{\mathbin{\rightarrow}}(Q{\mathord{\wedge}}R)\)</span></li>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q{\mathord{\wedge}}R\)</span></li>
+<li><span class="math">\(P{\mathord{\vee}}Q{\mathord{\vee}}R\)</span></li>
+<li><span class="math">\(P{\mathord{\vee}}Q{\mathord{\wedge}}R\)</span></li>
+</ol>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li>Not well-formed: note that it doesn’t have an even number of parentheses.</li>
+<li>Not well-formed: <span class="math">\(A\)</span> and <span class="math">\(B\)</span> are not sentence letters</li>
+<li>Official Notation</li>
+<li>Informal Notation: the outermost parentheses have been dropped. In official notation, <span class="math">\((P{\mathord{\wedge}}R)\)</span></li>
+<li>Informal Notation: the outermost parentheses have been dropped. The main connective is the conditional, so in official notation, <span class="math">\((P{\mathbin{\rightarrow}}(Q{\mathord{\wedge}}R))\)</span>.</li>
+<li>Informal Notation: the outer most parentheses have been dropped. Also, the parentheses around the consequent, <span class="math">\(Q{\mathord{\wedge}}R\)</span>, have been dropped, as allowed by the first of our new conventions. So, in official notation, <span class="math">\((P{\mathbin{\rightarrow}}(Q{\mathord{\wedge}}R))\)</span>.</li>
+<li>Informal Notation, following the second of our new conventions. In official notation, this sentence would be written as <span class="math">\(((P{\mathord{\vee}}Q){\mathord{\vee}}R)\)</span>.</li>
+<li>Not well-formed. We don’t have any convention that allows us to drop parentheses when we have a <em>mixed</em> series of conjunctions and disjunctions.</li>
+</ol>
+</div>
+<h1 id="characteristic-truth-tables">Characteristic Truth Tables</h1>
+<p>The <em>meaning</em> of a connective can be expressed with a <em>truth table</em>—that is, a table that summarizes the truth or falsehood of a complex sentence, given the truth or falsehood of its parts.</p>
+<p>Chapter 2, section 1 presents truth tables for our three new connectives. Truth tables for the conditional and negation can be found on pages 4 and 5 of chapter 1. Before continuing, you should write down all five of those tables on a piece of paper and think a little bit about what they say.</p>
+<h2 id="test-your-understanding-2">Test Your Understanding</h2>
+<p>For each of the following sentences and the supplied schemes of abbreviation, first decide whether or not you think it is true, then look at the truth tables from 2.1, and calculate its truth value.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(P{\mathord{\wedge}}R\)</span> (<span class="math">\(P\)</span>: Obama is President; <span class="math">\(Q\)</span>: Romney is President)</li>
+</ol>
+<div class="answers">
+<p>False. Here is the table for conjunction:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\wedge}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since <span class="math">\(P\)</span> is true and <span class="math">\(R\)</span> is false, the situation for <span class="math">\(P{\mathord{\wedge}}R\)</span> is represented by the second row of this table. As that row indicates, when the left conjunct is true, and the right conjunct is false, the conjunction is false.</p>
+<p>Here is another way to summarize what the table tells us: the conjunction is true only if both of its conjuncts are true. So, since <span class="math">\(R\)</span> is false, <span class="math">\(P{\mathord{\wedge}}R\)</span> is false.</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math">\(P{\mathord{\vee}}Q\)</span> (<span class="math">\(P\)</span>: Obama is President; <span class="math">\(Q\)</span>: Romney is President)</li>
+</ol>
+<div class="answers">
+<p>True. Here is the table for disjunction:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\vee}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since <span class="math">\(P\)</span> is true and <span class="math">\(R\)</span> is false, the situation for <span class="math">\(P{\mathord{\vee}}R\)</span> is represented by the second row of this table. As that row indicates, when the left disjunct is true, and the right disjunct is false, the disjunction is false.</p>
+<p>Here is another way to summarize what the table tells us: the disjunction is true if either of its disjuncts is true. So, since <span class="math">\(P\)</span> is true, <span class="math">\(P{\mathord{\vee}}R\)</span> is true.</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span> (<span class="math">\(P\)</span>: Obama is President; <span class="math">\(Q\)</span>: Romney is President)</li>
+</ol>
+<div class="answers">
+<p>False! Here is the table for the conditional:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathbin{\rightarrow}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since <span class="math">\(P\)</span> is true and <span class="math">\(R\)</span> is false, the situation for <span class="math">\(P{\mathbin{\rightarrow}}R\)</span> is represented by the second row of this table. As that row indicates, when the antecedent is true, and the consequent is false, the conditional is false.</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li><span class="math">\(P{\mathord{\leftrightarrow}}Q\)</span> (<span class="math">\(P\)</span>: Obama is President; <span class="math">\(Q\)</span>: Romney is President)</li>
+</ol>
+<div class="answers">
+<p>False! Here is the table for the biconditional:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\leftrightarrow}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Since <span class="math">\(P\)</span> is true and <span class="math">\(R\)</span> is false, the situation for <span class="math">\(P{\mathord{\leftrightarrow}}R\)</span> is represented by the second row of this table. As that row indicates, when the left consitutent is true, and the right constituent is false, the biconditional is false.</p>
+<p>Here is another way to summarize what the table tells us: the biconditional is true only if both of its constituents agree in “truth value”: that is, if both are true or both are false. But <span class="math">\(P\)</span> is true and <span class="math">\(R\)</span> is false, so <span class="math">\(P{\mathord{\leftrightarrow}}R\)</span> is false.</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li><span class="math">\(P{\mathord{\wedge}}Q\)</span> (<span class="math">\(P\)</span>: Penguins are birds; <span class="math">\(Q\)</span>: Quail are birds)</li>
+<li><span class="math">\(P{\mathord{\vee}}Q\)</span> (<span class="math">\(P\)</span>: Penguins are birds; <span class="math">\(Q\)</span>: Quail are birds)</li>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span> (<span class="math">\(P\)</span>: Penguins are birds; <span class="math">\(Q\)</span>: Quail are birds)</li>
+<li><span class="math">\(P{\mathord{\leftrightarrow}}Q\)</span> (<span class="math">\(P\)</span>: Penguins are birds; <span class="math">\(Q\)</span>: Quail are birds)</li>
+</ol>
+<div class="answers">
+<p>Since <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both true, we are looking at the first row of each truth table.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>True! A conjunction is true if both of its conjuncts are true, as is the case here.</p></li>
+<li><p>True! A disjunction is true if both of its disjuncts are true, as is the case here.</p>
+<p>You might be inclined to think that the English sentence is false—that ‘or’ is <em>exclusive</em>—one <em>or</em> the other, but <em>not both</em>. But our symbol, ‘<span class="math">\({\mathord{\vee}}\)</span>’ represents <em>inclusive</em> disjunction. The table for exclusive disjunction would look like this:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}\ \mbox{exclusive-or}\ {\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We are not going to introduce a connective for exclusive-or. Those who do sometimes use the disjunction sign, <span class="math">\({\mathord{\vee}}\)</span>, with a line beneath it: <span class="math">\(\veebar\)</span>.</p></li>
+<li><p>True! A conditional with both true antecedent and consequent is true, as you can see on the first row of the truth table.</p>
+<p>You might balk at this. Shouldn’t the truth of the conditional require something more—a non-accidental connection between the truth of the antecedent and the consequent?</p>
+<p>In English, no doubt this is often the case. But our conditional is what logicians call the <em>material</em> conditional. The only way it can be false is when the antecedent is true and the consequent false (see the second row of its truth table). Otherwise, it is true.</p></li>
+<li><p>True! A biconditional is true if both of its constituents agree in truth value, as they do here.</p>
+<p>You might be inclined to think that the English sentence is false—that ‘if and only if’ requires a stronger relationship between the two consituents; that it cannot just be an <em>accident</em> that they happen to both have the same truth value. But our biconditional ‘<span class="math">\({\mathord{\leftrightarrow}}\)</span>’ is the <em>material</em> biconditional, and expresses nothing more than agreement of truth value.</p></li>
+</ol>
+</div>
+<ol start="8" style="list-style-type: decimal">
+<li><span class="math">\(R{\mathord{\wedge}}Q\)</span> (<span class="math">\(R\)</span>: Rabbits are birds; <span class="math">\(Q\)</span>: Quail are reptiles)</li>
+<li><span class="math">\(R{\mathord{\vee}}Q\)</span> (<span class="math">\(R\)</span>: Rabbits are birds; <span class="math">\(Q\)</span>: Quail are reptiles)</li>
+<li><span class="math">\(R{\mathbin{\rightarrow}}Q\)</span> (<span class="math">\(R\)</span>: Rabbits are birds; <span class="math">\(Q\)</span>: Quail are reptiles)</li>
+<li><span class="math">\(R{\mathord{\leftrightarrow}}Q\)</span> (<span class="math">\(R\)</span>: Rabbits are birds; <span class="math">\(Q\)</span>: Quail are reptiles)</li>
+</ol>
+<div class="answers">
+<p>Since <span class="math">\(R\)</span> and <span class="math">\(Q\)</span> are both false, we are looking at the bottom row of each truth table.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>False! A conjunction is true only if both of its conjuncts are true.</li>
+<li>False! A disjunction is true only if at least one of its disjuncts is true. But both of the disjuncts here are false.</li>
+<li>True! A conditional is true whenever its antecedent is false!</li>
+<li>True! A biconditional is true if both of its constituents <em>agree</em> in truth value. Since they are both false here, they both have the same truth value, so the biconditional is true.</li>
+</ol>
+<p>Sometimes people get confused about the difference here between ‘and’ and ‘if and only if’. Sometimes people think that ‘<span class="math">\(P\)</span> and <span class="math">\(Q\)</span>’ should be true if <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both false, since at least they have the same truth value. But ‘and’ requires not just <em>agreement</em> between the conjuncts, but that they both be <em>true</em>. If you want to express the weaker relationship of agreement, use the biconditional instead.</p>
+<p>And sometimes people think that ‘<span class="math">\(P\)</span> if and only if <span class="math">\(Q\)</span>’ should be false if <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both false, confusing the weak requirement of agreement with the stronger requirement that both be true. If you want to express that stronger relationship, use the conjunction instead.</p>
+</div>
+<h1 id="calculating-the-truth-value-of-a-complex-sentence">Calculating the Truth Value of a Complex Sentence</h1>
+<p>Once you parse a complex sentence, you can use the truth tables to calculate its truth value, given an assignment of truth values to the sentence letters it contains.</p>
+<p>You can find some examples that illustrate this on pages 3 and 4 of chapter 2. I will not repeat them here.</p>
+<h2 id="test-your-understanding-3">Test Your Understanding</h2>
+<ol style="list-style-type: decimal">
+<li><p>Suppose <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are true. What is the truth value of <span class="math">\({\mathord{\sim}}(P{\mathord{\wedge}}Q)\)</span>?</p>
+<p>Maybe you can calculate this one in your head, or maybe you cannot. Either way, get out a piece of paper and try to calculate it by hand, following the model presented in the text, of first parsing the sentence into a tree, and then calculating the truth value of the whole by working your way up from the truth values of the atomic sentences.</p>
+<p>The solution is presented below in stages.</p></li>
+</ol>
+<div class="answers">
+<p>Here is what the sentence looks like when parsed:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\({\mathord{\sim}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math">\({\lfloor}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Is that what you had? If so, move on to the next step, assigning truth values to the atomic sentences.</p>
+</div>
+<div class="answers">
+<p>Here is the parsed sentence, with truth values assigned to the atomic sentences:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\({\mathord{\sim}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math">\({\lfloor}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The next step is to calculate the truth value of the conjunction…</p>
+</div>
+<div class="answers">
+<p>Since both <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are true, <span class="math">\(P{\mathord{\wedge}}Q\)</span> is true too:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\({\mathord{\sim}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math">\({\lfloor}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>What next?</p>
+</div>
+<div class="answers">
+<p>Since the conjunction is true, its negation is false:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\({\mathord{\sim}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math">\({\lfloor}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>And so we conclude that, when <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both true, <span class="math">\({\mathord{\sim}}(P{\mathord{\wedge}}Q)\)</span> is false.</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Suppose <span class="math">\(P\)</span> and <span class="math">\(S\)</span> are true, but <span class="math">\(Q\)</span> and <span class="math">\(R\)</span> are false. What is the truth value of <span class="math">\((P{\mathord{\wedge}}Q){\mathord{\vee}}(R{\mathbin{\rightarrow}}S)\)</span>? Or, more succinctly,</li>
+</ol>
+<div class="tt4sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(R\)</span></th>
+<th align="center"><span class="math">\(S\)</span></th>
+<th align="center"><span class="math">\((P{\mathord{\wedge}}Q){\mathord{\vee}}(R{\mathbin{\rightarrow}}S)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Again, the solution is presented in stages:</p>
+<div class="answers">
+<p>Here is the parsed sentence, with appropriate truth values assigned to the atomic sentences:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"><span class="math">\({\mathord{\vee}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="answers">
+<p>Now we calculate up the tree:</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"><span class="math">\({\mathord{\vee}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="answers">
+<p>And, again,</p>
+<div class="parsetree">
+<table>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"><span class="math">\({\mathord{\vee}}\)</span></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"><span class="math">\({\mathord{\wedge}}\)</span></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\((\)</span></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"><span class="math">\({\mathbin{\rightarrow}}\)</span></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"><span class="math">\()\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\({\bigwedge}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><span class="math">\(P\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(Q\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(R\)</span></td>
+<td align="center"></td>
+<td align="center"><span class="math">\(S\)</span></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">F</td>
+<td align="center"></td>
+<td align="center">T</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>And so we see that, in this situation, the complex sentence is true.</p>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

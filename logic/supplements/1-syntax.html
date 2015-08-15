@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Negations and Conditionals (1.1 and 1.2)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body class="supplement">
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Negations and Conditionals (1.1 and 1.2)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="conditionals-and-negations">Conditionals and Negations</h1>
+<p>Chapter 1 introduces a fragment of <strong>Sentential Logic</strong>, focusing just on the logic of ‘if’ and ‘not’. The rest of Sentential Logic—including the logic of ‘and’, ‘or’, and ‘if and only if’—is introduced in Chapter 2. We start with just this fragment to keep things simple.</p>
+<p>You just read the first two sections of Chapter 1. The first section introduces a new symbolic notation—two new symbols, ‘<span class="math">\({\mathord{\sim}}\)</span>’ and ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’—together with some rules for combining those symbols with <strong>sentence letters</strong>—capital letters <span class="math">\(P\)</span> through <span class="math">\(Z\)</span>—and parentheses to produce <strong>symbolic sentences</strong>.</p>
+<p>The second section explains what the new symbols mean. ‘<span class="math">\({\mathord{\sim}}\)</span>’ is the negation sign, and we use it to symbolize ‘it is not the case that’. ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’ is the conditional sign, and we use it to symbolize ‘if…then…’.</p>
+<p>In this supplement, I am going to work through the same material in a slightly different order. I begin with a review of how we use the negation sign and the conditional sign to symbolize negations and conditionals, and end with a review of the rules for combining our new symbols together to create well-formed symbolic sentences.</p>
+<h1 id="negations">Negations</h1>
+<p>We will use the sentence letters—capital letters <span class="math">\(P\)</span> through <span class="math">\(Z\)</span>—to represent simple sentences. This is an arbitrary choice: other logic textbooks might use other letters, or lowercase letters.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> We will use ‘<span class="math">\({\mathord{\sim}}\)</span>’ to symbolize negation. This is again an arbitrary choice. Some textbooks use ‘<span class="math">\(\neg\)</span>’ instead.</p>
+<!-- add image of empty fridge
+-->
+<p>A negation is a sentence that is true just in case the sentence it negates is false. So, for example, suppose we are at a party, and you ask for a beer, and I say,</p>
+<ul>
+<li>There are some beers in the refrigerator.</li>
+</ul>
+<p>You go look, but you don’t find any beer. So you say,</p>
+<ul>
+<li>There are not any beers in the refrigerator.</li>
+</ul>
+<p>At this point, we would probably send somebody on a beer run. But maybe the party is a logic party, so we decide to translate our exchange into symbols instead.</p>
+<p>We can represent my sentence with a single sentence letter,</p>
+<ul>
+<li><span class="math">\(R\)</span>: There are some beers in the refrigerator.</li>
+</ul>
+<p>Your sentence is the <strong>negation</strong> of my sentence. What you said was true just case what I said was false, and vice versa. So, using our negation sign, we can represent your sentence as,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}R\)</span>: It is not the case that there are some beers in the refrigerator.</li>
+</ul>
+<p>Here are some other examples of sentences and their negations, together with appropriate symbolizations:</p>
+<p><span class="math">\(S\)</span>: Snow is white<br /><span class="math">\({\mathord{\sim}}S\)</span>: Snow is not white<br /><span class="math">\(T\)</span>: Frozen is the greatest musical of all time<br /><span class="math">\({\mathord{\sim}}T\)</span>: Frozen isn’t the greatest musical of all time<br /><span class="math">\(R\)</span>: The NSA respects the rights of US citizens<br /><span class="math">\({\mathord{\sim}}R\)</span>: The NSA fails to respect the rights of US citizens</p>
+<p>As these examples show, in English we tend to express negations by including a ‘not’ somewhere in the middle of the sentence, but we can also use contractions or expressions like ‘fails to’.</p>
+<!--
+    add image of something Canadian
+-->
+<p>Not all sentences that involve negativity are negations. Consider:</p>
+<ol style="list-style-type: decimal">
+<li>Canada is the best!</li>
+<li>Canada is the worst!</li>
+</ol>
+<p>(2) is not the negation of (1), because (2) is not true just in case (1) is false. Maybe Canada is neither the best nor the worst, but just so-so. The negation of (1) is a sentence that is true just in case (1) is false, like (3):</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Canada is not the best.</li>
+</ol>
+<!--
+comment: picture of cupcake
+-->
+<p>Not all sentences that differ just by a ‘not’ are negations. Consider:</p>
+<ol style="list-style-type: decimal">
+<li>I want to eat a cupcake.</li>
+<li>I want to not eat a cupcake.</li>
+</ol>
+<p>(2) is not the negation of (1). For (2) to be true, I must want to avoid eating cupcakes, but maybe (1) is false because I am simply indifferent to cupcakes. The negation of (1), then, is</p>
+<ol start="3" style="list-style-type: decimal">
+<li>I don’t want to eat a cupcake.</li>
+</ol>
+<p>So, let’s work through some examples.</p>
+<p>Suppose <span class="math">\(Z\)</span> stands for ‘The level of zooplankton in the Great Lakes is dangerously high.’ What English sentence does <span class="math">\({\mathord{\sim}}Z\)</span> symbolize?</p>
+<div class="answers">
+<p>It symbolizes the sentence, ‘The level of zooplankton in the Great Lakes is not dangerously high’, or, equivalently, ‘It is not the case that the level of zooplankton in the Great Lakes is dangerously high.’</p>
+</div>
+<p>What English sentence expresses the negation of ‘Satan is evil’?</p>
+<div class="answers">
+<p>‘Satan is good’ is not the negation of ‘Satan is evil’: something can fail to be evil without being good. The negation of ‘Satan is evil’ is ‘Satan is not evil’, or ‘Satan fails to be evil’, or ‘It is not the case that Satan is evil’.</p>
+</div>
+<p>How would you symbolize, ‘It is not the case that the levels of zooplankton in the Great Lakes are not dangerously high’?</p>
+<div class="answers">
+<p>There are two ‘nots’ here. So the natural way to symbolize this is as <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span>, which is the negation of <span class="math">\({\mathord{\sim}}Z\)</span>.</p>
+<p><span class="math">\(Z\)</span> and <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span> stand in an interesting logical relationship. <span class="math">\(Z\)</span> is true just in case its negation, <span class="math">\({\mathord{\sim}}Z\)</span>, is false. And <span class="math">\({\mathord{\sim}}Z\)</span> is false just in case <em>its</em> negation, <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span>, is true. So <span class="math">\(Z\)</span> is true just in case <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Z\)</span> is true. In other words, they are <em>logically equivalent</em>.</p>
+</div>
+<p>Suppose <span class="math">\(P\)</span> represents the sentence ‘Petunia is a purple pig’. What are three ways of expressing, in English, <span class="math">\({\mathord{\sim}}P\)</span>?</p>
+<div class="answers">
+<p>‘Petunia is not a purple pig,’ ‘Petunia fails to be a purple pig,’ ‘It is not the case that Petunia is a purple pig,’ ‘Petunia isn’t a purple pig.’ Or even, ‘It is not the case that Petunia fails to not be a purple pig,’ which is logically equivalent.</p>
+</div>
+<h1 id="conditionals">Conditionals</h1>
+<!--
+    comment: picture of popcorn
+-->
+<p>We use the conditional sign, ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’, to represent conditionals, that is, if…then… statements. This is again an arbitrary choice. Some textbooks use ‘<span class="math">\(\supset\)</span>’ instead.</p>
+<p>A <strong>conditional</strong> is an if…then… statement, like</p>
+<ol style="list-style-type: decimal">
+<li>If you eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>The <strong>antecedent</strong> of the conditional is the “if” part, so, in this case,</p>
+<ul>
+<li><span class="math">\(P\)</span>: You eat all the popcorn.</li>
+</ul>
+<p>The <strong>consequent</strong> is the “then” part, so,</p>
+<ul>
+<li><span class="math">\(S\)</span>: I will be sad.</li>
+</ul>
+<p>This terminology is important, because it gives us a precise way to refer to the different parts of a conditional.</p>
+<p>‘Ante’ means before. Hence ‘ante up’ in poker, and the antebellum period, before the Civil War.</p>
+<p>We can represent (1) as</p>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math">\((P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>Now suppose I want to deny (1): my happiness does not depend on your eating habits! I can do this by expressing the negation of the conditional,</p>
+<ol start="3" style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>or, in English,</p>
+<ol start="4" style="list-style-type: decimal">
+<li>It is not the case that if you eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>The parentheses are important. Consider yet another way my happiness and your eating habits might be related: maybe my happiness <em>does</em> depend on your eating habits, but not in the way that (1) suggests. Maybe I <em>want</em> you to eat all the popcorn, and if you don’t, I am going to be sad. That is,</p>
+<ol start="5" style="list-style-type: decimal">
+<li>If you don’t eat all the popcorn, then I will be sad.</li>
+</ol>
+<p>(5) is a conditional. Its antecedent is,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}P\)</span>: You don’t eat all the popcorn,</li>
+</ul>
+<p>and its consequent is,</p>
+<ul>
+<li><span class="math">\(S\)</span>: I will be sad.</li>
+</ul>
+<p>So we can symbolize (5) as,</p>
+<ol start="6" style="list-style-type: decimal">
+<li><span class="math">\(({\mathord{\sim}}P{\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>Study the difference between (3) and (6), and the corresponding difference between (4) and (5). In (3), the negation sign is inside the parentheses. In (6), it is outside. Can you see how that captures the difference between (4)—the negation of the conditional—and (5)—a conditional with a negation as its antecedent? If we didn’t have parentheses, we could not capture this distinction.</p>
+<p>So, what is the antecedent of this conditional: ‘If you can’t love the one you want, love the one you’re with’?</p>
+<div class="answers">
+<p>The antecedent is ‘You can’t love the one you want’.</p>
+</div>
+<p>What is the consequent of this conditional: <span class="math">\(((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}R)\)</span></p>
+<div class="answers">
+<p>The consequent is <span class="math">\(R\)</span>. The antecedent is <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span>. Do you see how the parentheses help guide you here?</p>
+</div>
+<h1 id="ambiguity">Ambiguity</h1>
+<p>Sentences in English can be <em>ambiguous</em>—that is, they can have multiple distinct interpretations. Sometimes this is because the sentence contains a word that is ambiguous, as in</p>
+<ul>
+<li>Meet me down at the bank.</li>
+</ul>
+<p>Are we meeting at a financial institution, or beside the river?</p>
+<p>But sometimes, the ambiguity has to do with the structure of the sentence. Consider the following ambiguous newspaper headlines:</p>
+<div class="figure">
+<img src="../../images/grandparents.jpg" title="Picture of newspaper headline" alt="Students Cook and Serve Grandparents" />
+<p class="caption">Students Cook and Serve Grandparents</p>
+</div>
+<ul>
+<li>Dr. Ruth to Talk about Sex with Newspaper Editors</li>
+<li>Squad Helps Dog Bite Victim</li>
+<li>Stolen Painting Found by Tree</li>
+<li>Enraged Cow Injures Farmer with Ax</li>
+</ul>
+<p>Each of these sentences can be interpreted in two different ways, and the truth or falsehood of the sentence depends on how you interpret it.</p>
+<p>We don’t want this sort of ambiguity in our symbolic language. Parentheses are the tool we use to avoid it.</p>
+<p>The sentence, ‘If you are in the class you should do the reading if you want to succeed’, is ambiguous. What are the two readings?</p>
+<div class="answers">
+<p>Here is one reading: ‘If you are in the class, then (you should do the reading if you want to succeed)’.</p>
+<p>Here is the other reading: ‘(If you are in the class, then you should do the reading) if you want to succeed’.</p>
+<p>If we let ‘Y’ stand for ‘You are in the class’, ‘R’ for ‘You should do the reading’, and ‘S’ for ‘You want to succeed’, then we can symbolize the first reading as:</p>
+<p><span class="math">\[(Y{\mathbin{\rightarrow}}(S{\mathbin{\rightarrow}}R))\]</span></p>
+<p>And we can symbolize the second reading as:</p>
+<p><span class="math">\[(S{\mathbin{\rightarrow}}(Y{\mathbin{\rightarrow}}R))\]</span></p>
+</div>
+<h1 id="formal-syntax">Formal Syntax</h1>
+<p>The discussion so far has provided an informal introduction to our symbolic language. But part of the point of logic is to be as clear and rigorous as possible. So we will now provide the formal syntax for the language.</p>
+<p>The symbols of our new language are:</p>
+<ul>
+<li>the <strong>connectives</strong>: the <strong>negation sign</strong>, <span class="math">\({\mathord{\sim}}\)</span>, and the <strong>conditional sign</strong>, <span class="math">\({\mathbin{\rightarrow}}\)</span><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></li>
+<li>the left and right parentheses</li>
+<li>the <strong>sentence letters</strong>: <span class="math">\(P\)</span> through <span class="math">\(Z\)</span><a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+</ul>
+<div class="cor">
+<p>The <strong>symbolic sentences</strong> of our language are built up out of these symbols, according to the following rules:</p>
+<ol style="list-style-type: decimal">
+<li>Every sentence letter is a symbolic sentence.</li>
+<li>If <input class="copyMe P sym slot" type="text"> is a symbolic sentence, so is <span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text">.</li>
+<li>If <input class="copyMe P sym slot" type="text"> and <input class="copyMe Q sym slot" type="text"> are both symbolic sentences, so is <span class="math">\((\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"> <span class="math">\()\)</span>.</li>
+</ol>
+<p><input class="copyMe P sym slot" type="text"> and <input class="copyMe Q sym slot" type="text"> are here being used as placeholders for any string of symbols. So, for example, according to the second clause, <em>if</em> <span class="math">\({\mathbin{\rightarrow}}{\mathord{\sim}}((PZQR{\mathbin{\rightarrow}}\)</span> is a symbolic sentence, <span class="math">\({\mathord{\sim}}{\mathbin{\rightarrow}}((PZQR{\mathbin{\rightarrow}}\)</span> is too.</p>
+</div>
+<p>This is a <em>recursive</em> definition. That means you can apply the clauses of the definition to generate some symbolic sentences, and then apply them again to the sentences you just generated to generate yet more symbolic sentences, and then apply them again to the sentences you just generated to generate yet more symbolic sentences, and so on.</p>
+<p>The first clause provides us with a foundation of simple symbolic sentences—we call them the <strong>atomic sentences</strong>. For example, according to the first clause,</p>
+<ul>
+<li><span class="math">\(P\)</span> and <span class="math">\(Q\)</span> a both symbolic sentences, because they are sentence letters.</li>
+</ul>
+<p>The second two clauses allow us to generate more complex sentences out of simpler sentences. We call these complex sentences <strong>molecular sentences</strong>.</p>
+<p>So, for example, according to the second clause, if <span class="math">\(P\)</span> a symbolic sentence, so is <span class="math">\({\mathord{\sim}}P\)</span>. And we’ve already established that <span class="math">\(P\)</span> is a symbolic sentence, so</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}P\)</span> is a symbolic sentence.</li>
+</ul>
+<p>And, again, according to the second clause, if <span class="math">\({\mathord{\sim}}P\)</span> is a symbolic sentence, so is <span class="math">\({\mathord{\sim}}{\mathord{\sim}}P\)</span>. So</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}{\mathord{\sim}}P\)</span> is a symbolic sentence.</li>
+</ul>
+<p>In this way, we can quickly generate infinitely many symbolic sentences just by repeated application of the second clause.</p>
+<p>The same is true of the third clause. Since both <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are symbolic sentences, so is</p>
+<ul>
+<li><span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span></li>
+</ul>
+<p>And since <span class="math">\(P\)</span> and <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> are symbolic sentences, so are both</p>
+<ul>
+<li><span class="math">\((P{\mathbin{\rightarrow}}(P{\mathbin{\rightarrow}}Q))\)</span></li>
+<li><span class="math">\(((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}P)\)</span></li>
+</ul>
+<p>and since these both are, so is</p>
+<ul>
+<li><span class="math">\(((P{\mathbin{\rightarrow}}(P{\mathbin{\rightarrow}}Q)){\mathbin{\rightarrow}}((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}P))\)</span>,</li>
+</ul>
+<p>and so on.</p>
+<p>Why isn’t <span class="math">\(A\)</span> a symbolic sentence?</p>
+<div class="answers">
+<p><span class="math">\(A\)</span> is not a symbolic sentence because it isn’t one of the sentence letters. The sentence letters are uppercase letters, <span class="math">\(P\)</span> through <span class="math">\(Z\)</span>.</p>
+</div>
+<p><span class="math">\({\mathord{\sim}}(Q{\mathbin{\rightarrow}}P)\)</span> is a symbolic sentence. Can you see how it is generated?</p>
+<div class="answers">
+<p>First, by clause (1), <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both symbolic sentences.</p>
+<p>And, by clause (3), if they both are, then <span class="math">\((Q{\mathbin{\rightarrow}}P)\)</span> is too.</p>
+<p>Finally, by clause (2), if <span class="math">\((Q{\mathbin{\rightarrow}}P)\)</span> is, so is <span class="math">\({\mathord{\sim}}(Q{\mathbin{\rightarrow}}P)\)</span>.</p>
+</div>
+<p><span class="math">\(((P{\mathbin{\rightarrow}}{\mathord{\sim}}Q){\mathbin{\rightarrow}}R)\)</span> is a symbolic sentence. Can you generate this sentence by repeated application of the three clauses of our recursive definition?</p>
+<div class="answers">
+<p>By clause (1), <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are both symbolic sentences.</p>
+<p>By clause (2), since <span class="math">\(Q\)</span> is, so is <span class="math">\({\mathord{\sim}}Q\)</span>.</p>
+<p>So, by clause (3), <span class="math">\((P{\mathbin{\rightarrow}}{\mathord{\sim}}Q)\)</span> is too.</p>
+<p><span class="math">\(R\)</span> is a symbolic sentence by clause (1), so <span class="math">\(((P{\mathbin{\rightarrow}}{\mathord{\sim}}Q){\mathbin{\rightarrow}}R)\)</span> is a symbolic sentence by the clause (3).</p>
+</div>
+<h1 id="main-connectives">Main Connectives</h1>
+<p>The <strong>main connective</strong> of a symbolic sentence is the connective that governs the whole sentence. If you think about how the sentence was built up, by successive applications of the three clauses of the definition, the main connective is the <strong>last connective added</strong>. For example, in <span class="math">\({\mathord{\sim}}{\mathord{\sim}}P\)</span>, the main connective is the first ‘<span class="math">\({\mathord{\sim}}\)</span>’, which was added to ‘<span class="math">\({\mathord{\sim}}P\)</span>’ in accordance with clause (2).</p>
+<p>So, what is the main connective in <span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}Q)\)</span>?</p>
+<div class="answers">
+<p>The main connective is the <span class="math">\({\mathord{\sim}}\)</span>, which was added to <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> by clause (2).</p>
+</div>
+<p>What is the main connective in <span class="math">\(({\mathord{\sim}}P{\mathbin{\rightarrow}}{\mathord{\sim}}Q)\)</span>?</p>
+<div class="answers">
+<p>The main connective is the <span class="math">\({\mathbin{\rightarrow}}\)</span>, which was added between <span class="math">\({\mathord{\sim}}P\)</span> and <span class="math">\({\mathord{\sim}}Q\)</span> by clause (3).</p>
+</div>
+<p>What is the main connective in <span class="math">\((P{\mathbin{\rightarrow}}(Q{\mathbin{\rightarrow}}R))\)</span>?</p>
+<div class="answers">
+<p>The main connective is the first ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’, which was added between <span class="math">\(P\)</span> and <span class="math">\((Q{\mathbin{\rightarrow}}R)\)</span>, by clause (3).</p>
+</div>
+<h1 id="parsing">Parsing</h1>
+<p>It is useful to have a way of representing the syntactic structure of sentence. We can do this by using a syntactic tree—a tree that shows how the sentence was generated from atomic sentences, by successive application of the clauses of the recursive definition.</p>
+<p>For example, we can parse <span class="math">\((P\rightarrow Q)\)</span> as follows:</p>
+<div class="figure">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABeCAQAAADvGQDbAAAABGdBTUEAALGPC/xhBQAAACBjSFJN%0AAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ%0AcwAAAJYAAACWAHFG/vAAAAOfSURBVHja7ZrRcaQwDIbdAi1Qwc3QAi3QAi3QglugBVqggHuhBZ7y%0ATguc8G72MJaNQNYAiceZzLLZNZ9lWf5NfjWrJzeV8BN%2Bwv9h%2BKq8CWJ1Al%2B1qlhdZapctVwINFe1%0A0tBqla3eLZQ%2BiK8a1VjXS7cTvNDvNkCLOjsQoFZ1r5DB3UZVr%2BPvG4AvCgP60d6anXk9P0z4EoJT%0AW9fzOmlUj8%2B4L3Fq5AbzOgbbayb8vL0jzO5oxb8j4sM0zsi7Gn6VVnodwId0yAMZP6kWvd969U1Y%0AD/iteuTd3h7Uck3Pfhhs7f3b0lO%2BG67OXo1%2B/BaLKvx04eneqSljIHFawmxrLH3waOCZ33xea6gM%0A1cH81lj03iWg9sxJYWX/QMOf3KQwsWg/ZfNUxYHvY9M/wK8MBZu2AaThIzm9zXzvAtXBNkE/pQuA%0A9rQpDDz8GVvOzqcKa2/etgbw9TbSeM8wzMn%2BJB1/dCIUocYvixdLOkieyVU5yD5Axu%2B3qNsqcAq/%0Ax1eM2T/yl7KBVnn3AbycozVCI1UgY%2B6rrVfrDEtJfN1zKQswSw2Fyoe/KlEQid7Az%2B6cHCybVUCs%0A9bAptWaQ/Ue25U4IK6rmGWNL4r1S%2B5bKELg3fGnDwhAnumTTscTYiRWiDfxII/J1M/By/TR%2B935R%0AO%2BsjO4Jf%2BJaa9MEQqs7klI7Wl3yhWtHc5KxbB9Rq6Ph2E/wsPedJ%2BAk/4f8afFAyf2XLr7SC%2BcIf%0ALz0A3xwO/2AH/wfgmzNTZbTiKJdAktqx%2B6hX/TB8oxzzj3qdpRJISGQBfGMdNoYn4Wv7qQAMZ5RJ%0AIIkuS/cfF%2Ba9/Bn4aKThxNQ/AH8plJT1cEv8UJUx1Si7N36wxi8PoW6MDzIhuMN%2B78S3xKfA7Q3w%0ASnxSasSVEHFlQsZb3JfhHymLvtJ6Jf6hTSmehIgnE3KerLgM/4wg24q6K/FPyOFYEiKOTChOVqr8%0AevzTdfz/cfIyfM5BPIaE4MsExhZkHqVk1%2BGzFST00F6EvzjeuPILd82lR7QJP%2BEn/B%2BHH8%2BQjZuu%0ApfGjGLJDpmvx5FFMQ/ae6VoUn2vI3jddy%2BLzDNkk07UkPs%2BQTTJdS%2BIzDNlU07Vc5WEZsqmmazl8%0AliGbarqWwycZskO3RPeSE0bjCDU/zrdd07UQPteQTTVdS%2BEzDdlU07UUPtOQTTVdR8ePZsgmma5v%0Arff3TNcPOa74TNdPwUdN18/BR03X6ayb8BN%2Bwk/4Qu0fPrGRks9RbosAAAAldEVYdGRhdGU6Y3Jl%0AYXRlADIwMTUtMDgtMTNUMTE6MDk6MTAtMDU6MDAHnsqzAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE1%0ALTA4LTEzVDExOjA5OjEwLTA1OjAwdsNyDwAAABR0RVh0cGRmOlZlcnNpb24AUERGLTEuNSAFXAs5%0AAAAAAElFTkSuQmCC%0A" />
+
+</div>
+<h2 id="informal-notation">Informal Notation</h2>
+<p>Parentheses are <em>really</em> important! Without them, our symbolic sentences would be ambiguous. But they can make our sentences cluttered and hard to read. So we allow ourselves to write sentences in an <strong>informal notation</strong>, which means we get to leave some of the parentheses out.</p>
+<p>But informal notation does not mean anything goes. We have strict rules concerning when parentheses can be omitted. For now, we only have one rule:</p>
+<ul>
+<li>If the symbolic sentence, in official notation, begins with a left parenthesis and ends with a right parenthesis, you can omit those parentheses.</li>
+</ul>
+<p>So, a sentence like <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> can be written as <span class="math">\(P{\mathbin{\rightarrow}}Q\)</span>. But you cannot omit any of the parentheses from a sentence like <span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}Q)\)</span>, because it does not begin with a parenthesis—it begins with a negation sign.</p>
+<p>Also, please note that there is no convention or rule—formal or informal—that lets you <em>add</em> parentheses willy-nilly. <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span> is a symbolic sentence; <span class="math">\(((P{\mathbin{\rightarrow}}Q))\)</span> is not.</p>
+<p>Is <span class="math">\((P)\)</span> a sentence in official notation, informal notation, or is it not well-formed?</p>
+<div class="answers">
+<p><span class="math">\(P\)</span> is a sentence letter. So <span class="math">\(P\)</span> is a well-formed symbolic sentence in official notation. But no clause of our definition allows you to add parentheses around a sentence letter. So ‘<span class="math">\((P)\)</span>’ is not a sentence in official notation.</p>
+<p>It is also not a sentence in informal notation: we don’t have a rule for informal notation that allows us write <em>extra</em> parentheses around a sentence in official notation.</p>
+</div>
+<p>Is <span class="math">\(P{\mathbin{\rightarrow}}{\mathord{\sim}}{\mathord{\sim}}Z\)</span> a sentence in official notation, informal notation, or is it not well-formed?</p>
+<div class="answers">
+<p>It is in informal notation. <span class="math">\((P{\mathbin{\rightarrow}}{\mathord{\sim}}{\mathord{\sim}}Z)\)</span> is a well-formed sentence in official notation. Our rule for informal notation allows us to drop the outermost parentheses.</p>
+</div>
+<p><span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}Q)\)</span> is a sentence in official notation. Can we drop any of the parentheses, if we want to write it in informal notation?</p>
+<div class="answers">
+<p>No, we cannot. The sentence does not begin with a parenthesis. It begins with a negation sign. Our rule for dropping parentheses only applies to sentences that begin and end with parentheses.</p>
+</div>
+<p><span class="math">\({\mathord{\sim}}P{\mathbin{\rightarrow}}Q\)</span> is a sentence in informal notation. How is it written in official notation?</p>
+<div class="answers">
+<p>In official notation, is it <span class="math">\(({\mathord{\sim}}P{\mathbin{\rightarrow}}Q)\)</span>. Note that the omitted parentheses surround the entire sentence, including the negation sign at the beginning.</p>
+</div>
+<p>Suppose a sentence contains 3 occurrences of <span class="math">\({\mathbin{\rightarrow}}\)</span>, and is written in official notation. How many pairs of parentheses does it contain?</p>
+<div class="answers">
+<p>It contains 3 pairs of parentheses: every time you join two sentences together to form a conditional by clause (3), you must also add a pair of parentheses around the entire sentence.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>We are saving capital letters <span class="math">\(A\)</span> through <span class="math">\(O\)</span> for later, when we will use them to represent predicates, like ‘____ is a cow’. And we are saving lowercase letters for later, when we will use them to represent names and variables.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Most “connectives” can be thought of as connecting two sentences to form a third, in the way that the <span class="math">\({\mathbin{\rightarrow}}\)</span> connects <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> to form <span class="math">\((P{\mathbin{\rightarrow}}Q)\)</span>. The negation sign doesn’t do this, so it is a bit awkward to call it a “connective”, but logicians can be awkward sometimes.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Officially, we also allow numerical subscripts, so <span class="math">\(P_{1}\)</span> is also a sentence letter. This is because, officially, we want to be able to symbolize more than 11 distinct sentences at a time.<a href="#fnref3">↩</a></p></li>
+</ol>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <meta name="author" content="David Sanson" />
+        
+        <title>'New Rules (2.4)'</title>
+        <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/texts.css" />
+        <link rel="shortcut icon" href="../../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+        <script src="../../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../../css/logic.css" />
+    </head>
+    <body>
+        <header>
+        <nav> 
+            <ul>
+                <li class="texts left">
+                    <a href="../../../logic/supplements/">← Logic Supplements</a>
+                </li>
+                <li class="texts" style="float:right; font-weight:bold"> 
+                    'New Rules (2.4)'
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="content">
+           <div id="page">
+                <h1 id="new-rules">New Rules</h1>
+<p>We have three new connectives, and six new rules.</p>
+<p>First, we have two new rules for conjunction (‘and’).</p>
+<p>The first rule is <strong>Simplification</strong> (<strong>S</strong>), which allows us to infer either conjunct from a conjunction. Because you can infer either conjunct, the rule has two forms:</p>
+<div class="boxed" style="float:left">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Land$ <input class="copyMe Q sym slot" type="text" >
+<input class="copyMe P sym slot" type="text" >  & S
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\wedge}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"></span><span class="djust">S</span>
+</p>
+</div>
+</div>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Land$ <input class="copyMe Q sym slot" type="text" >
+<input class="copyMe Q sym slot" type="text" >  & S
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\wedge}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"></span><span class="djust">S</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+<p>Simplification is obviously valid. If this is not immediately obvious to you (and there is no reason it should be) play around by plugging some sentences into the box and circle, until you are convinced that any values that make the premise true will also make the conclusion true.</p>
+<p>The second rule is <strong>Adjunction</strong> (<strong>Adj</strong>), which allows us to infer the conjunction when we have both conjuncts separately. So,</p>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > 
+<input class="copyMe Q sym slot" type="text" >
+<input class="copyMe P sym slot" type="text" > $\Land$ <input class="copyMe Q sym slot" type="text" >  & ADJ
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> </span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\wedge}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust">ADJ</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+<p>Again, this is obviously valid, but again, you might wish to play around by plugging in some sentences, to get a better sense of why it is valid.</p>
+<p>Next, we have two rules for disjunction (‘or’).</p>
+<p>The first rule is <strong>Addition</strong>, which allows us to infer a disjunction from either disjunct. Again, this rule has two forms.</p>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" >  
+<input class="copyMe P sym slot" type="text" > $\Lor$ <input class="copyMe Q sym slot" type="text" > & ADD
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> </span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\vee}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust">ADD</span>
+</p>
+</div>
+</div>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" >  
+<input class="copyMe Q sym slot" type="text" > $\Lor$ <input class="copyMe P sym slot" type="text" > & ADD
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> </span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"> <span class="math">\({\mathord{\vee}}\)</span> <input class="copyMe P sym slot" type="text"></span><span class="djust">ADD</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+<p>The second rule is kind of like <strong>MP</strong> and <strong>MT</strong>. We will call it <strong>Modus Tollendo Ponens</strong> (Latin for ‘the way of putting by taking’). It says that from a disjunction and the negation of one of the disjuncts, you can infer the other disjunct. Again, the rule has two forms:</p>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Lor$ <input class="copyMe Q sym slot" type="text" >
+$\Lneg$ <input class="copyMe P sym slot" type="text" >
+<input class="copyMe Q sym slot" type="text" >  & MTP
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\vee}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"></span><span class="djust">MTP</span>
+</p>
+</div>
+</div>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Lor$ <input class="copyMe Q sym slot" type="text" >
+$\Lneg$ <input class="copyMe Q sym slot" type="text" >
+<input class="copyMe P sym slot" type="text" >  & MTP
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\vee}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"></span><span class="djust">MTP</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+<p>Play around with these forms, to get a sense of why they are valid.</p>
+<div class="cor">
+<p>Finally, we have two rules for the biconditional (‘if and only if’). The two rules track the fact that the biconditional, is equivalent to <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\leftrightarrow}}\)</span> <input class="copyMe Q sym slot" type="text">, is equivalent to the conjunction of both conditionals, (<input class="copyMe Q sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe P sym slot" type="text">) <span class="math">\({\mathord{\wedge}}\)</span> (<input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text">).</p>
+</div>
+<p>The first rule is called <strong>Conditionals to Biconditional</strong> (<strong>CB</strong>), and says that, if you have both conditionals, you can infer the biconditional.</p>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Lif$ <input class="copyMe Q sym slot" type="text" > 
+<input class="copyMe Q sym slot" type="text" > $\Lif$ <input class="copyMe P sym slot" type="text" >
+<input class="copyMe P sym slot" type="text" > $\Liff$ <input class="copyMe Q sym slot" type="text" > & CB
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"> </span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe P sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\leftrightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust">CB</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+<p>The second rule has two forms. It says that, from the biconditional, you can infer either conditional. We call it <strong>Biconditional to Conditional</strong> (<strong>BC</strong>):</p>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Liff$ <input class="copyMe Q sym slot" type="text" > 
+<input class="copyMe P sym slot" type="text" > $\Lif$ <input class="copyMe Q sym slot" type="text" > & BC   
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\leftrightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"> </span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust">BC </span>
+</p>
+</div>
+</div>
+<div class="boxed" style="float:left; clear:both">
+<!--
+~~~{.derivation}
+<input class="copyMe P sym slot" type="text" > $\Liff$ <input class="copyMe Q sym slot" type="text" >
+<input class="copyMe Q sym slot" type="text" > $\Lif$ <input class="copyMe P sym slot" type="text" >  & BC
+~~~
+-->
+<div class="der outer">
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\leftrightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"></span><span class="djust"></span>
+</p>
+<p class="dline">
+<span class="dnum"></span><span class="dform"><input class="copyMe Q sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe P sym slot" type="text"></span><span class="djust">BC</span>
+</p>
+</div>
+</div>
+<p style="clear:both">
+           </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

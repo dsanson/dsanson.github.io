@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <meta name="author" content="David Sanson" />
+        
+        <title>'Strategies and Theorems (1.10, 1.11, and 1.12)'</title>
+        <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/texts.css" />
+        <link rel="shortcut icon" href="../../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+        <script src="../../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../../css/logic.css" />
+    </head>
+    <body>
+        <header>
+        <nav> 
+            <ul>
+                <li class="texts left">
+                    <a href="../../../logic/supplements/">← Logic Supplements</a>
+                </li>
+                <li class="texts" style="float:right; font-weight:bold"> 
+                    'Strategies and Theorems (1.10, 1.11, and 1.12)'
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="content">
+           <div id="page">
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to sections 1.10, 1.11, and 1.12 of the Logic Text. You should read those <em>before</em> you read this.</p>
+<h1 id="outline">Outline</h1>
+<p>Section 1.10 reviews some strategies for solving derivations. Section 1.11 introduces the concept of a <strong>theorem</strong>. Section 1.12 describes how you can <em>use</em> theorems that you have already proven.</p>
+<h1 id="strategies">Strategies</h1>
+<p>Section 1.10 presents some useful strategies for working through derivations. You should also look at the “Advice” document, available from with the Derivation Module in the Logic Software.</p>
+<div class="figure">
+<img src="http://files.davidsanson.com/logic2010/advice_button.png" alt="Advice Button" />
+<p class="caption">Advice Button</p>
+</div>
+<p>Here is my summary of the advice:</p>
+<ol style="list-style-type: upper-alpha">
+<li>Begin by trying to think through the derivation on scratch paper, constructing an outline and writing down obvious consequences.</li>
+<li>If the show line is a conditional, use CD; otherwise, use DD if it is obvious how, or use ID.</li>
+<li>To use available lines:
+<ul>
+<li>conditionals: apply MP or MT if you can
+<ul>
+<li>if you don’t have the antecedent, try showing it</li>
+<li>if you don’t have the negation of the consequent, try showing it.</li>
+</ul></li>
+<li>negations of conditionals: try showing the unnegation.</li>
+</ul></li>
+</ol>
+<p>Tip (A) is just basic good advice. It applies to writing essays. It also applies to constructing derivations. Try to think it through. Use scratch paper to help: it is easier to brainstorm and sketch out ideas on paper than it is to do it all in your head, or try to do it in the software.</p>
+<p>Every derivation is about trying to <em>show</em> some conclusion, given some <em>premises</em>. So you always have to ask yourself two questions:</p>
+<ul>
+<li>What do I need to show and how am I going to show it?</li>
+<li>What is available to use and how am I going to use it?</li>
+</ul>
+<p>Tip (B) addresses the first question. Tip (C) addresses the second question.</p>
+<h1 id="theorems">Theorems</h1>
+<p>A <strong>theorem</strong> is a sentence that can be derived without assuming any premises. Theorems are <strong>logical truths</strong>: sentences that are true no matter what, in virtue of their logical form.</p>
+<p>Examples include:</p>
+<dl>
+<dt>T1</dt>
+<dd><span class="math">\(P{\mathbin{\rightarrow}}P\)</span>
+</dd>
+</dl>
+<p>No matter what we plug in for <span class="math">\(P\)</span>, T1 is true:</p>
+<ul>
+<li>If Obama is President, then Obama is President.</li>
+<li>If Romney is President, then Romney is President.</li>
+<li>If the Moon is made of green cheese, then the Moon is made of green cheese.</li>
+</ul>
+<p>Another is,</p>
+<dl>
+<dt>T2</dt>
+<dd><span class="math">\(Q{\mathbin{\rightarrow}}(P{\mathbin{\rightarrow}}Q)\)</span>
+</dd>
+</dl>
+<p>Again, no matter what we plug in for <span class="math">\(P\)</span> and <span class="math">\(Q\)</span>, T2 is true:</p>
+<ul>
+<li>If Obama is President, then Obama is President if it is raining.</li>
+<li>If it is raining, then it is raining if Obama is President.</li>
+<li>If I do not like green eggs and ham, then I do not like them if I am on a train.</li>
+</ul>
+<p>Deriving theorems can seem daunting, because you don’t get to start with any premises. But you do get to make assumptions, either for CD or ID. So just try to derive them using the same techniques you have already learned.</p>
+<h1 id="using-theorems">Using Theorems</h1>
+<p>Here is a cool thing: once you have derived a theorem (and saved your work in the software), you can then <em>use</em> that theorem in other derivations.</p>
+<p>To use a theorem, right down an <strong>instance</strong> of that theorem—that is, a sentence that has the same logical form as the theorem—and write down the name of the theorem as justification. For example,</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">5.</td>
+<td align="left"><span class="math">\(W{\mathbin{\rightarrow}}W\)</span></td>
+<td align="left">T1</td>
+</tr>
+<tr class="even">
+<td align="left">6.</td>
+<td align="left"><span class="math">\((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}(P{\mathbin{\rightarrow}}Q)\)</span></td>
+<td align="left">T1</td>
+</tr>
+<tr class="odd">
+<td align="left">7.</td>
+<td align="left"><span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}{\mathord{\sim}}Q){\mathbin{\rightarrow}}{\mathord{\sim}}(P{\mathbin{\rightarrow}}{\mathord{\sim}}Q)\)</span></td>
+<td align="left">T1</td>
+</tr>
+</tbody>
+</table>
+<p>You can also do this on the midterm, if youd like.</p>
+           </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <meta name="author" content="David Sanson" />
+        
+        <title>'Metatheory (addendum to Chapter 2)'</title>
+        <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/texts.css" />
+        <link rel="shortcut icon" href="../../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        
+        <script src="../../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../../css/logic.css" />
+    </head>
+    <body>
+        <header>
+        <nav> 
+            <ul>
+                <li class="texts left">
+                    <a href="../../../logic/supplements/">← Logic Supplements</a>
+                </li>
+                <li class="texts" style="float:right; font-weight:bold"> 
+                    'Metatheory (addendum to Chapter 2)'
+                </li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="content">
+           <div id="page">
+                <h1 id="overview">Overview</h1>
+<p>This supplement provides a brief overview of some interesting concepts and facts that fall under the broad heading of “metalogic” or “metatheory of logic”. The material here might show up under the guise of a bonus question on an exam, but it is not material I otherwise intend to hold you responsible for. Students interested in an accessible overview of some of these topics might look to David Papineau, <em>Philosophical Devices</em> (Oxford University Press, 2012), Part IV.</p>
+<h2 id="logic-vs.metatheory">Logic vs. Metatheory</h2>
+<p>We have been <em>doing</em> logic. Weve learned how to symbolize sentences in logic, how to check for tautological validity using truth tables, and how to construct derivations.</p>
+<p>Metatheory involves stepping back and thinking <em>about</em> the logic we have been using: what are its properties? does it work properly? how does it compare to other logical systems?</p>
+<h2 id="what-is-a-logic">What is a Logic?</h2>
+<p>A <strong>logic</strong> is a formal language together with a system of deduction and a semantics.</p>
+<p>A <strong>formal language</strong> consists of a set of symbols (in our case, the sentence letters, the parentheses, and the five connectives), together with a <strong>syntax</strong>—that is, rules that determine which combinations of those symbols are well-formed sentences. (The Parsing module was designed to test your understanding of the syntax of our formal language.)</p>
+<p>A <strong>system of deduction</strong> is a set of inference rules (in our case, R, DN, MP, MT, S, ADJ, MTP, ADD, CB and BC), a set of methods of derivation (our case, DD, CD, and ID). When you construct derivations in the Derivation module, you are using our system of deduction.</p>
+<p>A <strong>semantics</strong> is a theory of meaning for a given language. There are various ways of providing a theory of meaning. We have done so by assuming that each sentence letter can either be T or F, and then associating each connective with its characteristic truth function, e.g.,</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathbin{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathbin{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathbin{◻}}{\mathbin{\wedge}}{\mathbin{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="other-logics">Other Logics</h2>
+<p>Other logics either have a different language, a different system of deduction, or a different semantics.</p>
+<p>Some logics are different from ours only in trivial ways. For example, our choice of sentence letters was arbitrary: a trivial variant of our logic would use lowercase letters as sentence letters instead. Or we might have used different symbols for our connectives.</p>
+<p>Some logics differ from our in less trivial ways. Our logic is a <em>sentential</em> logic: the basic atoms, or logical units, are sentence letters. Predicate logic, which we will study next, takes the basic atoms to be predicates, like ‘is sitting’, and singular terms, like ‘Socrates’. Term logic, which we looked at briefly in the <a href="0_introduction.html#logical-form-and-formal-validity">introduction</a>, takes the basic logical units to be common nouns, like ‘Cars’ and ‘Horses’.</p>
+<p>Our logic is a <em>truth-functional</em> sentential logic: the connectives in our language are all truth-functional. That is why, if you know the truth values of the atomic sentence letters in a complex sentence, you can calculate the truth value of the complex sentence. But there are sentential connectives in English that are not truth-functional: ‘because’ is one, as is the non-material conditional.</p>
+<p>Two unary connectives that are not truth functional are ‘possibly’ and ‘necessarily’. Consider:</p>
+<ul>
+<li>‘2+2=4’ is true and ‘Necessarily 2+2=4’ is true.</li>
+<li>‘There are cows’ is true but ‘Necessarily there are cows’ is false.</li>
+</ul>
+<p>Likewise,</p>
+<ul>
+<li>‘2+2=5’ is false, and ‘possibly 2+2=5’ is false.</li>
+<li>‘There are purple cows’ is false, but ‘Possibly there are purple cows’ is true.</li>
+</ul>
+<p>So ‘possibly’ and ‘necessarily’ are not truth-functional connectives. The logic of ‘possibly’ and ‘necessarily’ is called <strong>modal logic</strong>. ‘<span class="math">\({\mathbin{◻}}\)</span>’ is used to represent ‘necessarily’, and ‘<span class="math">\(\Diamond\)</span>’ is used to represent ‘possibly’.</p>
+<h2 id="truth-functional-completeness">Truth-Functional Completeness</h2>
+<p>Confining our attention to truth-functional sentential logics, we might consider logics that have more connectives than ours: for example, a logic that includes a connective for exclusive ‘or’, or a connective for ‘neither…nor…’</p>
+<p>Here is an interesting fact about our logic: it is <strong>truth-functionally complete</strong>. That means that every truth-function is expressible in our language. For example, we can express the truth-function that goes along with an exclusive ‘or’ using the sentence ‘<span class="math">\((P{\mathbin{\vee}}Q){\mathbin{\wedge}}{\mathbin{\sim}}(P{\mathbin{\wedge}}Q)\)</span>’, read in English as ‘P or Q, but not both’. And we can express the truth-function that goes along with ‘neither…nor…’ using ‘<span class="math">\({\mathbin{\sim}}(P{\mathbin{\vee}}Q)\)</span>’.</p>
+<p>So adding more connectives to our language would not add to its expressive power. What about removing connectives?</p>
+<p>We already know that every conditional is equivalent to some disjunction, and vice versa. This means that our language would remain truth-functionally complete even if we got rid of one or other of these two connectives.</p>
+<p>As a matter of fact, the language of Chapter 1, containing only ‘<span class="math">\({\mathbin{\rightarrow}}\)</span>’ and ‘<span class="math">\({\mathbin{\sim}}\)</span>’, was truth-functionally complete. Likewise, a language containing only ‘<span class="math">\({\mathbin{\vee}}\)</span>’ and ‘<span class="math">\({\mathbin{\sim}}\)</span>’ would be truth-functionally complete, as would a language containing only ‘<span class="math">\({\mathbin{\wedge}}\)</span>’ and ‘<span class="math">\({\mathbin{\sim}}\)</span>’.</p>
+<p>Challenge: find a sentence, using only ‘<span class="math">\({\mathbin{\sim}}\)</span>’ and ‘<span class="math">\({\mathbin{\vee}}\)</span>’, that expresses the same truth function as ‘<span class="math">\(P{\mathbin{\wedge}}Q\)</span>’.</p>
+<div class="answers">
+<p>Remember DeMorgan’s Laws: ‘<span class="math">\(P{\mathbin{\wedge}}Q\)</span>’ is equivalent to ‘<span class="math">\({\mathbin{\sim}}({\mathbin{\sim}}P{\mathbin{\vee}}{\mathbin{\sim}}Q)\)</span>’. Double check this by producing a truth table: do the sentences have the same truth value on each row?</p>
+<p>This means we could treat every sentence involving ‘<span class="math">\({\mathbin{\wedge}}\)</span>’ as an abbreviation for a sentence just involving ‘<span class="math">\({\mathbin{\vee}}\)</span>’ and ‘<span class="math">\({\mathbin{\sim}}\)</span>’.</p>
+</div>
+<p>In fact, it is possible to have a truth-functionally complete language that contains only a <em>single</em> connective. The Sheffer stroke has the following truth table:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\(P\)</span></th>
+<th align="center"><span class="math">\(Q\)</span></th>
+<th align="center"><span class="math">\(P\uparrow Q\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This connective is sometimes called ‘NAND’ in programming contexts. Looking at the truth table, do you see why it might give given that name?</p>
+<div class="answers">
+<p>The connective symbolizes ‘not both’: it is false if both <span class="math">\(P\)</span> and <span class="math">\(Q\)</span> are true; true otherwise.</p>
+</div>
+<p>Challenge: using just ‘<span class="math">\(\uparrow\)</span>’, find a sentence that is equivalent to ‘<span class="math">\({\mathbin{\sim}}P\)</span>’.</p>
+<div class="answers">
+<p>Try ‘<span class="math">\(P\uparrow P\)</span>’.</p>
+<p>Next challenge: find a sentence that is equivalent to ‘<span class="math">\(P{\mathbin{\wedge}}Q\)</span>’.</p>
+</div>
+<div class="answers">
+<p>Since ‘<span class="math">\(P\uparrow Q\)</span>’ is equivalent to ‘not both <span class="math">\(P\)</span> and <span class="math">\(Q\)</span>’, what we want is ‘<span class="math">\({\mathbin{\sim}}(P\uparrow Q)\)</span>’. That contains ‘<span class="math">\({\mathbin{\sim}}\)</span>’. But we just saw how to replace ‘<span class="math">\({\mathbin{\sim}}\)</span>’. So, what is the sentence?</p>
+</div>
+<div class="answers">
+<p>‘<span class="math">\((P\uparrow Q)\uparrow(P\uparrow Q)\)</span>’</p>
+<p>What about disjunctions, conditionals, and the biconditionals? Can you figure out how to express them using only the ‘<span class="math">\(\uparrow\)</span>’?</p>
+</div>
+<p>Of course, if our language only had ‘<span class="math">\(\uparrow\)</span>’, we’d need different rules and methods of derivation. What should they be?</p>
+<h2 id="classical-and-non-classical-logics">Classical and Non-classical Logics</h2>
+<p>Our logic is a <strong>classical</strong> logic. That means it has several important features. For example, in our logic, each of the following is a theorem:</p>
+<dl>
+<dt><strong>The Law of Excluded Middle</strong>:</dt>
+<dd><span class="math">\({\therefore\ }P{\mathbin{\vee}}{\mathbin{\sim}}P\)</span>
+</dd>
+<dt><strong>The Law of Non-Contradiction</strong>:</dt>
+<dd><span class="math">\({\therefore\ }{\mathbin{\sim}}(P{\mathbin{\wedge}}{\mathbin{\sim}}P)\)</span>
+</dd>
+<dt><strong>The Principle of Explosion</strong></dt>
+<dd><span class="math">\({\therefore\ }P{\mathbin{\wedge}}{\mathbin{\sim}}P {\mathbin{\rightarrow}}Q\)</span>
+</dd>
+</dl>
+<p>Also, in our logic, you can always add additional irrelevant premises to an argument, without affecting its derivability (derivability is “monotonic”). That is, for any list of sentences, <span class="math">\(\Gamma\)</span>, and any sentences <span class="math">\({\mathbin{◻}}\)</span> and <span class="math">\({\mathbin{○}}\)</span>,</p>
+<dl>
+<dt><strong>Monotonicity</strong>:</dt>
+<dd>If there is a derivation from <span class="math">\(\Gamma\)</span> to <span class="math">\({\mathbin{◻}}\)</span>, then there is a derivation from <span class="math">\(\Gamma\ .\ {\mathbin{○}}\)</span> to <span class="math">\({\mathbin{◻}}\)</span>
+</dd>
+</dl>
+<p>Each of these properties might be thought problematic: the Law of Excluded Middle, if you think that some sentences lack truth values, or that there are truth values other than T and F; the Law of Non-Contradiction and the Principle of Explosion, if you think that some contradictions are true; and Monotonicity, if you think the premises of an argument must be <em>relevant</em> to the conclusion. This has led to the development of a wide variety of <em>non-classical logics</em>.</p>
+<p>You might be a <em>logical monist</em>, and think of classical logics and non-classical logics as competitors for the title of the one correct logic. Or you might be a <em>logical pluralist</em>, and think that there is no such thing as the one correct logic. The issues here quickly get complicated in fascinating ways. For more, see the Stanford Encyclopedia of Philosophy article on <a href="http://plato.stanford.edu/entries/logical-pluralism/">logical pluralism</a>.</p>
+<p>For a decent overview of the issues dividing classical and non-classical logics, see the Wikipedia articles on <a href="https://en.wikipedia.org/wiki/Classical_logic">Classical Logic</a> and <a href="https://en.wikipedia.org/wiki/Non-classical_logic">Non-classical Logic</a>. For a more advanced and rigorous overview, see several articles in the Stanford Encyclopedia of Philosophy, including:</p>
+<ul>
+<li><a href="http://plato.stanford.edu/entries/logic-classical/">Classical Logic</a></li>
+<li><a href="http://plato.stanford.edu/entries/logic-intuitionistic/">Intuitionistic Logic</a></li>
+<li><a href="http://plato.stanford.edu/entries/logic-linear/">Linear Logic</a></li>
+<li><a href="http://plato.stanford.edu/entries/logic-paraconsistent/">Paraconsistent Logic</a></li>
+<li><a href="http://plato.stanford.edu/entries/logic-relevance/">Relevance Logic</a></li>
+</ul>
+<h2 id="soundness-and-completeness">Soundness and Completeness</h2>
+<p>Our logic includes both a system of deduction—a set of rules together with methods of derivation—and a truth-functional semantics. It also has two important features, where <span class="math">\(\Gamma\)</span> is any set of symbolic sentences and <span class="math">\({\mathbin{◻}}\)</span> is any symbolic sentence:</p>
+<dl>
+<dt><strong>Soundness</strong></dt>
+<dd>If there is a derivation from <span class="math">\(\Gamma\)</span> to <span class="math">\({\mathbin{◻}}\)</span>, then <span class="math">\(\Gamma {\therefore\ }{\mathbin{◻}}\)</span> is tautologically valid.
+</dd>
+<dt><strong>Completeness</strong></dt>
+<dd>If <span class="math">\(\Gamma {\therefore\ }{\mathbin{◻}}\)</span> is tautologically valid, then there is a derivation from <span class="math">\(\Gamma\)</span> to <span class="math">\({\mathbin{◻}}\)</span>.
+</dd>
+</dl>
+<p>The first of these, <em>Soundness</em>, says that our derivations never go wrong: you cannot construct a derivation from true premises to a false conclusion. This would not be true if we introduced an invalid rule—say, a rule that allowed you to infer <span class="math">\(P\)</span> from <span class="math">\(P{\mathbin{\vee}}Q\)</span>.</p>
+<p>The second, <em>Completeness</em>, says that every tautologically valid argument can be derived. This would not be true if we had not introduced <em>enough</em> rules and methods, or if our rules and methods were not powerful enough.</p>
+<p>Some of our rules and methods are redundant: we could get rid of them, and our system would remain complete. For example, every derivation completed using DD could instead be completed using ID (how?) DN is also redundant: given <span class="math">\({\mathbin{\sim}}{\mathbin{\sim}}Q\)</span>, you can derive both <span class="math">\(Q\)</span> and <span class="math">\({\mathbin{\sim}}{\mathbin{\sim}}{\mathbin{\sim}}{\mathbin{\sim}}Q\)</span> using nothing but ID and R (can you do this?) MT is similarly a rule we could do without.</p>
+<p>This suggests that we might “purify” our system by removing DD, DN, MT, and any other redundant basic rules and methods (we could always reintroduce them as <em>derived</em> rules or methods). For an example of a system that is similar to ours but more pure in this sense, see Bergmann, Moor, and Nelson’s <em>The Logic Book</em>.</p>
+<p>A standard course in Metatheory of Sentential Logic would culminate in proofs of soundness and completeness. You can find an accessible sketch of such proofs in Papineau’s <em>Philosophical Devices</em>, and you can find more rigorous proofs in any of several logic texts, including <em>The Logic Book</em> (but note that the sentential logics presented in both <em>Philosophical Devices</em> and <em>The Logic Book</em> differ from ours both in their choice of symbols and, more importantly, in their choice of rules and derivation methods).</p>
+           </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Introducing Derivations (1.4 and 1.5)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body>
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Introducing Derivations (1.4 and 1.5)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to sections 1.4 and 1.5 of the Logic Text. You should read those <em>before</em> you read this.</p>
+<h1 id="rules-and-derivations">Rules and Derivations</h1>
+<p>Now that we have a symbolic language that allows us to represent negations and conditionals, it is time to return to our goal, which is to get a better understanding of validity.</p>
+<p>How should we do this? Here is one idea: write down <em>all</em> the valid forms of argument, then try to think about what they all have in common. The trouble with this idea is that there are too many valid forms to write down. In fact, there are infinitely many valid forms.</p>
+<p>We can see this even if we just consider arguments that have a single premise, and only involve negation.</p>
+<div class="cor">
+<p>Here is an invalid argument form:</p>
+<div class="centered">
+<p><span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+</div>
+<p>Plug a false sentence in the <input class="copyMe P sym slot" type="text">, like ‘The sky is beneath us’, and the premise is true but the conclusion false:</p>
+<p> It is not the case that the sky is beneath us: true!<br /> <span class="math">\({\therefore\ }\)</span> The sky is beneath us: false!</p>
+<p>So this form is invalid.</p>
+</div>
+<div class="cor">
+<p>But this one is valid:</p>
+<div class="centered">
+<p><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+</div>
+<p>Plug a true sentence in the <input class="copyMe P sym slot" type="text">, and both premise and conclusion are true. Try it: plug in the sentence ‘Grass is green’:</p>
+<p> It is not the case that grass is not green: true!<br /> <span class="math">\({\therefore\ }\)</span> Grass is green: true!</p>
+<p>Plug a false sentence in the <input class="copyMe P sym slot" type="text">, and the premise is false. Try it: plug in the sentence ‘The sky is beneath us’:</p>
+<p> It is not the case that the sky is not beneath us: false!<br /> <span class="math">\({\therefore\ }\)</span> The sky is beneath us: false!</p>
+<p>So there is no way an argument of this form could have a true premise and a false conclusion. So all such arguments are valid.</p>
+</div>
+<div class="cor">
+<p>Like our first form, this form is invalid:</p>
+<div class="centered">
+<p><span class="math">\({\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+</div>
+</div>
+<p>Try it. You can type sentences into the boxes. Can you find a sentence that makes the premise true but the conclusion false?</p>
+<p>And like our second form, this form is valid:</p>
+<div class="cor centered">
+<p> <span class="math">\({\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /> <span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+</div>
+<p>It is clear that we can keep generating new argument forms in this way, by adding additional negation signs to the first premise. Every other form we generate will be valid. So there are infinitely many distinct valid forms of argument.</p>
+<p>But it is also clear that, in this case at least, there is a pattern. Consider the first valid form from above:</p>
+<div class="cor boxed centered">
+<p><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p><strong>Double Negation Elimination</strong></p>
+</div>
+<p>We will call valid patterns of inference <strong>rules</strong>. We will call this one <strong>Double Negation Elimination</strong> (<strong>DNE</strong>, for short).</p>
+<p>We can explain the validity of our fourth form,</p>
+<div class="cor centered">
+<p><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+</div>
+<p>by showing that the conclusion follows from two successive applications of the rule, <strong>DNE</strong>, to the premise.</p>
+<p>First, we note that our premise,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"></li>
+</ul>
+<p>is not just a quadruple negation; it is also a double negation. That is, it is a sentence that begins with two negations:</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span> <span style="border:thin solid; padding: .5em"><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span><input class="copyMe P sym
+slot" type="text"></span></li>
+</ul>
+<p>So, applying our rule, <strong>Double Negation Elimination</strong>, we can infer,</p>
+<ul>
+<li><span style="border:thin solid; padding: .5em"><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span><input class="copyMe P sym
+slot" type="text"></span></li>
+</ul>
+<p>And, since this is also a double negation, we can apply our rule again, inferring</p>
+<ul>
+<li><input class="copyMe P sym slot" type="text"></li>
+</ul>
+<p>Since both steps are instances of <strong>DNE</strong>, and <strong>DNE</strong> is obviously valid, this shows that this form of argument is also valid. We could call it <strong>Quadruple Negation Elimination</strong> if we wanted, but we won’t bother to give it a name.</p>
+<p>This, then, will be our first strategy for understanding validity. We will identify some simple rules that are obviously valid. We will then develop a system of <strong>derivation</strong>—a system for applying rules to premises, in order to <em>derive</em> conclusions.</p>
+<h2 id="test-your-understanding">Test Your Understanding</h2>
+<p>Consider the following argument:</p>
+<p><span class="math">\({\phantom{\therefore}\ }P{\mathbin{\rightarrow}}Q\)</span><br /><span class="math">\({\phantom{\therefore}\ }P\)</span><br /><span class="math">\({\therefore\ }{\mathord{\sim}}{\mathord{\sim}}Q\)</span></p>
+<p>Can you show how to get from the premises to the conclusion in two obviously valid steps?</p>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span></li>
+<li><span class="math">\(P\)</span></li>
+</ol>
+<p>From (1) and (2), it is obvious that</p>
+<ol start="3" style="list-style-type: decimal">
+<li><span class="math">\(Q\)</span></li>
+</ol>
+<p>follows. From (3), it is obvious that</p>
+<ol start="4" style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}{\mathord{\sim}}Q\)</span></li>
+</ol>
+<p>follows.</p>
+</div>
+<h1 id="rules">Rules</h1>
+<p>Section 1.4 introduces four rules. Again, a <strong>rule</strong> is a formally valid pattern of reasoning. Section 1.5 introduces the simplest sort of derivation. Section 1.6 introduces two slightly more complicated sorts of derivation. Again, a <strong>derivation</strong> is a series of steps, each in accordance with a rule, showing that we can reason validly from the premises to the conclusion.</p>
+<p>You can find the four rules in the box on p. 11. You can also find them in the Logic Software, from within the “Derivation” Module, by clicking on the “Rules” button:</p>
+<div class="figure">
+<img src="http://dsanson.droppages.com/logic2010/rules.png" alt="Rules Button" />
+<p class="caption">Rules Button</p>
+</div>
+<h2 id="repetition">Repetition</h2>
+<p>The first rule is</p>
+<dl>
+<dt><strong>Repetition</strong> (<strong>R</strong>)</dt>
+<dd><input class="copyMe P sym slot" type="text"> <span class="math">\(\ {\therefore\ }\)</span> <input class="copyMe P sym slot" type="text">
+</dd>
+</dl>
+<p>What this says, in English, is this: if you have some sentence as a premise, you can infer that same sentence as your conclusion. We can also represent the pattern vertically, in the way we usually write arguments:</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p>An example of an argument that fits this pattern is:</p>
+<ol style="list-style-type: decimal">
+<li>The world is flat.</li>
+<li><span class="math">\({\therefore\ }\)</span> The world is flat.</li>
+</ol>
+<p>No doubt this is a silly form of argument: we typically want an argument to represent an attempt to reason from some premises to some <em>new</em> piece of information. But also no doubt this is a valid form of argument. Just as you wouldn’t omit the fact that 0+0=0 from your account of addition, we shouldn’t omit <strong>R</strong> from our account of validity.</p>
+<h2 id="modus-ponens-and-modus-tollens">Modus Ponens and Modus Tollens</h2>
+<p>The second rule is,</p>
+<div class="cor">
+<dl>
+<dt><strong>Modus Ponens</strong> (<strong>MP</strong>)</dt>
+<dd><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe
+Q sym slot" type="text"> . <input class="copyMe P sym slot" type="text"> <span class="math">\({\therefore\ }\)</span><input class="copyMe Q sym slot" type="text">
+</dd>
+</dl>
+<p>What this says, in English, is this: if you have two premises (here separated by a period), and one is a conditional, and the other is the antecedent of that conditional, then you can infer the consequent of the conditional as your conclusion. We can also represent the pattern vertically, as</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe Q sym slot" type="text"></p>
+</div>
+<p>An example of an argument that fits this pattern is:</p>
+<ol style="list-style-type: decimal">
+<li>If the patient doesn’t take her medicine, then the patient will not recover.</li>
+<li>The patient doesn’t take her medicine.</li>
+<li><span class="math">\({\therefore\ }\)</span> The patient will not recover.</li>
+</ol>
+<p>If you think about what ‘if…then…’ means, you will see that this form of argument is valid.</p>
+<p>The third rule is,</p>
+<dl>
+<dt><strong>Modus Tollens</strong> (<strong>MT</strong>)</dt>
+<dd><input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe
+Q sym slot" type="text"> . <span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe Q sym slot" type="text"> <span class="math">\({\therefore\ }{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text">
+</dd>
+</dl>
+<p>Or, in English: If you have two premises, and one is a conditional, and the other is the negation of the consequent, you can infer the negation of the antecedent. Vertically, it looks like this:</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\therefore\ }{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p>An example that fits this pattern is:</p>
+<ol style="list-style-type: decimal">
+<li>If patient took his medicine, then he recovered.</li>
+<li>The patient did not recover.</li>
+<li><span class="math">\({\therefore\ }\)</span> The patient did not take his medicine.</li>
+</ol>
+<p>It may take a little more thought to convince yourself that this form of argument is valid. Unlike <strong>MP</strong>, it is not enough just to think about what ‘if…then…’ means, since <strong>MT</strong> involves an interaction between conditionals and negations.</p>
+<p>I already introduced both of these rules in the <a href="0_introduction.html#sentential-logic-if-and-not">Introduction</a>, and distinguished them from two closely related fallacies. A <strong>fallacy</strong> is the evil twin of a <strong>rule</strong>: it is an formally invalid pattern of reasoning.</p>
+<p>Just to review, <em>affirming the consequent</em> is the evil twin of <strong>MP</strong>:</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p>An example, in English, is</p>
+<ol style="list-style-type: decimal">
+<li>If patient took her medicine, then she recovered.</li>
+<li>The patient recovered.</li>
+<li><span class="math">\({\therefore\ }\)</span> The patient took her medicine.</li>
+</ol>
+<p>This is invalid: perhaps the patient recovered even though she did not take her medicine—that is consistent with the truth of (1).</p>
+<p><em>Denying the antecedent</em> is the evil twin of <strong>MT</strong>:</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathbin{\rightarrow}}\)</span> <input class="copyMe Q sym slot" type="text"><br /><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe Q sym slot" type="text"></p>
+<p>For example,</p>
+<ol style="list-style-type: decimal">
+<li>If patient took her medicine, then she recovered.</li>
+<li>The patient didn’t take her medicine.</li>
+<li><span class="math">\({\therefore\ }\)</span> The patient didn’t recover.</li>
+</ol>
+<p>Again, perhaps the patient recovered even though she didn’t take her medicine.</p>
+<p>‘Modus Ponens’ and ‘Modus Tollens’ are Latin. A literal meaning of ‘Modus Ponens’ is “the way of putting”. A literal meaning of ‘Modus Tollens’ is “the way of taking”. Knowing the literal meanings of these names might help you remember which is which.</p>
+<p>Here is one way to think about <strong>MP</strong>, <strong>MT</strong>, and their evil invalid twins:</p>
+<ul>
+<li>If you want to go with the flow—infer in the direction of the arrow—you need to be positive. That’s what you do when you apply <strong>MP</strong>.</li>
+<li>If you want to go against the flow—infer in the opposite direction of the arrow—you need to be negative. That’s what you do when you apply <strong>MT</strong>.</li>
+<li>You can’t go with the flow in a negative way—that is <em>denying the antecedent</em>.</li>
+<li>You can’t go against the flow in a positive way—that is <em>affirming the antecedent</em>.</li>
+</ul>
+<h2 id="test-your-understanding-1">Test Your Understanding</h2>
+<p>For each of the following arguments, symbolize the argument, then say whether or not it is valid, and whether or not it is an instance of <strong>MP</strong>, <strong>MT</strong>, <em>denying the antecedent</em>, or <em>affirming the consequent</em>.</p>
+<ol style="list-style-type: decimal">
+<li>If God exists, there is order in the world.</li>
+<li>There is order in the world.</li>
+<li><span class="math">\({\therefore\ }\)</span> God exists.</li>
+</ol>
+<div class="answers">
+<ul>
+<li><span class="math">\(P\)</span>: God exists. <span class="math">\(W\)</span>: There is order in the world</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(P{\mathbin{\rightarrow}}W\)</span></li>
+<li><span class="math">\(W\)</span></li>
+<li><span class="math">\({\therefore\ }P\)</span></li>
+</ol>
+<p>This is invalid. It is an instance of the fallacy, <em>affirming the consequent</em>.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>There is order in the world only if God exists.</li>
+<li>There is order in the world.</li>
+<li><span class="math">\({\therefore\ }\)</span> God exists.</li>
+</ol>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li><span class="math">\(W{\mathbin{\rightarrow}}P\)</span></li>
+<li><span class="math">\(W\)</span></li>
+<li><span class="math">\({\therefore\ }P\)</span></li>
+</ol>
+<p>This is valid. It is an instance of <strong>MP</strong>. Remember: “only if” marks the consequent!</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>God doesn’t exist if there isn’t order in the world.</li>
+<li>God doesn’t exist.</li>
+<li><span class="math">\({\therefore\ }\)</span> There isn’t order in the world.</li>
+</ol>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}W{\mathbin{\rightarrow}}{\mathord{\sim}}P\)</span></li>
+<li><span class="math">\({\mathord{\sim}}P\)</span></li>
+<li><span class="math">\({\mathord{\sim}}W\)</span></li>
+</ol>
+<p>This is not valid. It is an instance of affirming the consequent. Don’t be misled by the fact that (2) is a negation: that isn’t enough to make this an instance of <strong>MT</strong>. To be an instance of <strong>MT</strong>, (2) would need to be the negation of the consequent of (1), so <span class="math">\({\mathord{\sim}}{\mathord{\sim}}P\)</span>.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>Provided that there is order in the world, God exists.</li>
+<li>God doesn’t exist.</li>
+<li><span class="math">\({\therefore\ }\)</span> There isn’t order in the world.</li>
+</ol>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li><span class="math">\(W{\mathbin{\rightarrow}}P\)</span></li>
+<li><span class="math">\({\mathord{\sim}}P\)</span></li>
+<li><span class="math">\({\therefore\ }{\mathord{\sim}}W\)</span></li>
+</ol>
+<p>This is valid, and it is an instance of <strong>MT</strong>.</p>
+</div>
+<h2 id="double-negation">Double Negation</h2>
+<p>The fourth rule is <strong>Double Negation</strong> (<strong>DN</strong>). I’ve already introduced one of its two forms:</p>
+<dl>
+<dt><strong>Double Negation Elimination</strong> (<strong>DNE</strong>)</dt>
+<dd><span class="math">\({\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text">
+</dd>
+</dl>
+<p>The other form is:</p>
+<dl>
+<dt><strong>Double Negation Introduction</strong> (<strong>DNI</strong>)</dt>
+<dd><input class="copyMe P sym slot" type="text"> <span class="math">\({\therefore\ }{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text">
+</dd>
+</dl>
+<p>Again, here are the vertical representations:</p>
+<p><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p>and</p>
+<p><span class="math">\({\phantom{\therefore}\ }\)</span> <input class="copyMe P sym slot" type="text"><br /><span class="math">\({\therefore\ }{\mathord{\sim}}{\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"></p>
+<p>Examples, in English:</p>
+<ol style="list-style-type: decimal">
+<li>It is not the case that I am not happy.</li>
+<li><span class="math">\({\therefore\ }\)</span> I am happy.</li>
+</ol>
+<p>and</p>
+<ol style="list-style-type: decimal">
+<li>I am happy.</li>
+<li>It is not the case that I am not happy.</li>
+</ol>
+<h2 id="test-your-understanding-2">Test Your Understanding</h2>
+<p>For each of the following arguments, symbolize the argument, then say whether or not it is valid, and whether or not it is an instance of <strong>R</strong>, <strong>MP</strong>, <strong>MT</strong>, or <strong>DN</strong>.</p>
+<ol style="list-style-type: decimal">
+<li>You can’t always get what you want.</li>
+<li><span class="math">\({\therefore\ }\)</span> It is not the case that you can always get what you want.</li>
+</ol>
+<div class="answers">
+<dl>
+<dt><span class="math">\(W\)</span></dt>
+<dd>You can always get what you want.
+</dd>
+</dl>
+<ol style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}W\)</span></li>
+<li><span class="math">\({\therefore\ }{\mathord{\sim}}W\)</span></li>
+</ol>
+<p>This is valid. It is an instance of <strong>R</strong>.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>You can always get what you want.</li>
+<li><span class="math">\({\therefore\ }\)</span> It is not the case that you can’t always get what you want.</li>
+</ol>
+<div class="answers">
+<ol style="list-style-type: decimal">
+<li><span class="math">\(W\)</span></li>
+<li><span class="math">\({\therefore\ }{\mathord{\sim}}{\mathord{\sim}}W\)</span></li>
+</ol>
+<p>Valid. <strong>DN</strong> (more specifically, <strong>DNI</strong>).</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>You can’t always get what you want if you should try some time.</li>
+<li>You can always get what you want.</li>
+<li><span class="math">\({\therefore\ }\)</span> You shouldn’t try some time.</li>
+</ol>
+<div class="answers">
+<ul>
+<li><span class="math">\(T\)</span>: You should try some time.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(T{\mathbin{\rightarrow}}{\mathord{\sim}}W\)</span></li>
+<li><span class="math">\(W\)</span></li>
+<li><span class="math">\({\therefore\ }{\mathord{\sim}}T\)</span></li>
+</ol>
+<p>This is valid. But it is not an instance of any of our rules. We can show that it is valid in two steps. First, apply <strong>DNI</strong> to (2), yielding,</p>
+<p><span class="math">\({\mathord{\sim}}{\mathord{\sim}}W\)</span></p>
+<p>Now, apply <strong>MT</strong> to this and (1), to get (3).</p>
+<p>This is an important example to think about and understand. For an argument to be an instance of one of our rules, it <em>must fit the pattern exactly</em>.</p>
+</div>
+<h1 id="recognizing-rules">Recognizing Rules</h1>
+<p>Remember, the four rules are argument <em>patterns</em>. Any symbolic sentences can be plugged in for the boxes and the circles to provide an instance of the pattern. The rules are easiest to recognize when we plug sentence letters into the boxes and circles. For example,</p>
+<p><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}{\mathord{\sim}}S\)</span><br /><span class="math">\({\therefore\ }S\)</span></p>
+<p>and</p>
+<p><span class="math">\({\phantom{\therefore}\ }Q{\mathbin{\rightarrow}}T\)</span><br /><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}T\)</span><br /><span class="math">\({\therefore\ }{\mathord{\sim}}Q\)</span></p>
+<p>The patterns can be harder to see when we plug molecular sentences into the boxes and circles. For example,</p>
+<p><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}{\mathord{\sim}}((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}{\mathord{\sim}}(R{\mathbin{\rightarrow}}Q))\)</span><br /><span class="math">\({\therefore\ }((P{\mathbin{\rightarrow}}Q){\mathbin{\rightarrow}}{\mathord{\sim}}(R{\mathbin{\rightarrow}}Q))\)</span></p>
+<p>is an instance of <strong>DNE</strong>, and</p>
+<p><span class="math">\({\phantom{\therefore}\ }P{\mathbin{\rightarrow}}(Q{\mathbin{\rightarrow}}R)\)</span><br /><span class="math">\({\phantom{\therefore}\ }P\)</span><br /><span class="math">\({\therefore\ }Q{\mathbin{\rightarrow}}R\)</span></p>
+<p>is an instance of <strong>MP</strong>.</p>
+<p>To be an instance of a rule, an argument must fit the pattern <em>exactly</em>. This is <em>not</em> an instance of <strong>MP</strong>:</p>
+<p><span class="math">\({\phantom{\therefore}\ }P{\mathbin{\rightarrow}}(Q{\mathbin{\rightarrow}}R)\)</span><br /><span class="math">\({\phantom{\therefore}\ }P{\mathbin{\rightarrow}}Q\)</span><br /><span class="math">\({\therefore\ }R\)</span></p>
+<p>The second premise, <span class="math">\(P{\mathbin{\rightarrow}}Q\)</span>, is not the antecedent of the first. One thing you can do to help see this is try to draw the boxes and circles in. To try to make this fit the rule <strong>MP</strong>, you would need to draw a box around <span class="math">\(P{\mathbin{\rightarrow}}(Q\)</span>, but that is not a well-formed sentence.</p>
+<p>The rules only apply to <strong>complete sentences</strong>. This is not an instance of <strong>DNE</strong>, because the sentence on the first line is not a double negation:</p>
+<p><span class="math">\({\phantom{\therefore}\ }P{\mathbin{\rightarrow}}{\mathord{\sim}}{\mathord{\sim}}Q\)</span><br /><span class="math">\({\therefore\ }P{\mathbin{\rightarrow}}Q\)</span></p>
+<p>When you are trying to figure out if an inference fits the pattern, you need to think of the sentences as they look in <em>official notation</em>. This is <em>not</em> an instance of <strong>DNE</strong>:</p>
+<p><span class="math">\({\phantom{\therefore}\ }{\mathord{\sim}}{\mathord{\sim}}P{\mathbin{\rightarrow}}Q\)</span><br /><span class="math">\({\therefore\ }P{\mathbin{\rightarrow}}Q\)</span></p>
+<p>The premise, written in informal notation, might appear to be a double negation. But it is not, as is clear when we write it in official notation:</p>
+<p><span class="math">\({\phantom{\therefore}\ }({\mathord{\sim}}{\mathord{\sim}}P{\mathbin{\rightarrow}}Q)\)</span></p>
+<p>Again, to be an instance of a rule, the argument must fit the pattern exactly. You will often be tempted to “skip steps”, relying on your insight and not respecting the patterns. For example,</p>
+<p> <span class="math">\(P{\mathbin{\rightarrow}}{\mathord{\sim}}Q\)</span><br /> <span class="math">\(Q\)</span><br /> <span class="math">\({\therefore\ }{\mathord{\sim}}P\)</span></p>
+<p>is not an instance of <strong>MT</strong>, because the second premise, <span class="math">\(Q\)</span>, is not the negation of of the consequent of the first, <span class="math">\({\mathord{\sim}}Q\)</span>. The negation of <span class="math">\({\mathord{\sim}}Q\)</span> is <span class="math">\({\mathord{\sim}}{\mathord{\sim}}Q\)</span>. It is easy to derive this from <span class="math">\(Q\)</span>, using <strong>DNI</strong>. But you cannot skip that step, and pretend that the pattern fits <strong>MT</strong>.</p>
+<p>In the same way,</p>
+<p> <span class="math">\({\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}{\mathord{\sim}}P\)</span><br /> <span class="math">\({\therefore\ }P\)</span></p>
+<p>is not an instance of <strong>DNE</strong>, though it is easy to get from the premise to the conclusion by two applications of <strong>DNE</strong>.</p>
+<h2 id="test-your-understanding-3">Test Your Understanding</h2>
+<p>This would be a good time to go complete the problems in the “Recognizing Rules” module of Logic 2010.</p>
+<h1 id="direct-derivations">Direct Derivations</h1>
+<p>One way to show that an argument is valid is to construct a <strong>derivation</strong> of the conclusion from the premises. A <strong>derivation</strong> involves a series of inferences, each in accordance with the <strong>rules</strong>, from the premises to the conclusion.</p>
+<p>So, consider the following argument:</p>
+<p>The world is your oyster.<br />If the world is your oyster, you are a pearl.<br />If you are a pearl, you are made out of layers of oyster snot.<br /><span class="math">\({\therefore\ }\)</span> You are made out of layers of oyster snot.</p>
+<p>Or, in symbols (assuming an appropriate scheme of abbreviation):</p>
+<p><span class="math">\(Y\)</span><br /><span class="math">\(Y{\mathbin{\rightarrow}}P\)</span><br /><span class="math">\(P{\mathbin{\rightarrow}}S\)</span><br /><span class="math">\({\therefore\ }S\)</span></p>
+<p>We can get from the premises to the conclusion by two applications of <strong>Modus Ponens</strong>. We might describe this informally as follows:</p>
+<ol style="list-style-type: decimal">
+<li><strong>To Be Shown</strong>: You are made out of layers of oyster snot.</li>
+<li>   The world is your oyster. (<strong>Premise</strong>)</li>
+<li>   If the world is your oyster, you are a pearl. (<strong>Premise</strong>)</li>
+<li>   You are a pearl. (From 2 and 3, by <strong>Modus Ponens</strong>)</li>
+<li>   If you are a pearl, you are made out of layers of oyster snot. (<strong>Premise</strong>)</li>
+<li>   You are made out of layers of oyster snot. (From 4 and 5 by <strong>Modus Ponens</strong>)</li>
+<li>   QED (Line (6) is what was to be shown.)</li>
+</ol>
+<p>Here is the same line of reasoning, now in symbols, with some abbreviations:</p>
+<div class="derivation">
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">1.</td>
+<td align="left">Show</td>
+<td align="left"><span class="math">\(S\)</span></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">2.</td>
+<td align="left"></td>
+<td align="left"><span class="math">\(Y\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="odd">
+<td align="left">3.</td>
+<td align="left"></td>
+<td align="left"><span class="math">\(Y{\mathbin{\rightarrow}}P\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="even">
+<td align="left">4.</td>
+<td align="left"></td>
+<td align="left"><span class="math">\(P\)</span></td>
+<td align="left">2,3 MP</td>
+</tr>
+<tr class="odd">
+<td align="left">5.</td>
+<td align="left"></td>
+<td align="left"><span class="math">\(P{\mathbin{\rightarrow}}S\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="even">
+<td align="left">6.</td>
+<td align="left"></td>
+<td align="left"><span class="math">\(S\)</span></td>
+<td align="left">4,5 MP</td>
+</tr>
+<tr class="odd">
+<td align="left">7.</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">6 DD</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Here ‘Show’ stands for ‘To Be Shown’. We call line (1) a “Show Line”. It is how we announce, at the beginning of a derivation, the conclusion we are after.</p>
+<p>‘PR’ stands for ‘Premise’. The point of a derivation is to reason from the premises to the conclusion. So ‘PR’ lets us know that the sentence on that line is one of the premises.</p>
+<p>‘MP’ stands for ‘Modus Ponens’. So, for example, on line (4), we are claiming that <span class="math">\(P\)</span> follows from lines (2) and (3) by Modus Ponens.</p>
+<p>‘DD’ stands for ‘Direct Derivation’. On line (7), we are claiming that the sentence on line (6) is the sentence that needed to be shown, as announced on line (1).</p>
+<p>(I know some of you have been exposed to logic before, and learned how to do some derivations. It is unlikely that the system of derivation you learned included “Show Lines”. There are a few different ways we can design a system for constructing derivations, and different textbooks use different systems. I’d be happy to talk with you more about how our system compares the other system you learned.)</p>
+<p>There is one other thing we will do when we construct derivations. It is called “Boxing and Canceling”, and we do it when we have successfully completed a derivation. Here is what the completed derivation looks like, when we have boxed and canceled:</p>
+<div class="derivation">
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">1.</td>
+<td align="left">!Show</td>
+<td align="left"><span class="math">\(S\)</span></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">2.</td>
+<td align="left"></td>
+<td align="left">┌ <span class="math">\(Y\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="odd">
+<td align="left">3.</td>
+<td align="left"></td>
+<td align="left">│ <span class="math">\(Y{\mathbin{\rightarrow}}P\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="even">
+<td align="left">4.</td>
+<td align="left"></td>
+<td align="left">│ <span class="math">\(P\)</span></td>
+<td align="left">2,3 MP</td>
+</tr>
+<tr class="odd">
+<td align="left">5.</td>
+<td align="left"></td>
+<td align="left">│ <span class="math">\(P{\mathbin{\rightarrow}}S\)</span></td>
+<td align="left">PR</td>
+</tr>
+<tr class="even">
+<td align="left">6.</td>
+<td align="left"></td>
+<td align="left">│ <span class="math">\(S\)</span></td>
+<td align="left">4,5 MP</td>
+</tr>
+<tr class="odd">
+<td align="left">7.</td>
+<td align="left"></td>
+<td align="left">└</td>
+<td align="left">6 DD</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The ‘boxing’ refers to the box we’ve drawn around lines 2 through 6. The ‘canceling’ refers the line we’ve drawn through the word ‘Show’.</p>
+<p>Conceptually, the canceling is meant to indicate that the sentence on line (1) is no longer just something we are trying to show, but is something we have established. An uncanceled show line is a statement of intention, so,</p>
+<div class="derivation">
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">1.</td>
+<td align="left">Show</td>
+<td align="left"><span class="math">\(S\)</span></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>should be read as,</p>
+<ul>
+<li>I intend to show that you are are made out of layers of oyster snot.</li>
+</ul>
+<p>A canceled show line is no longer a statement of intention: it is as if the word ‘Show’ has been deleted. So,</p>
+<div class="derivation">
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">1.</td>
+<td align="left">!Show</td>
+<td align="left"><span class="math">\(S\)</span></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>should be read as,</p>
+<ul>
+<li>You are made out of layers of oyster snot.</li>
+</ul>
+<p>The point of the boxing won’t be entirely apparent until we consider more complex derivations. But the idea is this: the sentences in the box were all in service of establishing the sentence on the show line. Now that we have successfully done that, and canceled the show line, we box them up to indicate that we are done with them, because they have served their purpose.</p>
+<h1 id="what-next">What Next?</h1>
+<p>Now is a good time to attempt some derivations in the Logic Software.</p>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Symbolization (1.3)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body class="supplement">
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Symbolization (1.3)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to section 1.3 of the Logic Text. You should read that <em>before</em> you read this.</p>
+<h1 id="symbolization">Symbolization</h1>
+<p>Symbolization is the process of taking a sentence in English, like</p>
+<ul>
+<li>If it rains, then it pours.</li>
+</ul>
+<p>and producing a corresponding symbolic sentence, like</p>
+<p><span class="math">\[R{\mathbin{\rightarrow}}P\]</span></p>
+<p>To do this, we first need to introduce a <strong>scheme of abbreviation</strong>—that is, a key saying what English sentences our sentence letters are meant to abbreviate. So, in the example above, the scheme of abbreviation was:</p>
+<p class="centered">
+<span class="math">\(P\)</span>: It pours. <span class="math">\(R\)</span>: It rains.
+</p>
+<p>Given this scheme of abbreviation, we can also symbolize,</p>
+<ul>
+<li>It is not the case that it rains.</li>
+</ul>
+<p>as</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}R\)</span></li>
+</ul>
+<p>And we can symbolize,</p>
+<ul>
+<li>It rains if it pours,</li>
+</ul>
+<p>as</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}R\)</span></li>
+</ul>
+<h2 id="test-your-understanding">Test Your Understanding</h2>
+<ol style="list-style-type: upper-roman">
+<li>Suppose you wanted to symbolize the sentence, ‘If the wolves are exterminated, the deer population explodes.’ What sentences would you need to have in your scheme of abbreviation?</li>
+</ol>
+<div class="answers">
+<p>The two atomic sentences are ‘The wolves are exterminated’ and ‘The deer population explodes’. So the scheme of abbreviation might look like this:</p>
+<p class="centered">
+<span class="math">\(W\)</span>: The wolves are exterminated. <span class="math">\(P\)</span>: The deer population explodes.
+</p>
+<p>and the sentence would be symbolized as:</p>
+<ul>
+<li><span class="math">\(W{\mathbin{\rightarrow}}P\)</span></li>
+</ul>
+<p>The choice of which sentence letters to use to symbolize the atomic English sentences is arbitrary. I could have instead chosen this scheme of abbreviation:</p>
+<p class="centered">
+<span class="math">\(P\)</span>: The wolves are exterminated. <span class="math">\(Q\)</span>: The deer population explodes.
+</p>
+<p>and symbolized the sentence as:</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span></li>
+</ul>
+</div>
+<h1 id="sources-of-mathordsim">Sources of <span class="math">\({\mathord{\sim}}\)</span></h1>
+<p>Inside the box on p. 7 of Section 1.3, you can find a summary of sources of negation in English. The three sources are: ‘fail to’, ‘not’, and ‘it is not the case that’. When you see one of these in an English sentence, you know that the sentence includes a negation.</p>
+<p>So,</p>
+<ul>
+<li>The deer population does not explode.</li>
+<li>The deer population fails to explode.</li>
+<li>It is not the case that the deer population explodes.</li>
+</ul>
+<p>Are all ways of expressing the negation of ‘The deer population explodes’, that is,</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}P\)</span></li>
+</ul>
+<p>In the sentence,</p>
+<ul>
+<li>If the wolves are not exterminated, the deer population will fail to explode.</li>
+</ul>
+<p>we see both a ‘not’ and a ‘fail to’, so we know that it includes two negations. But how do we know where to put them?</p>
+<p>Again, the box on p. 7 has a useful tip:</p>
+<div class="boxed">
+<p>‘not’ and ‘fail to’ yield a negation that applies to the smallest sentence that they are a part of.</p>
+</div>
+<p>Let’s think about how to apply this tip to our sentence. The ‘not’ occurs as a part of two sentences. First, it occurs as a part of the entire conditional,</p>
+<ul>
+<li>If the wolves are <strong>not</strong> exterminated, the deer population will fail to explode.</li>
+</ul>
+<p>But, also, it occurs as a part of the antecedent, which is a complete sentence contained inside the entire conditional,</p>
+<ul>
+<li>If <em>the wolves are <strong>not</strong> exterminated</em>, the deer population will fail to explode.</li>
+</ul>
+<p>The antecedent is the smaller of these two sentences, so, according to the tip, the negation applies to it. For the same reason, the ‘fails to’ applies to the consequent,</p>
+<ul>
+<li>If the wolves are not exterminated, <em>the deer population will <strong>fail to</strong> explode</em>.</li>
+</ul>
+<p>So we should symbolize the sentence this way:</p>
+<ul>
+<li><span class="math">\(({\mathord{\sim}}W {\mathbin{\rightarrow}}{\mathord{\sim}}P)\)</span></li>
+</ul>
+<p>‘It is not the case’ works a bit differently. It applies to a complete sentence that immediately follows it. So, in</p>
+<ul>
+<li>If <strong>it is not the case that</strong> <em>the wolves are exterminated</em>, then the deer population will fail to explode.</li>
+</ul>
+<p>the ‘it is not the case that’ applies to ‘the wolves are exterminated’. That is because ‘the wolves are exterminated’ is the only complete sentence that immediately follows ‘it is not the case that’. For example, ‘the wolves are exterminated, then the deer population will fail to explode’ is not a complete sentence, but only a fragment of a sentence. So this would symbolized as,</p>
+<ul>
+<li><span class="math">\(({\mathord{\sim}}W{\mathbin{\rightarrow}}P)\)</span></li>
+</ul>
+<p>Compare that sentence to this sentence:</p>
+<ul>
+<li><strong>It is not the case that</strong> if the wolves are exterminated, then the deer population will fail to explode,</li>
+</ul>
+<p>What complete sentence immediately follows ‘it is not the case that’? ‘If the wolves are exterminated’ is not a complete sentence, but a fragment, because of that unresolved ‘if’. ‘If the wolves are exterminated, then the deer population will fail to explode’ is a complete sentence. So the negation applies to the entire conditional:</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}(W{\mathbin{\rightarrow}}P)\)</span></li>
+</ul>
+<h2 id="test-your-understanding-1">Test Your Understanding</h2>
+<p>Symbolize the following sentences, using an appropriate scheme of abbrevation:</p>
+<ol style="list-style-type: decimal">
+<li>It is not the case that dogs are color blind.</li>
+<li>If dogs are color blind, then dogs fail to see green.</li>
+<li>If dogs are not color blind, then it is not the case that dogs are color blind.</li>
+<li>It is not the case that if dogs fail to see green, then dogs are color blind.</li>
+</ol>
+<div class="answers">
+<p>First we need a scheme of abbreviation. I will use the following (but if you used different letters—as long as they were between P and Z—that’s okay too):</p>
+<ul>
+<li><span class="math">\(P\)</span>: Dogs are color blind. <span class="math">\(R\)</span>: Dogs see green.</li>
+</ul>
+<p>So, relative to this scheme,</p>
+<ol style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}P\)</span></li>
+<li><span class="math">\(P{\mathbin{\rightarrow}}{\mathord{\sim}}R\)</span></li>
+<li><span class="math">\({\mathord{\sim}}P{\mathbin{\rightarrow}}{\mathord{\sim}}P\)</span></li>
+<li><span class="math">\({\mathord{\sim}}({\mathord{\sim}}R{\mathbin{\rightarrow}}P)\)</span></li>
+</ol>
+</div>
+<h1 id="sources-of-conditionals">Sources of Conditionals</h1>
+<p>Inside the box on p. 8, you can find a summary of sources of the conditional in English. The three sources are ‘if’, ‘then’, and ‘only if’. Reread the information in that box now.</p>
+<h2 id="test-your-understanding-2">Test Your Understanding</h2>
+<ol style="list-style-type: upper-roman">
+<li>Explain the difference between ‘if’ and ‘only if’.</li>
+</ol>
+<div class="answers">
+<p>‘<strong>if</strong>’ always introduces the antecedent of a conditional <em>unless</em> there is an ‘only’ in front of it. ‘<strong>only if</strong>’ always introduces the consequent of a conditional. (If you are still fuzzy on these words, ‘antecedent’ and ‘consequent’, now is a good time to review what they mean.)</p>
+<p>So,</p>
+<ul>
+<li>If P, Q</li>
+</ul>
+<p>gets symbolized as</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span>,</li>
+</ul>
+<p>because ‘if’ introduces the antecedent. And</p>
+<ul>
+<li>P if Q</li>
+</ul>
+<p>gets symbolized as</p>
+<ul>
+<li><span class="math">\(Q{\mathbin{\rightarrow}}P\)</span>,</li>
+</ul>
+<p>because ‘if’ introduces the antecedent. Notice that the <em>order in which atomic sentences occur</em> in a molecular sentence of English is not a good guide to the order in which they occur in the corresponding symbolic sentence.</p>
+<p>When ‘only’ is put in front of ‘if’, this behavior is inverted: ‘only if’ always introduces the consequent. So,</p>
+<ul>
+<li>P only if Q</li>
+</ul>
+<p>is</p>
+<ul>
+<li><span class="math">\(P{\mathbin{\rightarrow}}Q\)</span></li>
+</ul>
+<p>and</p>
+<ul>
+<li>Only if P, Q</li>
+</ul>
+<p>is</p>
+<ul>
+<li><span class="math">\(Q{\mathbin{\rightarrow}}P\)</span></li>
+</ul>
+</div>
+<ol start="2" style="list-style-type: upper-roman">
+<li><p>Symbolize the following sentences, then click on the box to check your answers.</p>
+<ol style="list-style-type: decimal">
+<li>I am happy if you hear me whistle.</li>
+<li>I am happy only if you hear me whistle.</li>
+<li>I am not happy if you fail to hear me whistle.</li>
+<li>If I am not happy, you don’t hear me whistle.</li>
+<li>Only if I am happy do you hear me whistle.</li>
+<li>It is not the case that I am happy if you hear me whistle</li>
+</ol></li>
+</ol>
+<div class="answers">
+<ul>
+<li><span class="math">\(Y\)</span>: I am happy. <span class="math">\(W\)</span>: You hear me whistle.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><span class="math">\(W{\mathbin{\rightarrow}}Y\)</span></li>
+<li><span class="math">\(Y{\mathbin{\rightarrow}}W\)</span></li>
+<li><span class="math">\({\mathord{\sim}}W{\mathbin{\rightarrow}}{\mathord{\sim}}Y\)</span></li>
+<li><span class="math">\({\mathord{\sim}}Y{\mathbin{\rightarrow}}{\mathord{\sim}}W\)</span></li>
+<li><span class="math">\(W{\mathbin{\rightarrow}}Y\)</span></li>
+</ol>
+<p>Sentence 6 is ambiguous. ‘It is not the case that’ attaches to a complete sentence that immediately follows it. But there are two complete sentences that immediately follow ‘it is not the case that’ in (6):</p>
+<ul>
+<li>I am happy</li>
+<li>I am happy if you hear me whistle</li>
+</ul>
+<p>So, on one reading, the negation attaches just to ‘I am happy’, so</p>
+<ul>
+<li><span class="math">\(W{\mathbin{\rightarrow}}{\mathord{\sim}}Y\)</span></li>
+</ul>
+<p>And, on another reading, (6) is the negation of a conditional:</p>
+<ul>
+<li><span class="math">\({\mathord{\sim}}(W{\mathbin{\rightarrow}}Y)\)</span></li>
+</ul>
+</div>
+<h1 id="commas">Commas</h1>
+<p>On p. 9, the text introduces an important convention governing the use of commas. Reread it now.</p>
+<h2 id="test-your-understanding-3">Test Your understanding</h2>
+<ol style="list-style-type: upper-roman">
+<li><p>Symbolize the following sentences. If they are ambiguous, how could you use commas to disambiguate them?</p>
+<ol style="list-style-type: decimal">
+<li>If the corn doesn’t grow, then we will starve if winter comes.</li>
+<li>If the corn grows if winter comes, we won’t starve.</li>
+<li>It is not the case that we will starve if the corn grows.</li>
+</ol></li>
+</ol>
+<div class="answers">
+<ul>
+<li><span class="math">\(P\)</span>: The corn grows. <span class="math">\(S\)</span>: We will starve. <span class="math">\(W\)</span>: Winter comes.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><span class="math">\({\mathord{\sim}}P {\mathbin{\rightarrow}}(W {\mathbin{\rightarrow}}S)\)</span></li>
+</ol>
+<p>Without the comma, the sentence would be ambiguous, and could instead be read as a conditional with ‘Winter comes’ as its antecedent.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math">\((W{\mathbin{\rightarrow}}P){\mathbin{\rightarrow}}{\mathord{\sim}}S\)</span></li>
+</ol>
+<p>Again, without the comma, it would be ambiguous, and could instead be read as a conditional with ‘if winter comes, we won’t starve’ as its antecedent.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>This one is ambiguous. It could be the negation of a conditional:</li>
+</ol>
+<ul>
+<li>It is not the case that [we will starve if the corn grows].</li>
+<li><span class="math">\({\mathord{\sim}}(P{\mathbin{\rightarrow}}S)\)</span></li>
+</ul>
+<p>Or it could be a conditional with a negation in the consequent:</p>
+<ul>
+<li>[It is not the case that we will starve] if the corn grows.</li>
+<li><span class="math">\((P{\mathbin{\rightarrow}}{\mathord{\sim}}S)\)</span></li>
+</ul>
+<p>We can force the second reading using a comma:</p>
+<ul>
+<li>It is not the case that we will starve, if the corn grows.</li>
+</ul>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

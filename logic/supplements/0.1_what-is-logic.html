@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>What is Logic?</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body class="supplement">
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                What is Logic?
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <div class="boxed">
+<p>“<em>Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell.</em>” — Sherlock Holmes</p>
+</div>
+<h1 id="what-is-logic">What is Logic?</h1>
+<p><strong>Logic</strong> is the study of correct and incorrect reasoning. Logicians want to understand what makes good reasoning good and what makes bad reasoning bad. Understanding this helps us to avoid making mistakes in our own reasoning, and it allows us to evaluate the reasoning of others. It makes us better thinkers.</p>
+<div class="figure">
+<img src="../../images/aristotle.png" alt="Aristotle (384-322 BCE)" />
+<p class="caption">Aristotle (384-322 BCE)</p>
+</div>
+<p>The <a href="http://plato.stanford.edu/entries/aristotle-logic/">first logician was Aristotle</a> (384-322 BCE). But the logic we use and study these days—sometimes called “Modern Logic” or “Contemporary Logic”—was developed in the 19th and early 20th centuries. Important early works include George Boole’s <em><a href="http://gutenberg.org/ebooks/15114">The Laws of Thought</a></em> (1854), and <a href="http://plato.stanford.edu/entries/frege/">Gottlob Frege</a>’s <em>Begriffsschrift</em> (“Concept Script”) (1879) and <em>Grundgesetze der Arithmetik</em> (“Basic Laws of Arithmetic) (1892).</p>
+<div class="figure">
+<img src="../../images/boole.jpg" alt="George Boole (1815-1864)" />
+<p class="caption">George Boole (1815-1864)</p>
+</div>
+<p>Logic lies at the foundation of mathematics, where it allows us to provide a clear and rigorous account of mathematical proof. It also plays a central role in philosophy, where we use it to help reason as clearly and rigorously as possible about hard questions about ourselves, about knowledge, reality, truth, and beauty, and about right and wrong, good and bad. It also lies at the foundation of computer science: a computer is a logic machine. And a mind is, at least in part, a logic machine too, so logic lies at the foundation of cognitive science and philosophy of mind. It also lies at the foundation of linguistics, providing the tools we use for thinking about linguistic structure (syntax) and linguistic meaning (semantics).</p>
+<div class="figure">
+<img src="../../images/frege.jpg" alt="Gottlob Frege (1848-1925)" />
+<p class="caption">Gottlob Frege (1848-1925)</p>
+</div>
+<p>Logic is one of the <a href="../../handouts/brief-overview-of-areas-of-philosophy.html">traditional sub-disciplines of Philosophy</a> and one of the seven traditional “<a href="https://en.wikipedia.org/wiki/Seven_liberal_arts#Seven_liberal_arts">liberal arts</a>”, alongside arithmetic, geometry, astronomy, music, grammar, and rhetoric. In a medieval university, students would begin by studying grammar, logic, and rhetoric, before going on to study the other four liberal arts. Advanced students might then study philosophy and theology. (At the time, “philosophy” included disciplines we would now categorize as “sciences”, like physics, biology, and psychology.)</p>
+<p>So there are many good reasons to study logic. It will make you more medieval. It will give you insight into linguistics, the foundations of mathematics, and computer science. It will make you a better philosopher. And it will make you a better thinker.</p>
+<p class="centered">
+Also, it can be a lot of fun!
+</p>
+<h1 id="representing-reasoning">Representing Reasoning</h1>
+<p>Logic aims to develop a theory of good and bad reasoning. But before we can evaluate a given piece of reasoning, we need a way to represent it.</p>
+<h2 id="the-structure-of-reasoning">The Structure of Reasoning</h2>
+<p>When we reason, we reason <em>from</em> some given information <em>to</em> some new information. We might represent this using a visual diagram:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="125pt" height="116pt" viewBox="0.00 0.00 124.70 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-112 120.7,-112 120.7,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="116.551,-108 0.149518,-108 0.149518,-72 116.551,-72 116.551,-108"></polygon> <text text-anchor="middle" x="58.3501" y="-85.8" font-family="Times,serif" font-size="14.00">given information</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="112.771,-36 3.92917,-36 3.92917,-0 112.771,-0 112.771,-36"></polygon> <text text-anchor="middle" x="58.3501" y="-13.8" font-family="Times,serif" font-size="14.00">new information</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M58.3501,-71.8142C58.3501,-64.2783 58.3501,-55.1015 58.3501,-46.0584"></path> <polygon fill="black" stroke="black" points="61.8502,-46 58.3501,-36 54.8502,-46 61.8502,-46"></polygon> </g> </g>
+</svg>
+<p>We will call a piece of reasoning an <strong>argument</strong>. We will call the information you reason from the <strong>premises</strong>, and the information you reason to the <strong>conclusion</strong>:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="85pt" height="116pt" viewBox="0.00 0.00 84.66 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-112 80.6553,-112 80.6553,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="71.0937,-108 5.5616,-108 5.5616,-72 71.0937,-72 71.0937,-108"></polygon> <text text-anchor="middle" x="38.3276" y="-85.8" font-family="Times,serif" font-size="14.00">premises</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="76.4837,-36 0.171592,-36 0.171592,-0 76.4837,-0 76.4837,-36"></polygon> <text text-anchor="middle" x="38.3276" y="-13.8" font-family="Times,serif" font-size="14.00">conclusion</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M38.3276,-71.8142C38.3276,-64.2783 38.3276,-55.1015 38.3276,-46.0584"></path> <polygon fill="black" stroke="black" points="41.8277,-46 38.3276,-36 34.8277,-46 41.8277,-46"></polygon> </g> </g>
+</svg>
+<p>So, for example, given the information that Andrew is vegetarian, you might reason to the conclusion that Andrew does not eat chicken:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="196pt" height="116pt" viewBox="0.00 0.00 195.82 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-112 191.821,-112 191.821,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="161.642,-108 26.1789,-108 26.1789,-72 161.642,-72 161.642,-108"></polygon> <text text-anchor="middle" x="93.9106" y="-85.8" font-family="Times,serif" font-size="14.00">Andrew is vegetarian</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="187.732,-36 0.0892705,-36 0.0892705,-0 187.732,-0 187.732,-36"></polygon> <text text-anchor="middle" x="93.9106" y="-13.8" font-family="Times,serif" font-size="14.00">Andrew does not each chicken</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M93.9106,-71.8142C93.9106,-64.2783 93.9106,-55.1015 93.9106,-46.0584"></path> <polygon fill="black" stroke="black" points="97.4107,-46 93.9106,-36 90.4107,-46 97.4107,-46"></polygon> </g> </g>
+</svg>
+<p>But this diagram leaves a lot of important information out. When you reasoned from the premise to the conclusion, you relied your background knowledge about vegetarians and chickens. This gave you additional information, and so additional premises. Here is a more explicit representation of your reasoning:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="466pt" height="117pt" viewBox="0.00 0.00 465.55 117.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 113)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-113 461.548,-113 461.548,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="0,-72.5 0,-108.5 457.548,-108.5 457.548,-72.5 0,-72.5"></polygon> <text text-anchor="middle" x="69.6157" y="-86.3" font-family="Times,serif" font-size="14.00">Andrew is vegetarian </text> <polyline fill="none" stroke="black" points="139.231,-72.5 139.231,-108.5 "></polyline> <text text-anchor="middle" x="230.521" y="-86.3" font-family="Times,serif" font-size="14.00">Vegetarians don't eat animals </text> <polyline fill="none" stroke="black" points="321.81,-72.5 321.81,-108.5 "></polyline> <text text-anchor="middle" x="389.679" y="-86.3" font-family="Times,serif" font-size="14.00">Chickens are animals</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="322.595,-36 134.953,-36 134.953,-0 322.595,-0 322.595,-36"></polygon> <text text-anchor="middle" x="228.774" y="-13.8" font-family="Times,serif" font-size="14.00">Andrew does not each chicken</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M228.774,-72.1521C228.774,-64.5451 228.774,-55.2817 228.774,-46.1533"></path> <polygon fill="black" stroke="black" points="232.274,-46 228.774,-36 225.274,-46 232.274,-46"></polygon> </g> </g>
+</svg>
+<p>Notice that the conclusion does not follow from any one of the premises taken by itself. It only follows from all the premises taken together. So we cannot represent this as three separate arguments for the same conclusion.</p>
+<p>We can also reason from one or more premises to one or more conclusions:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="486pt" height="118pt" viewBox="0.00 0.00 485.91 118.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 114)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-114 481.908,-114 481.908,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="0,-73.5 0,-109.5 477.908,-109.5 477.908,-73.5 0,-73.5"></polygon> <text text-anchor="middle" x="126.576" y="-87.3" font-family="Times,serif" font-size="14.00">Alice, Bob, and Christina are teammates   </text> <polyline fill="none" stroke="black" points="253.152,-73.5 253.152,-109.5 "></polyline> <text text-anchor="middle" x="365.53" y="-87.3" font-family="Times,serif" font-size="14.00">Alice is the tallest player on her team</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="79.1021,-0.5 79.1021,-36.5 398.806,-36.5 398.806,-0.5 79.1021,-0.5"></polygon> <text text-anchor="middle" x="152.03" y="-14.3" font-family="Times,serif" font-size="14.00">Alice is taller than Bob</text> <polyline fill="none" stroke="black" points="224.958,-0.5 224.958,-36.5 "></polyline> <text text-anchor="middle" x="311.882" y="-14.3" font-family="Times,serif" font-size="14.00">Alice is taller than Christina</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M238.954,-73.1521C238.954,-65.5451 238.954,-56.2817 238.954,-47.1533"></path> <polygon fill="black" stroke="black" points="242.454,-47 238.954,-37 235.454,-47 242.454,-47"></polygon> </g> </g>
+</svg>
+<p>Notice that here each conclusion follows separately from the premises. So we can represent this as two separate arguments, from the same premises, but to different conclusions:</p>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="486pt" height="117pt" viewBox="0.00 0.00 485.91 117.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 113)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-113 481.908,-113 481.908,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="0,-72.5 0,-108.5 477.908,-108.5 477.908,-72.5 0,-72.5"></polygon> <text text-anchor="middle" x="126.576" y="-86.3" font-family="Times,serif" font-size="14.00">Alice, Bob, and Christina are teammates   </text> <polyline fill="none" stroke="black" points="253.152,-72.5 253.152,-108.5 "></polyline> <text text-anchor="middle" x="365.53" y="-86.3" font-family="Times,serif" font-size="14.00">Alice is the tallest player on her team</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="311.81,-36 166.099,-36 166.099,-0 311.81,-0 311.81,-36"></polygon> <text text-anchor="middle" x="238.954" y="-13.8" font-family="Times,serif" font-size="14.00">Alice is taller than Bob</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M238.954,-72.1521C238.954,-64.5451 238.954,-55.2817 238.954,-46.1533"></path> <polygon fill="black" stroke="black" points="242.454,-46 238.954,-36 235.454,-46 242.454,-46"></polygon> </g> </g>
+</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: G Pages: 1 -->
+<svg width="486pt" height="117pt" viewBox="0.00 0.00 485.91 117.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 113)">
+<title>
+G
+</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-113 481.908,-113 481.908,4 -4,4"></polygon> <!-- premise --> <g id="node1" class="node">
+<title>
+premise
+</title>
+<polygon fill="none" stroke="black" points="0,-72.5 0,-108.5 477.908,-108.5 477.908,-72.5 0,-72.5"></polygon> <text text-anchor="middle" x="126.576" y="-86.3" font-family="Times,serif" font-size="14.00">Alice, Bob, and Christina are teammates   </text> <polyline fill="none" stroke="black" points="253.152,-72.5 253.152,-108.5 "></polyline> <text text-anchor="middle" x="365.53" y="-86.3" font-family="Times,serif" font-size="14.00">Alice is the tallest player on her team</text> </g> <!-- conclusion --> <g id="node2" class="node">
+<title>
+conclusion
+</title>
+<polygon fill="none" stroke="black" points="325.803,-36 152.105,-36 152.105,-0 325.803,-0 325.803,-36"></polygon> <text text-anchor="middle" x="238.954" y="-13.8" font-family="Times,serif" font-size="14.00">Alice is taller than Christina</text> </g> <!-- premise&#45;&gt;conclusion --> <g id="edge1" class="edge">
+<title>
+premise-&gt;conclusion:n
+</title>
+<path fill="none" stroke="black" d="M238.954,-72.1521C238.954,-64.5451 238.954,-55.2817 238.954,-46.1533"></path> <polygon fill="black" stroke="black" points="242.454,-46 238.954,-36 235.454,-46 242.454,-46"></polygon> </g> </g>
+</svg>
+<p>When we reason from some premises to more than one conclusion, it is always possible to represent the reasoning in this way, with separate arguments. So, for the sake of simplicity, we will do this, and assume that an argument always has exactly one conclusion.</p>
+<p>These diagrams provide a nice visual way of representing arguments. We began with them to help emphasize the basic structure of an argument: an argument is a piece of reasoning, from some given information, to a conclusion.</p>
+<h2 id="premise-conclusion-form">Premise-Conclusion Form</h2>
+<p>In practice, it is much easier to represent an argument as a simple list: first the premises, followed by the conclusion. So, for example, we can represent the argument above as,</p>
+<ol style="list-style-type: decimal">
+<li>Alice, Bob, and Christina are teammates.</li>
+<li>Alice is the tallest player on her team.</li>
+<li>∴ Alice is taller than Christina.</li>
+</ol>
+<p>Here the premises are (1) and (2), and the conclusion is (3). We know that (3) is the conclusion because it is the last sentence in the list. We also know that it is the conclusion because it is marked by a special symbol, ‘∴’ which stands for “therefore”. We will always mark conclusions using ‘∴’.</p>
+<p>When we represent arguments like this—as a list of premises, followed by the conclusion—we say that we have put the argument in <strong>premise-conclusion form</strong>. Putting arguments in premise-conclusion form is a common philosophical exercise. It forces you to clearly separate out the premises from each other, and from the conclusion.</p>
+<div class="boxed">
+<p><strong>Test Your Understanding</strong></p>
+<p>Research shows that it is easy to read something and feel like you understand it, even when you don’t. Most of us feel like we understand so long as we know what most of the words in a sentence mean, even if we don’t really grasp the ideas being communicated.</p>
+<p>So, throughout these supplements, you will be provided with opportunities to stop and test your understanding. Please don’t skip this. If you get a question wrong, go back and re-read the preceding paragraphs with an eye to figuring out what you missed.</p>
+</div>
+<p>Arguments are everywhere. You can find them in blogs, magazine articles, textbooks, and newspaper editorials. They often pop up in conversations. But they are not usually found in premise-conclusion form, and important premises are often left unstated. Sometimes even the conclusion is left unstated, as in this example, from Confucius:</p>
+<blockquote>
+<p>If there be righteousness in the heart,<br />there will be beauty in the character.<br />If there be beauty in the character,<br />there will be harmony in the home.<br />If there be harmony in the home,<br />there will be order in the nation.<br />If there be order in the nation,<br />there will be peace in the world.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
+<p>Can you put this argument in premise-conclusion form? What is the conclusion? When you think you know the answer, click on the gray box below.</p>
+<div class="answers">
+<p>Presumably the conclusion is,</p>
+<ul>
+<li>If there be righteousness in the heart, there will be peace in the world.</li>
+</ul>
+<p>So the argument, in premise-conclusion form, would be,</p>
+<ol style="list-style-type: decimal">
+<li>If there be righteousness in the heart, there will be beauty in the character.</li>
+<li>If there be beauty in the character, there will be harmony in the home.</li>
+<li>If there be harmony in the home, there will be order in the nation.</li>
+<li>If there be order in the nation, there will be peace in the world.</li>
+<li>∴ If there be righteousness in the heart, there will be peace in the world.</li>
+</ol>
+</div>
+<p>Here is an argument:</p>
+<blockquote>
+<p>Some pigs have wings. Everything with wings can fly. So, some pigs can fly.</p>
+</blockquote>
+<p>What are the premises of this argument? What is its conclusion? Can you put it in premise-conclusion form? When you think you know the answer, click on the gray box below:</p>
+<div class="answers">
+<p>The premises are ‘Some pigs have wings’ and ‘Everything with wings can fly’. The conclusion is ‘Some pigs can fly’. In English, the words ‘so’ and ‘hence’ and ‘therefore’ are often used to indicate a conclusion. In this case, the fact that the last sentence begins with ‘So’ tells us that it is the conclusion.</p>
+<ol style="list-style-type: decimal">
+<li>Some pigs have wings.</li>
+<li>Everything with wings can fly.</li>
+<li>∴ Pigs can fly.</li>
+</ol>
+</div>
+<p>Here is another argument:</p>
+<blockquote>
+<p>We need to raise the capital gains tax. We need to do this because a low capital gains tax provides a disproportionate benefit to the wealthiest citizens. It serves only to increase the gap between the super-wealthy and the rest of us, and we need to decrease that gap.</p>
+</blockquote>
+<p>What are the premises of this argument? What is the conclusion?</p>
+<div class="answers">
+<p>The conclusion is, ‘We need to raise the capital gains tax.’ Notice that when people give arguments, they don’t always state the conclusion last, and they don’t always mark it with a word like ‘so’ or ‘therefore’.</p>
+<p>The first premise is ‘A low capital gains tax provides a disproportionate benefit to the wealthiest citizens.’ Notice the way the word ‘because’ is used to indicate that this is a premise—a bit of information that helps support the conclusion. Another word that often indicates a premise is ‘since’.</p>
+<p>Here is the argument in premise-conclusion form:</p>
+<ol style="list-style-type: decimal">
+<li>A low capital gains tax provides a disproportionate benefit to the wealthiest citizens.</li>
+<li>A low capital gains tax serves only to increase the gap between the super-wealthy and the rest of us.</li>
+<li>We need to decrease the gap between the super-wealthy and the rest of us.</li>
+<li>∴ We need to raise the capital gains tax.</li>
+</ol>
+</div>
+<h1 id="review-and-a-loose-end">Review and a Loose End</h1>
+<p>We’ve introduced three key terms: <strong>argument</strong>, <strong>premise</strong>, <strong>conclusion</strong>, They are defined in terms of each other:</p>
+<div class="boxed">
+<dl>
+<dt><strong>Arguments, Premises, Conclusions</strong></dt>
+<dd>An <strong>argument</strong> is piece of reasoning that can be represented as a list of sentences, called the <strong>premises</strong>, followed by a sentence, called the <strong>conclusion</strong>.
+</dd>
+</dl>
+</div>
+<p>And we’ve introduced a way of representing arguments, by putting them in <strong>premise-conclusion</strong> form.</p>
+<p>We need to add one qualification to our definition of an argument. The sentences that play the role of premises or conclusions must be sentences that express information. So they have to be <em>declarative sentences</em>—the kinds of sentences that are true or false. They cannot be questions or commands, since questions and commands are not used to express information.</p>
+<p>So this is <em>not</em> an argument:</p>
+<ol style="list-style-type: decimal">
+<li>It is important to eat fruits and vegetables.</li>
+<li>∴ Eat your fruits and vegetables!</li>
+</ol>
+<p>Why not?</p>
+<div class="answers">
+<p>This is not an argument because the conclusion is an imperative sentence—a sentence used to give a command—rather than a declarative sentence—a sentence used to say something true or false.</p>
+<p>It is possible to develop a logic that includes imperatives. Computer programming languages often involve imperatives. Consider:</p>
+<ol style="list-style-type: decimal">
+<li>If the user clicks on the icon, then open the app!</li>
+<li>The user has clicked on the icon.</li>
+<li>∴ Open the app!</li>
+</ol>
+<p>We might think of this as an argument from one imperative—the command expressed by (1)—to another imperative—the command expressed by (3). But the logic of imperatives (like the logic of questions) is an advanced topic, to be considered after you have mastered the material of this course.</p>
+</div>
+<h1 id="done">Done!</h1>
+<p>Head back to the <a href="index.html">table of contents</a>.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Borrowed from Pospesel, p. 76.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

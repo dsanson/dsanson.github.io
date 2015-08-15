@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Logical Form and Formal Validity</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body class="supplement">
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Logical Form and Formal Validity
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="logical-form-and-formal-validity">Logical Form and Formal Validity</h1>
+<p>Often, the validity of an argument is connected to its <strong>logical form</strong>. Both of our sample arguments from the previous section—the one about the cars and the one about the platypus—have the same logical form. Consider:</p>
+<div class="cor">
+<ol style="list-style-type: decimal">
+<li>No <input class="copyMe A slot" type="text" placeholder="cars"> are <input class="copyMe B slot" type="text" style="width:10em" placeholder="allowed in the park">.</li>
+<li>All <input class="copyMe C slot" type="text" style="width:8em" placeholder="police cruisers"> are <input class="copyMe A slot" type="text" placeholder="cars">.</li>
+<li>Therefore, all <input class="copyMe C slot" type="text" style="width:8em" placeholder="police cruisers"> are not <input class="copyMe B slot" type="text" style="width:10em" placeholder="allowed in the park">.</li>
+</ol>
+<p>Each of the boxes above is actually a text input box: you can type in anything you want. Try replacing <input class="copyMe A slot" type="text" placeholder="cars"> with ‘mammals’, <input class="copyMe B slot" type="text" style="width:10em" placeholder="allowed in the park"> with ‘egg-layers’, and <input class="copyMe C slot" type="text" style="width:8em" placeholder="police cruisers"> with ‘platypus’.</p>
+</div>
+<p>Play around with it: plug in any terms—that is, any common nouns or noun phrases—into the form. Each time, note whether or not the premises and conclusion are true.</p>
+<p>Now for a more focused challenge. Try plugging in terms that make the premises all true. Once you’ve done that, the conclusion will be specified. Is it true or false? Can you find terms that make all the premises true but the conclusion false?</p>
+<p>Now try plugging in terms that make the conclusion false. Once you’ve done that, all but one of the terms will be specified. Can you find a value for that third term that makes one of the premises false?</p>
+<p>This argument is <strong>formally valid</strong>: there is no argument of this form—no argument that you can get by plugging in different terms—that has true premises and a false conclusion.</p>
+<div class=".cor">
+<p>Here is another argument form that involves three terms:</p>
+<ol style="list-style-type: decimal">
+<li>  Some <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe B slot" type="text" placeholder="Bs"></li>
+<li>  Some <input class="copyMe B slot" type="text" placeholder="Bs"> are <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+<li>∴ Some <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+</ol>
+<p>This argument is not formally valid. Can you find values for <input class="copyMe A slot" type="text" placeholder="As">, <input class="copyMe B slot" type="text" placeholder="Bs">, and <input class="copyMe C slot" type="text" placeholder="Cs"> that make both of the premises true and the conclusion false?</p>
+</div>
+<div class="answers">
+<p>Here is one way to do it: let ‘As’ be ‘cats’; let ‘Bs’ be ‘animals’; let ‘Cs’ be ‘dogs’.</p>
+</div>
+<p>In the previous section, we saw that validity had to do with what is or isn’t possible: is it possible that all the premises be true but the conclusion false? Figuring out what is or isn’t possible requires a lot of imagination, and it isn’t always clear what we should say.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>But formal validity is more straightforward.</p>
+<div class="boxed">
+<dl>
+<dt><strong>Formal Validity</strong></dt>
+<dd>An argument is <strong>formally valid</strong> just in case there is no argument with the same logical form that has all true premises and a false conclusion.
+</dd>
+</dl>
+</div>
+<p>We can test the formal validity of an argument by trying to find an argument that has the same logical form whose premises are <em>actually</em> true, and whose conclusion is <em>actually</em> false.</p>
+<p>Let’s practice.</p>
+<p>The following form is invalid. Show this by finding values for ‘A’, ‘B’, and ‘C’ that make the premises true and the conclusion false.</p>
+<ol style="list-style-type: decimal">
+<li>  Some <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe B slot" type="text" placeholder="Bs"></li>
+<li>   All <input class="copyMe B slot" type="text" placeholder="Bs"> are not <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+<li>∴  All <input class="copyMe A slot" type="text" placeholder="As"> are not <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+</ol>
+<div class="answers">
+<p>Here is one way to do it: let ‘A’ be ‘numbers’, ‘B’ be ‘odd numbers’, and ‘C’ be ‘divisible by two’. Then the premises are both true, but the conclusion is false.</p>
+<p>Here is another way to do it: let ‘A’ be ‘animals’, ‘B’ be ‘dogs’, and ‘C’ be ‘cats’.</p>
+</div>
+<p>Is this form valid? Try to find values for ‘A’, ‘B’, and ‘C’ that make the premises true and the conclusion false.</p>
+<ol style="list-style-type: decimal">
+<li>  All <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe B slot" type="text" placeholder="Bs"></li>
+<li>  All <input class="copyMe B slot" type="text" placeholder="Bs"> are <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+<li>∴ All <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe C slot" type="text" placeholder="Cs"></li>
+</ol>
+<div class="answers">
+<p>The form is valid. No matter what nouns you plug in for ‘A’, ‘B’, and ‘C’, if the premises are true, the conclusion will be true too. Aristotle called this argument form “Barbara”.</p>
+<p>Notice that we cannot really <em>show</em> that the argument is valid. All we can do is try to come up with an example that shows that it is invalid. When we cannot come up with any such examples, how can we be sure that this is not simply due to our lack of imagination?</p>
+</div>
+<p>Is this form valid?</p>
+<ol style="list-style-type: decimal">
+<li>  Some <input class="copyMe A slot" type="text" placeholder="As"> are <input class="copyMe B slot" type="text" placeholder="Bs"></li>
+<li>∴ Some <input class="copyMe B slot" type="text" placeholder="Bs"> are <input class="copyMe A slot" type="text" placeholder="As"></li>
+</ol>
+<div class="answers">
+<p>Yes, it is.</p>
+</div>
+<h1 id="sentential-logic-if-not-and-or">Sentential Logic: ‘if’, ‘not’, ‘and’, ‘or’</h1>
+<p>In the previous section, we took the common nouns that occurred in an argument—words like ‘platypus’ and ‘police car’—to be the non-logical <em>content</em> of an argument—and we took the words that surrounded them—words like ‘all’, ‘some’, ‘no’, ‘not’, and ‘are’—to indicate the logical form of the argument.</p>
+<p>The resulting logic is called <strong>Term Logic</strong> (or sometimes <strong>Aristotelean Logic</strong>, because this was the sort of logic that Aristotle developed). It is also called <strong>Traditional Logic</strong>, because it was the logic used throughout the medieval and early modern periods. But this is not the only way one might think about logical form.</p>
+<div class="cor">
+<p>Consider the following argument:</p>
+<ol style="list-style-type: decimal">
+<li>If <input class="copyMe P slot" type="text" style="width:12em" placeholder="the governor is corrupt">, then <input class="copyMe Q slot" type="text" style="width:17em" placeholder="he should be thrown in prison">.</li>
+<li><input class="copyMe P slot" type="text" style="width:12em" placeholder="the governor is corrupt"></li>
+<li>∴ <input class="copyMe Q slot" type="text" style="width:17em" placeholder="he should be thrown in prison">.</li>
+</ol>
+<p>This argument is valid: any possible situation that makes both premises true makes the conclusion true too.</p>
+<p>Further, the argument is formally valid. Replace <input class="copyMe P slot" type="text" style="width:12em" placeholder="the governor is corrupt"> with any sentence, and <input class="copyMe Q slot" type="text" style="width:17em" placeholder="he should be thrown in prison"> with any sentence, and the resulting argument will also be valid. Try it, by typing in other sentences into the box and the circle.</p>
+</div>
+<p>Here is another argument, similar but slightly different in form:</p>
+<ol style="list-style-type: decimal">
+<li>If capital punishment deterred crimes, then it is justified.</li>
+<li>Capital punishment does not deter crimes.</li>
+<li>∴ Capital punishment is not justified.</li>
+</ol>
+<p>Is this argument valid? The answer may not be immediately obvious. We can represent the form of the argument as,</p>
+<ol style="list-style-type: decimal">
+<li>If <input class="copyMe P slot" type="text">, then <input class="copyMe Q slot" type="text"></li>
+<li>It is not the case that <input class="copyMe P slot" type="text"></li>
+<li>∴ It is not the case that <input class="copyMe Q slot" type="text"></li>
+</ol>
+<p>Can you find sentences that, when plugged into the box and circle, make the premises true but the conclusion false? (Note that the box and circle are still interactive: you can type sentences into them.)</p>
+<div class="answers">
+<p>Try plugging in ‘Hilary Clinton is President’ into the box and ‘a Democrat is President’ into the circle. Then the premises are both true, but the conclusion is false.</p>
+</div>
+<p>This invalid form of argument is a fairly common <strong>logical fallacy</strong>—that is, logical mistake people make when reasoning. It is common enough that it has a name: <em>denying the antecedent</em>.</p>
+<p>To understand that name, you need to know a few more technical terms. We call an ‘if … then …’ sentence a <strong>conditional</strong>. We call the ‘if’-part of a conditional the <strong>antecedent</strong>, and we call the ‘then’-part the <strong>consequent</strong>. So, for example, here is a conditional:</p>
+<ul>
+<li>If Bonzo is an ape, then he should go to bed,</li>
+</ul>
+<p>The antecedent is ‘Bonzo is an ape’. The consequent is ‘Bonzo should go to bed’. So, to <em>deny</em> the antecedent of this conditional would be to say that the Bonzo is not an ape.</p>
+<p>Here are four common forms of argument that involve conditionals. Which are valid and which are invalid?</p>
+<div class="boxed">
+<p><strong>Modus Ponens</strong>:</p>
+<blockquote>
+<p>If <input class="copyMe P slot" type="text">, then <input class="copyMe Q slot" type="text">.<br /><input class="copyMe P slot" type="text"><br /><span class="math">\(∴\)</span> <input class="copyMe Q slot" type="text"></p>
+</blockquote>
+</div>
+<div class="boxed">
+<p><strong>Denying the Antecedent</strong></p>
+<blockquote>
+<p>If <input class="copyMe P slot" type="text">, then <input class="copyMe Q slot" type="text">.<br />It is not the case that <input class="copyMe P slot" type="text"><br /><span class="math">\(∴\)</span> It is not the case that <input class="copyMe Q slot" type="text"></p>
+</blockquote>
+</div>
+<div class="boxed">
+<p><strong>Affirming the Consequent</strong></p>
+<blockquote>
+<p>If <input class="copyMe P slot" type="text">, then <input class="copyMe Q slot" type="text">.<br /><input class="copyMe Q slot" type="text"><br /><span class="math">\(∴\)</span> <input class="copyMe P slot" type="text"></p>
+</blockquote>
+</div>
+<div class="boxed">
+<p><strong>Modus Tollens</strong>: If P, then Q. It is not the case that Q. ∴ It is not the case that P.</p>
+<blockquote>
+<p>If <input class="copyMe P slot" type="text">, then <input class="copyMe Q slot" type="text">.<br />It is not the case that <input class="copyMe Q slot" type="text"><br /><span class="math">\(∴\)</span> It is not the case that <input class="copyMe P slot" type="text"></p>
+</blockquote>
+</div>
+<p>Which of these four forms are valid, and which invalid? Try to work out your answer before clicking the box below.</p>
+<div class="answers">
+<p>The first and last forms, with the weird Latin names, are valid. The other two are invalid. For the invalid forms, can you come up with sentences that make the premises true but the conclusion false?</p>
+</div>
+<p>There are other ways to combine sentences to form new more complicated sentences. For example, given the sentences <input class="copyMe P slot" type="text" style="width: 10em" placeholder="Bonzo is an ape"> and <input class="copyMe Q slot" type="text" style="width: 15em" placeholder="Reagan was President">, we can form sentences like,</p>
+<ul>
+<li><p><input class="copyMe P slot" type="text" style="width: 10em" placeholder="Bonzo is an ape"> and <input class="copyMe Q slot" type="text" style="width: 15em" placeholder="Reagan was President">.</p></li>
+<li><p><input class="copyMe P slot" type="text" style="width: 10em" placeholder="Bonzo is an ape"> or <input class="copyMe Q slot" type="text" style="width: 15em" placeholder="Reagan was President">.</p></li>
+<li><p><input class="copyMe P slot" type="text" style="width: 10em" placeholder="Bonzo is an ape"> just in case <input class="copyMe Q slot" type="text" style="width: 15em" placeholder="Reagan was President">.</p></li>
+</ul>
+<p>These examples all share an important feature: they are <em>truth-functional</em>. That is, the truth or falsehood of the complex sentence is a function of the truth or falsehood of its component parts.</p>
+<p>This isn’t true of all connectives in English. Consider,</p>
+<ul>
+<li><input class="copyMe P slot" type="text" style="width: 22em" placeholder="Renacci voted against the gun control bill"> because <input class="copyMe Q slot" type="text" style="width: 15em" placeholder="The NRA
+gave Renacci $9,900">.</li>
+</ul>
+<p>Both of the component sentences are true. The NRA gave Senator Jim Renacci $9,900 in support of his 2012 election campaign, and Renacci voted against a gun control bill. But that is not enough to tell us whether or not the complex sentence is true, whether the contribution <em>caused</em> his vote. So ‘because’ is not truth-functional.</p>
+<p>Can you think of other connectives in English that are not truth-functional?</p>
+<div class="answers">
+<p>There are lots of examples. Here are two:</p>
+<ul>
+<li><p>‘while’, as in: “It rained while I walked.” Suppose ‘it rained’ and ‘I walked’ are both true. That does not settle whether or not ‘it rained while I walked’ is true.</p></li>
+<li><p>‘necessarily’, as in: “Necessarily, 2+2=4,” or “Necessarily, there are cows”. The former is true and the second is false, but ‘2+2=4’ and ‘there are cows’ are both true.</p></li>
+</ul>
+</div>
+<h1 id="review">Review</h1>
+<p>The aim of chapter 0 was to provide you a first introduction to logic. Key terms that were defined include <strong>logic</strong>, <strong>argument</strong>, <strong>premise</strong>, <strong>conclusion</strong>, <strong>valid</strong>, <strong>sound</strong>, <strong>formally valid</strong>, <strong>conditional</strong>, <strong>antecedent</strong>, and <strong>consequent</strong>. You were introduced to two kinds of logic form—the sort studied by term logic and the sort studied by sentential logic. In the next chapter, we will begin developing sentential logic.</p>
+<p>Return to the <a href="index.html">table of contents</a>.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Cows are mammals. Might they not have been? If not, the argument</p>
+<ol style="list-style-type: decimal">
+<li>Grass is green.</li>
+<li>∴ Cows are mammals.</li>
+</ol>
+<p>is valid, by our definition. Is it formally valid?<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>

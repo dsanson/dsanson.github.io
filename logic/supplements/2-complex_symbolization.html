@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="David Sanson" />
+        <title>Complex Symbolization (2.3)</title>
+        <link rel="stylesheet" type="text/css" href="../../css/default.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/texts.css" />
+        <link rel="shortcut icon" href="../../favicon.ico" />
+        <link rel="apple-touch-icon" href="../../images/touch.png" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Make Internet Explorer recognize HTML5 tags-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+
+        <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="../../js/logic.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/logic.css" />
+    </head>
+    <body>
+
+
+        <div id="content">
+         <header>
+                <h1 id="logo">
+                    <a href="../../logic" accesskey="1">Philosophy 112</a>
+                </h1>
+                <nav> 
+                    <ul>
+                        <li class="home">
+                           <a href="../../logic/index.html">Announcements</a>
+                       </li>
+                        <li class="syllabus">
+                           <a href="../../logic/syllabus.html">Syllabus</a>
+                       </li>
+                       <li class="schedule">
+                            <a href="../../logic/schedule.html">Schedule</a>
+                        </li>
+                        <li class="supplement">
+                            <a href="../../logic/supplements/">Supplement</a>
+                        </li>
+                        <li class="logic2010">
+                            <a href="http://logiclx.humnet.ucla.edu/">Logic2010</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+           <div id="page">
+            <!--
+            <h1 id="title">
+                Complex Symbolization (2.3)
+            </h1>
+
+            <h2 id="author">
+                David Sanson
+            </h2>
+
+            
+            <hr>
+            -->
+                <h1 id="what-is-this">What is This?</h1>
+<p>This is a supplement to section 2.3 of the Logic Text. You should read that <em>before</em> you read this. Section 2.3 discusses some principles useful for symbolizing complex sentences involving ‘and’, ‘or’, and ‘if and only if’.</p>
+<h1 id="principles-and-examples">Principles and Examples</h1>
+<p>Each of the following principles is taken verbatim from Chapter 2, Section 3.</p>
+<h2 id="first-principle">First Principle</h2>
+<blockquote>
+<p>“When any of these expressions occurs between sentences, it gives rise to a conjunction, disjunction, or biconditional. The constituents of the conjunction, disjunction, or biconditional are symbolizations of sentences immediately to the left and to the right of ‘and’, ‘or’, or ‘if and only if’.”</p>
+</blockquote>
+<p>Examples:</p>
+<p><span class="math">\[\mbox{It is raining but it is not snowing.}\]</span></p>
+<p>Here ‘but’ is another way of saying ‘and’. It has a sentence, ‘it is raining’, immediately to its left, and another sentence, ‘it is not snowing’, immediately to its right. So, applying our principle, we treat these two sentences at the two conjuncts:</p>
+<p><span class="math">\[\fbox{It is raining}{\mathord{\wedge}}\fbox{it is not snowing}\]</span></p>
+<p>And so, symbolizing the two conjucts, we get:</p>
+<p><span class="math">\[R{\mathord{\wedge}}{\mathord{\sim}}S\]</span></p>
+<p>Now consider,</p>
+<p><span class="math">\[\mbox{It is not raining unless it is snowing}\]</span></p>
+<p>Remember that ‘unless’ is another way of saying ‘or’. Here ‘unless’ is immediately surrounded on both sides by complete sentences, so</p>
+<p><span class="math">\[\fbox{it is not raining}{\mathord{\vee}}\fbox{it is snowing}\]</span></p>
+<p>And so,</p>
+<p><span class="math">\[{\mathord{\sim}}R{\mathord{\vee}}S\]</span></p>
+<p>What about the sentence</p>
+<p><span class="math">\[\mbox{It is raining or it is snowing and it is not raining}\]</span></p>
+<p>Here we have two connectives, ‘or’ and ‘and’. Is the ‘or’ immediately surrounded by complete sentences? If so, what are they?</p>
+<div class="answers">
+<p>This was a trick question. Applying our principle, we can see that there is only one complete sentence immediately to the left of the ‘or’:</p>
+<p><span class="math">\[\fbox{It is raining}\mbox{or it is snowing and it is not raining}\]</span></p>
+<p>But to the right, there are two candidates—two complete sentences, each immediately to the right of the ‘or’:</p>
+<p><span class="math">\[\fbox{It is raining}\mbox{or}\fbox{it is snowing}\ \mbox{and it is not raining}\]</span> <span class="math">\[\fbox{It is raining}\mbox{or}\fbox{it is snowing and it is not raining}\]</span></p>
+<p>Our principle does not tell us which of these two sentences is the right disjunct. But it does allow us to rule out one candidate:</p>
+<p><span class="math">\[\fbox{It is raining}\mbox{or it is snowing and} \fbox{it is not raining}\]</span></p>
+<p>‘it is not raining’ is a complete sentence, and it is to the right of the ‘or’, but it is not <em>immediately</em> to its right, and so cannot be the right disjunct.</p>
+<p>The same problem arises for the ‘and’. What are the possible left conjuncts for ‘and’, given our principle?</p>
+</div>
+<div class="answers">
+<p><span class="math">\[\fbox{It is raining or it is snowing}\ \mbox{and}\fbox{it is not raining}\]</span> <span class="math">\[\mbox{It is raining or} \fbox{it is snowing}\ \mbox{and}\fbox{it is not raining}\]</span></p>
+<p>As before, one candidate is ruled out:</p>
+<p><span class="math">\[\fbox{It is raining} \mbox{or it is snowing and}\fbox{it is not raining}\]</span></p>
+<p>‘It is raining’ does not occur <em>immediately</em> to the left of the ‘and’, and so cannot be the left conjunct.</p>
+<p>So we are left unable to parse the sentence: it is ambiguous between two readings, one of which takes the ‘or’ to be the main connective:</p>
+<p><span class="math">\[\fbox{It is raining}\ \mbox{or}\ \fbox{it is snowing and it is not raining}\]</span></p>
+<p>The other takes the ‘and’ to be the main connective:</p>
+<p><span class="math">\[\fbox{It is raining or it is snowing}\ \mbox{and}\ \fbox{it is not raining}\]</span></p>
+</div>
+<h2 id="second-principle-commas">Second Principle: Commas</h2>
+<p>As in Chapter 1, commas indicate the bigger break. You can use commas to disambiguate</p>
+<p><span class="math">\[\mbox{It is raining or it is snowing and it is not raining}\]</span></p>
+<p>How?</p>
+<div class="answers">
+<p>If you want the ‘or’ to be the main connective, put a comma right before it:</p>
+<p><span class="math">\[\mbox{It is raining, or it is snowing and it is not raining}\]</span> <span class="math">\[\fbox{It is raining}\ \mbox{or}\ \fbox{it is snowing and it is not raining}\]</span></p>
+<p>If you want the ‘and’ to be the main connective, put the comma right before it:</p>
+<p><span class="math">\[\mbox{It is raining or it is snowing, and it is not raining}\]</span> <span class="math">\[\fbox{It is raining or it is snowing}\ \mbox{and}\ \fbox{it is not raining}\]</span></p>
+</div>
+<p>Here is another ambiguous sentence:</p>
+<p><span class="math">\[\mbox{Roses are red and violets are blue unless colors are an illusion}\]</span></p>
+<p>What are the two readings, and how would you use commas to force one rather than the other?</p>
+<div class="answers">
+<p>The two readings are:</p>
+<p><span class="math">\[\fbox{Roses are red}\ \mbox{and}\ \fbox{violets are blue unless colors are an illusion}\]</span> <span class="math">\[\fbox{Roses are red and violets are blue}\ \mbox{unless}\ \fbox{colors are an illusion}\]</span></p>
+<p>To force the first reading, and make ‘and’ the main connective, place a comma before the ‘and’:</p>
+<p><span class="math">\[\mbox{Roses are red, and violets are blue unless colors are an illusion.}\]</span> <span class="math">\[R{\mathord{\wedge}}(V{\mathord{\vee}}U)\]</span></p>
+<p>To force the second reading, and make ‘unless’ the main connective, place a comma before the ‘unless’:</p>
+<p><span class="math">\[\mbox{Roses are red and violets are blue, unless colors are an illusion}\]</span> <span class="math">\[(R{\mathord{\wedge}}V){\mathord{\vee}}U\]</span></p>
+</div>
+<p>Here are four more examples. Each is ambiguous. Each can be disambiguated using commas. How?</p>
+<p><span class="math">\[\mbox{Randy runs but Wendy walks if Teresa tumbles.}\]</span></p>
+<div class="answers">
+<ul>
+<li><span class="math">\(R{\mathord{\wedge}}(T{\mathbin{\rightarrow}}W)\)</span>: Randy runs, but Wendy walks if Teresa tumbles.</li>
+<li><span class="math">\(T{\mathbin{\rightarrow}}(R{\mathord{\wedge}}W)\)</span>: Randy runs but Wendy walks, if Teresa tumbles.</li>
+</ul>
+</div>
+<p><span class="math">\[\mbox{Randy runs if Wendy walks if Teresa tumbles.}\]</span></p>
+<div class="answers">
+<ul>
+<li><span class="math">\(T{\mathbin{\rightarrow}}(W{\mathbin{\rightarrow}}R)\)</span>: Randy runs, if Wendy walks if Teresa tumbles.</li>
+<li><span class="math">\((T{\mathbin{\rightarrow}}W){\mathbin{\rightarrow}}R\)</span>: Randy runs if Wendy walks, if Teresa tumbles.</li>
+</ul>
+</div>
+<p><span class="math">\[\mbox{Randy runs only if Wendy walks or Teresa tumbles.}\]</span></p>
+<div class="answers">
+<ul>
+<li><span class="math">\(R{\mathbin{\rightarrow}}(W{\mathord{\vee}}T)\)</span>: Randy runs, only if Wendy walks or Teresa tumbles.</li>
+<li><span class="math">\((R{\mathbin{\rightarrow}}W){\mathord{\vee}}T\)</span>: Randy runs only if Wendy walks, or Teresa tumbles.</li>
+</ul>
+</div>
+<p><span class="math">\[\mbox{Wendy walks unless Randy runs but Teresa doesn't tumble.}\]</span></p>
+<div class="answers">
+<ul>
+<li><span class="math">\(W{\mathord{\vee}}(R{\mathord{\wedge}}{\mathord{\sim}}T)\)</span>: Wendy walks, unless Randy runs but Teresa doesn’t tumble.</li>
+<li><span class="math">\((W{\mathord{\vee}}R){\mathord{\wedge}}{\mathord{\sim}}T\)</span>: Wendy walks unless Randy runs, but Teresa doesn’t tumble.</li>
+</ul>
+</div>
+<h2 id="third-principle-either-and-both">Third Principle: ‘Either’ and ‘Both’</h2>
+<blockquote>
+<p>“When ‘either’ occurs with ‘or’, the symbolization of the expression enclosed between ‘either’ and ‘or’ is a disjunct. Likewise, When ‘both’ occurs with ‘and’, the symbolization of the expression enclosed between ‘both’ and ‘and’ is a conjunct.”</p>
+</blockquote>
+<p>These complement the corresponding principle for ‘if…then’: when ‘if’ occurs with ‘then’, the symbolization of the expression between the ‘if’ and the ‘then’ is an antecedent.</p>
+<p>Consider the ambiguous sentence:</p>
+<p><span class="math">\[\mbox{It is raining and it is not snowing or it is snowing.}\]</span></p>
+<p>You can use commas to disambiguate it:</p>
+<p><span class="math">\[\mbox{It is raining, and it is not snowing or it is snowing.}\]</span> <span class="math">\[\mbox{It is raining and it is not snowing, or it is snowing.}\]</span></p>
+<p>But you can also use ‘either’ to force the second reading:</p>
+<p>$$</p>
+<p>Our principle tells us that the sentence that occurs between ‘either’ and ‘or’ must be a disjunct:</p>
+<p><span class="math">\[\mbox{Either}\ \fbox{it is raining and it is not snowing}\ \mbox{or it is snowing}\]</span></p>
+<p>So only the second reading,</p>
+<p><span class="math">\[\mbox{It is raining and it is not snowing, or it is snowing.}\]</span></p>
+<p>is possible. How would you symbolize that?</p>
+<div class="answers">
+<p><span class="math">\[(R{\mathord{\wedge}}{\mathord{\sim}}S){\mathord{\vee}}S\]</span></p>
+</div>
+<p>The following sentence is not ambiguous:</p>
+<p><span class="math">\[\mbox{Both penguins are birds or dinosaurs and TRexes are birds}\]</span></p>
+<p>How should it be symbolized?</p>
+<div class="answers">
+<p>The sentence between ‘both’ and ‘and’ must be a conjunct, so</p>
+<p><span class="math">\[\mbox{Both}\ \fbox{penguins are birds or dinosaurs}\ \mbox{and}\ \fbox{TRexes are birds}\]</span> <span class="math">\[\fbox{penguins are birds or dinosaurs}\ {\mathord{\wedge}}\ \fbox{TRexes are birds}\]</span> <span class="math">\[(\fbox{penguins are birds}\ \mbox{or}\ \fbox{penguins are dinosaurs})\ {\mathord{\wedge}}\ \fbox{TRexes are birds}\]</span> <span class="math">\[(P{\mathord{\vee}}R){\mathord{\wedge}}T\]</span></p>
+</div>
+<h2 id="fourth-principle-neither-nor">Fourth Principle: Neither Nor</h2>
+<blockquote>
+<p>“‘neither <input class="copyMe P sym slot" type="text"> nor <input class="copyMe Q sym slot" type="text">’ is equivalent to ‘not (either <input class="copyMe P sym slot" type="text"> or <input class="copyMe Q sym slot" type="text">)’.”</p>
+</blockquote>
+<p>It is also equivalent to <span class="math">\({\mathord{\sim}}\)</span> <input class="copyMe P sym slot" type="text"> <span class="math">\({\mathord{\wedge}}{\mathord{\sim}}\)</span> <input class="copyMe Q sym slot" type="text">. Perhaps the easiest way to see this is to consider some truth tables:</p>
+<div class="tt2sl">
+<table>
+<thead>
+<tr class="header">
+<th align="center"><span class="math">\({\mathord{◻}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{○}}\)</span></th>
+<th align="center">Neither <span class="math">\({\mathord{◻}}\)</span> nor <span class="math">\({\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{◻}}{\mathord{\vee}}{\mathord{○}}\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}({\mathord{◻}}{\mathord{\vee}}{\mathord{○}})\)</span></th>
+<th align="center"><span class="math">\({\mathord{\sim}}{\mathord{◻}}{\mathord{\wedge}}{\mathord{\sim}}{\mathord{○}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">T</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="odd">
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">F</td>
+</tr>
+<tr class="even">
+<td align="center">F</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">F</td>
+<td align="center">T</td>
+<td align="center">T</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The ‘Neither…nor’ column is filled out by considering our intuitions about what it takes for a ‘Neither…nor’ claim to be true. Intuitively, its true only when both the component sentences are false, and so only on the fourth row of the table.</p>
+<p>The next column over shows the truth table for the disjunction. Note that it is the exact opposite of the truth table we want for ‘Neither…nor’.</p>
+<p>The next column, then, shows the truth table for the negation of the disjunction, which matches our intuitive table for ‘Neither…nor’.</p>
+<p>The last column shows that this is equivalent to the truth table for “both not <span class="math">\({\mathord{◻}}\)</span> and not <span class="math">\({\mathord{○}}\)</span>.”</p>
+<p>So, provide two equivalent symbolizations for each of the following sentences.</p>
+<p><span class="math">\[\mbox{Neither dogs nor cats are dinosaurs}\]</span></p>
+<div class="answers">
+<p>Let <span class="math">\(P\)</span> stand for ‘dogs are dinosaurs’ and <span class="math">\(Q\)</span> for ‘cats are dinosaurs’.</p>
+<p>We can symbolize this sentence as the negation of the disjunction:</p>
+<p><span class="math">\[{\mathord{\sim}}(P{\mathord{\vee}}Q)\]</span></p>
+<p>or we can symbolize it as the conjunction of two negations:</p>
+<p><span class="math">\[{\mathord{\sim}}P{\mathord{\wedge}}{\mathord{\sim}}Q\]</span></p>
+</div>
+<p><span class="math">\[\mbox{It is neither raining nor snowing.}\]</span></p>
+<div class="answers">
+<p><span class="math">\[{\mathord{\sim}}(R{\mathord{\vee}}S)\]</span> <span class="math">\[{\mathord{\sim}}R{\mathord{\wedge}}{\mathord{\sim}}S\]</span></p>
+</div>
+<h2 id="fifth-principle-complex-subjects-and-predicates">Fifth Principle: Complex Subjects and Predicates</h2>
+<blockquote>
+<p>“Sometimes ‘and’ or ‘or’ occurs inside a simple sentence, where only the subject is conjoined or disjoined, and there is a single predicate, or only the predicate is conjoined or disjoined, and there is a single subject. If you fill in a copy of the shared part, you will get a synonymous sentence that we already know how to symbolize.”</p>
+</blockquote>
+<p>For example, in</p>
+<p><span class="math">\[\mbox{Penguins and Quail are birds}\]</span></p>
+<p>the ‘and’ does not join two complete sentences. Note that to its left, we have just a noun, not a sentence,</p>
+<p><span class="math">\[\fbox{Penguins}\ \mbox{and Quail are birds}\]</span></p>
+<p>What is ‘and’ doing here? It is joining the two nouns, ‘Penguins’ and ‘Quail’, into a single subject. But this sentence is synonymous with</p>
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{and}\ \fbox{Quail are birds}\]</span></p>
+<p>And we know how to symbolize this, by our first principle, as</p>
+<p><span class="math">\[P{\mathord{\wedge}}Q\]</span></p>
+<p>The same trick works for</p>
+<p><span class="math">\[\mbox{Penguins are birds or dinosaurs}\]</span></p>
+<p>Again, the ‘or’ does not join two complete sentences, because ‘dinosaurs’ is not a sentence:</p>
+<p><span class="math">\[\mbox{Penguins are birds or}\ \fbox{dinosaurs}\]</span></p>
+<p>But it is synonymous with</p>
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{or}\ \fbox{Penguins are dinosaurs}\]</span></p>
+<p>which we can symbolize by the first principle.</p>
+<p>For each of the following, find the synonymous sentence and symbolize:</p>
+<p><span class="math">\[\mbox{Penguins or TRexes are birds}\]</span></p>
+<div class="answers">
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{or}\ \fbox{TRexes are birds}\]</span> <span class="math">\[P{\mathord{\wedge}}T\]</span></p>
+</div>
+<p><span class="math">\[\mbox{Penguins but not TRexes are birds}\]</span></p>
+<div class="answers">
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{but}\ \fbox{TRexes are not birds}\]</span> <span class="math">\[P{\mathord{\wedge}}{\mathord{\sim}}T\]</span></p>
+</div>
+<p><span class="math">\[\mbox{Penguins are birds but not dinosaurs}\]</span></p>
+<div class="answers">
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{but}\ \fbox{Penguins are not dinosaurs}\]</span> <span class="math">\[P{\mathord{\wedge}}{\mathord{\sim}}R\]</span></p>
+</div>
+<p><span class="math">\[\mbox{Either penguins and TRexes are birds or penguins are dinosaurs}\]</span></p>
+<div class="answers">
+<p><span class="math">\[\mbox{Either}\ \fbox{penguins and TRexes are birds}\ \mbox{or}\ \fbox{penguins are dinosaurs}\]</span></p>
+<p>The left disjunct is synonymous with:</p>
+<p><span class="math">\[\fbox{Penguins are birds}\ \mbox{and}\ \fbox{TRexes are birds}\]</span></p>
+<p>So the whole sentence is:</p>
+<p><span class="math">\[(P{\mathord{\wedge}}T){\mathord{\vee}}R\]</span></p>
+</div>
+<h2 id="sixth-principle">Sixth Principle</h2>
+<blockquote>
+<p>“When connectives occur inside otherwise simple sentences, the symbolizations of the sentences form a unit.”</p>
+</blockquote>
+<p>This is similar to the principle governing ‘not’: when it occurs inside a sentence, next to the verb, it negates the smallest sentence it is a part of.</p>
+<p>Consider the ambiguous sentence:</p>
+<p><span class="math">\[\mbox{Bill is an excellent adventurer and Ted is an excellent adventurer unless Ted is lazy.}\]</span></p>
+<p>This sentence is ambiguous. Is it,</p>
+<p><span class="math">\[\fbox{Bill is an excellent adventurer}\mbox{, and}\ \fbox{Ted is an excellent adventurer unless Ted is lazy}\]</span> <span class="math">\[R{\mathord{\wedge}}(T{\mathord{\vee}}Z)\]</span></p>
+<p>or is it,</p>
+<p><span class="math">\[\fbox{Bill is an excellent adventurer and Ted is an excellent adventurer}\mbox{, unless}\ \fbox{Ted is lazy}\]</span> <span class="math">\[(R{\mathord{\wedge}}T){\mathord{\vee}}Z\]</span></p>
+<p>Commas give us one way to disambiguate. But we can also disambiguate by taking advantage of this sixth principle. Consider:</p>
+<p><span class="math">\[\mbox{Bill and Ted are excellent adventurers unless Ted is lazy}\]</span></p>
+<p>Here ‘and’ occurs inside a simple sentence, ‘Bill and Ted are excellent adventurers’. So, by our principle, this forms a unit:</p>
+<p><span class="math">\[\fbox{Bill and Ted are excellent adventurers}\ \mbox{unless Ted is lazy}\]</span></p>
+<p>That unit is synonymous, by our fifth principle, with</p>
+<p><span class="math">\[\fbox{Bill is an excellent adventurer}\ \mbox{and}\ \fbox{Ted is an excellent adventurer}\]</span></p>
+<p>So the sentence is unambiguously,</p>
+<p><span class="math">\[(R{\mathord{\wedge}}T){\mathord{\vee}}Z\]</span></p>
+<p>How should we symbolize the following:</p>
+<p><span class="math">\[\mbox{Roses and Violets are edible unless all flowers are poisonous}\]</span></p>
+<div class="answers">
+<p><span class="math">\[\fbox{Roses and Violets are edible}\ \mbox{or}\ \fbox{all flowers are poisonous}\]</span> <span class="math">\[(R{\mathord{\wedge}}V){\mathord{\vee}}P\]</span></p>
+</div>
+<ol start="25" style="list-style-type: decimal">
+<li>Krampus but not Santa Claus is evil if the stories are true.</li>
+</ol>
+<div class="answers">
+<p>Let <span class="math">\(P\)</span> stand for ‘Krampus is evil’, <span class="math">\(S\)</span> for ‘Santa Claus is evil’, and <span class="math">\(T\)</span> stand for ‘The stories are true’.</p>
+<p><span class="math">\[\fbox{Krampus but not Santa Claus is evil}\ \mbox{if}\ \fbox{the stories are true}\]</span></p>
+<p>‘if’ always introduces an antecedent, so this is equivalent to:</p>
+<p><span class="math">\[\fbox{the stories are true}\ {\mathbin{\rightarrow}}\ \fbox{Krampus but not Santa Claus is evil}\]</span></p>
+<p>which is</p>
+<p><span class="math">\[\fbox{the stories are true}\ {\mathbin{\rightarrow}}\ \fbox{Krampus is evil but Santa Claus is not evil}\]</span></p>
+<p>and so,</p>
+<p><span class="math">\[\fbox{the stories are true}\ {\mathbin{\rightarrow}}(\ \fbox{Krampus is evil}\ {\mathord{\wedge}}\ \fbox{Santa Claus is not evil}\ )\]</span> <span class="math">\[T{\mathbin{\rightarrow}}(P{\mathord{\wedge}}{\mathord{\sim}}S)\]</span></p>
+</div>
+            </div>
+        </div>
+        <footer>
+           <p>
+               <a href="../../site.html" title="License">design and most content: [(CC) BY NC SA]</a>
+           </p>
+        </footer>
+    </body>
+</html>
