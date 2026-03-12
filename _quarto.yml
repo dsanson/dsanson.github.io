@@ -8,7 +8,7 @@ website:
   title: "David Sanson"
   site-url: "https://www.davidsanson.com"
   image: "media/david.jpg"
-  favicon: "favicon.ico"
+  favicon: "media/favicon.png"
   twitter-card: true
   open-graph: true
   page-footer: |
