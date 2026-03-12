@@ -25,6 +25,10 @@ jobs:
       - name: Quarto install tinytex
         run: quarto install tinytex
 
+      - name: Install Quarto extensions
+        run: |
+          quarto install extension pandoc-ext/diagram
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
