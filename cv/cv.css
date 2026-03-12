@@ -1,0 +1,13 @@
+/* css styles */
+main ul {
+  list-style: none;
+  text-indent: -2em;
+}
+
+main h2, h3 {
+  font-variant: small-caps
+}
+
+main .title {
+  text-align: right
+}

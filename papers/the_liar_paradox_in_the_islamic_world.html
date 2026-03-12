@@ -733,8 +733,6 @@ ul.task-list li input[type="checkbox"] {
 <p>———. 2011. <em>Al-Maḥṣūl fī ʿlm uṣūl al-fiqh</em>. Edited by Ṭā-hā al-ʿAlwānī. Vol. 4. Cairo: Dār al-Salām.</p>
 <p>al-Samarqandī, Shams al-Dīn 2020. <em>Qisṭās al-afkār fī al-manṭiq</em>. Edited by A. Falāḥī. Muassasah-i Pizhūhishī-i Ḥikmat va Falsafah-i Īrān.</p>
 <p>———. 2023. <em>Sharḥ al-Qisṭās</em>. Edited by&nbsp;Ḥasan Bīkkā. Tehran: Intishārāt Mawlā.</p>
-<p>&nbsp;</p>
-<p>Intishārāt-i Mawlá.</p>
 <p>al-Taftāzānī, Saʿd al-Dīn 1998. <em>Sharḥ al-Maqāṣid</em>. Edited by Umayra ʿAbd al-Raḥmān. 2nd ed.&nbsp;Vol. 4. Beirut: ʿĀlam al-Kitāb.</p>
 <p>al-Ṭūsī, Naṣīr al-Dīn 1974. “Taʿdīl al-miʿyār fī naqd tanzīl al-afkār.” In <em>Collected Texts and Papers on Logic and Language</em>, edited by Mehdi Mohaghegh and Toshihiko Izutsu, 139–248. Tehran: Institute of Islamic Studies.</p>
 </section>
@@ -895,6 +893,13 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
