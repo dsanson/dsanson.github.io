@@ -107,7 +107,7 @@ and Phenomenological Research* 81 (1): 24--39.
 - Ahmed Alwishah and David Sanson. 2009. "The Early Arabic Liar: The
 Liar Paradox in the Islamic World from the Mid-Ninth to the
 Mid-Thirteenth Centuries CE." *Vivarium* 47 (1): 97--127.
-<https://doi.org/10.1163/156853408X345909>.
+<https://doi.org/10.1163/156853408X345909a>.
 
     We describe the earliest occurrences of the Liar Paradox in the Arabic
     tradition. The early Mutakallimūn claim the Liar Sentence is both true and
