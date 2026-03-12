@@ -1,0 +1,39 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "David Sanson"
+  navbar:
+    aria-label: navigation
+    left:
+      - href: index.md
+        text: Home
+      - href: research.md
+        text: Research 
+      - href: stuff.md
+        text: Other Stuff
+      - href: cv.md
+        text: CV
+    tools:
+      - icon: github
+        text: Github
+        href: https://github.com/dsanson/davidsanson.com
+
+format:
+  html:
+    highlight-style: a11y
+    theme:
+      light: 
+        - cosmo
+        - custom.scss
+      dark: 
+        - darkly
+        - custom.scss
+    respect-user-color-scheme: true
+    css: styles.css
+    toc: true
+    axe:
+      output: document
