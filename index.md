@@ -4,7 +4,7 @@ image: media/david.jpg
 image-alt: "Me and my dog"
 about:
   id: about-me
-  template: solana
+  template: trestles
   links:
     - text: '{{< iconify academicons:philpapers >}} PhilPeople'
       href: https://philpeople.org/profiles/david-sanson
@@ -14,6 +14,12 @@ about:
     - icon: envelope
       text: Email
       href: desanso@ilstu.edu
+    - icon: mastodon
+      text: Mastodon
+      href: https://zirk.us/@dsanson
+    - icon: bluesky
+      text: BlueSky
+      href: https://bsky.app/profile/davsans.bsky.social
 
 ---
 
