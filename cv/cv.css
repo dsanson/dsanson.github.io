@@ -5,9 +5,18 @@ main ul {
 }
 
 main h2, h3 {
-  font-variant: small-caps
+  font-variant: small-caps;
 }
 
-main .title {
-  text-align: right
+#custom-title-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
+
+#custom-title-block-header .author {
+  font-size: 3em;
+  text-align: left;
+  font-variant: small-caps;
+}
+
