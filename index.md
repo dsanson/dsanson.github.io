@@ -23,12 +23,14 @@ I am an associate professor in the [Philosophy Department] at [Illinois State Un
 
 I have research interests in metaphysics, philosophy of language, the history
 of logic, medieval philosophy, and the philosophy of art. I have published
-work on the history of the liar paradox, time and change, essence and
+work on the history of the Liar Paradox, time and change, essence and
 modality, and the ontological status of fictional characters.
 
-
-
-[Ahmed Alwishah] and I recently published a book on the history of the Liar Paradox, *The Final Word: al-Dawānī and the Liar Paradox in the Islamic World*. You can read the first 20 pages or so for free on [Google Books]. You can buy it from [Oxford University Press], [Bookshop.org], [Barnes & Noble], or [Amazon]. Or get your library to purchase it!
+[Ahmed Alwishah] and I have published a book on the history of the Liar 
+Paradox, *The Final Word: al-Dawānī and the Liar Paradox in the Islamic World*.
+You can read the first 20 pages or so for free on [Google Books].
+You can find it in a library using [WorldCat].
+You can buy it from [Oxford University Press], [Bookshop.org], [Barnes & Noble], or [Amazon].
 
 ![](media/final-word-cover.jpg){.lightbox fig-alt="Cover of our book, The Final Word" fig-align="center" width=15em}
 
@@ -62,6 +64,7 @@ We also have [an entry on the topic][SEP] forthcoming in the *[Stanford Encyclop
   [Amazon]: https://www.amazon.com/Final-Word-al-Dawani-Paradox-Islamic/dp/0197609945
   [Bookshop.org]: https://bookshop.org/p/books/the-final-word-al-dawani-and-the-liar-paradox-in-the-islamic-world-associate-professor-of-philosophy-david-sanson/40159cb5696aae38
   [Barnes & Noble]: https://www.barnesandnoble.com/w/the-final-word-ahmed-alwishah/1148562805
+  [WorldCat]: https://search.worldcat.org/title/The-final-word-:-al-Dawani-and-the-Liar-Paradox-in-the-Islamic-world/oclc/1551490690
   [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu
   [SEP]: papers/the_liar_paradox_in_the_islamic_world.html
 

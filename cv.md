@@ -1,5 +1,7 @@
 ---
 title: Curriculum Vitae
+aliases:
+  - cv/index.html
 format:
   html: 
     css: cv/cv.css
@@ -13,7 +15,6 @@ format:
       email: 'desanso@ilstu.edu'
     template-partials:
       - cv/typst-template.typ
-    font-size: 10pt
     papersize: us-letter
     margin:
       x: 1in

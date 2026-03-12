@@ -1,5 +1,7 @@
 ---
 title: Research
+aliases:
+  - research/index.html
 ---
 
 Some of my published research is in the history of philosophy---specifically,
