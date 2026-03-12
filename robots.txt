@@ -1,1 +1,1 @@
-Sitemap: https://dsanson.github.io/sitemap.xml
+Sitemap: https://www.davidsanson.com/sitemap.xml
