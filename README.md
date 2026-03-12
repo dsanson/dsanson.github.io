@@ -1,12 +1,10 @@
 # Webpage redesign notes
 
--   Use a standard framework that you can trust to keep up on accessibility. At the moment, Quarto is the frontrunner.
+- [x] Use a standard framework that you can trust to keep up on standards and accessibility. At
+  the moment, this is Quarto.
 
--   Design for deployment using ghpages and GitHub actions:
-    -   on push to GitHub, an action should build the website and push it to the gh-pages branch
-
--   Design for redundant deployment using a self-hosted git repo and hooks:
-    -   on push to repo, a hook should build the website and push it to hosted directory
+- [x]  Design for deployment using ghpages and GitHub actions. Quarto does this.
+   -   need to figure out how to transfer DNS over and drop NFSN
 
 -   Design with possible future plans for a non-static self-hosted deployment?
 
@@ -19,7 +17,7 @@
 -   Logic textbook should be separate, but share the same basic design
     -   with future plans to self-host both together on the same server?
 
--   automatic generation of pdf version of CV
+- [x] automatic generation of pdf version of CV
 
 -   Host html/audio/audio+slideshow versions of research papers?
 
