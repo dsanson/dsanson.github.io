@@ -1,8 +1,22 @@
 /*-- scss:rules --*/
+
+/* accessibility tweaks */
+/* don't just use color to indicate to links */
 main a {
   text-decoration: underline !important;
 }
+/* don't dim blockquotes */
 .blockquote {
   color: inherit;
 }
 
+/* print tweaks */
+/* don't print header and footer */
+@media print {
+  #quarto-header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}

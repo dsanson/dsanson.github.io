@@ -49,7 +49,6 @@ We also have [an entry on the topic][SEP] forthcoming in the *[Stanford Encyclop
 
 
 
-## Contact
 
 | 341 Stevenson Hall
 | Department of Philosophy (4540)
