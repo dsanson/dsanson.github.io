@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Quarto extensions
         run: |
-          quarto install extension pandoc-ext/diagram
+          quarto install extension --no-prompt pandoc-ext/diagram
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
