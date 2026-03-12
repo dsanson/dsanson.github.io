@@ -2,6 +2,13 @@
 title: Research
 ---
 
+Some of my published research is in the history of philosophy---specifically,
+the history of the Liar Paradox in the Islamic World. The rest of it is in 
+contemporary philosophy, with a focus on puzzles about nonexistence, both in the
+context of time and in the context of fiction.
+
+## History of Philosophy
+
 -   Ahmed Alwishah and David Sanson. Forthcoming. "The Liar Paradox in the Islamic
 World." In *Stanford Encyclopedia of Philosophy*, edited by Edward N.
 Zalta and Uri Nodelman. [DRAFT][SEP]
@@ -40,6 +47,25 @@ Zalta and Uri Nodelman. [DRAFT][SEP]
     the paradox in the tradition, and (c) suggests a connection between the
     paradox and what it tells us about the nature of truth and falsehood, and
     related puzzles concerning reason and the nature of goodness and badness.
+
+- Ahmed Alwishah and David Sanson. 2009. "The Early Arabic Liar: The
+Liar Paradox in the Islamic World from the Mid-Ninth to the
+Mid-Thirteenth Centuries CE." *Vivarium* 47 (1): 97--127.
+<https://doi.org/10.1163/156853408X345909a>.
+
+    We describe the earliest occurrences of the Liar Paradox in the Arabic
+    tradition. The early Mutakallimūn claim the Liar Sentence is both true and
+    false; they also associate the Liar with problems concerning plural subjects,
+    which is somewhat puzzling. Al-Abharī (1200-1265) ascribes an unsatisfiable
+    truth condition to the Liar Sentence---as he puts it, its being true is the
+    conjunction of its being true and false---and so concludes that the sentence
+    is not true. Al-Tūsī (1201-1274) argues that self-referential sentences, like
+    the Liar, are not truth-apt, and defends this claim by appealing to a
+    correspondence theory of truth. Translations of the texts are provided as an
+    appendix.
+
+
+## Contemporary Philosophy
 
 -   David Sanson and Ben Caplan, and Cathleen Muller. 2017. "Counting Again."
 *Grazer Philosophische Studien* 94 (1--2): 69--82.
@@ -104,21 +130,6 @@ and Phenomenological Research* 81 (1): 24--39.
     "tensed" properties). In this paper, we argue that solutions of this sort are
     wrong.
 
-- Ahmed Alwishah and David Sanson. 2009. "The Early Arabic Liar: The
-Liar Paradox in the Islamic World from the Mid-Ninth to the
-Mid-Thirteenth Centuries CE." *Vivarium* 47 (1): 97--127.
-<https://doi.org/10.1163/156853408X345909a>.
-
-    We describe the earliest occurrences of the Liar Paradox in the Arabic
-    tradition. The early Mutakallimūn claim the Liar Sentence is both true and
-    false; they also associate the Liar with problems concerning plural subjects,
-    which is somewhat puzzling. Al-Abharī (1200-1265) ascribes an unsatisfiable
-    truth condition to the Liar Sentence---as he puts it, its being true is the
-    conjunction of its being true and false---and so concludes that the sentence
-    is not true. Al-Tūsī (1201-1274) argues that self-referential sentences, like
-    the Liar, are not truth-apt, and defends this claim by appealing to a
-    correspondence theory of truth. Translations of the texts are provided as an
-    appendix.
 
   [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu
   [SEP]: papers/the_liar_paradox_in_the_islamic_world.html

@@ -11,8 +11,10 @@ website:
   favicon: "favicon.ico"
   twitter-card: true
   open-graph: true
-  body-footer: |
+  page-footer: |
     © 2026 David Sanson. Created using [Quarto](https://quarto.org/).
+  repo-url: https://github.com/dsanson/dsanson.github.io
+  repo-actions: [source, issue]
   navbar:
     aria-label: navigation
     left:
@@ -24,10 +26,6 @@ website:
         text: Other Stuff
       - href: cv.md
         text: CV
-    tools:
-      - icon: github
-        text: Github
-        href: "https://github.com/dsanson/dsanson.github.io"
 
 format:
   html:
