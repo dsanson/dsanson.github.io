@@ -13,7 +13,7 @@ about:
       href: https://github.com/dsanson
     - icon: envelope
       text: Email
-      href: desanso@ilstu.edu
+      href: dsanson@gmail.com
     - icon: mastodon
       text: Mastodon
       href: https://zirk.us/@dsanson
