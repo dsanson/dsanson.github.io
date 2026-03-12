@@ -1532,10 +1532,6 @@ by A. Falāḥī. Muassasah-i Pizhūhishī-i Ḥikmat va Falsafah-i Īrān.
 ---------. 2023. *Sharḥ al-Qisṭās*. Edited by Ḥasan Bīkkā. Tehran:
 Intishārāt Mawlā.
 
- 
-
-Intishārāt-i Mawlá.
-
 al-Taftāzānī, Saʿd al-Dīn 1998. *Sharḥ al-Maqāṣid*. Edited by Umayra
 ʿAbd al-Raḥmān. 2nd ed. Vol. 4. Beirut: ʿĀlam al-Kitāb.
 

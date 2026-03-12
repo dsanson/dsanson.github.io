@@ -2,24 +2,34 @@
 title: Curriculum Vitae
 format:
   html: 
-    css: cv.css
-  pdf:
-    author: David Sanson
-    pdf-engine: lualatex
+    css: cv/cv.css
+  typst:
+    author: 
+    - name: David Sanson
+      affiliation: |
+        Department of Philosophy\
+        Illinois State University\
+        Normal, IL 61790
+      email: 'desanso@ilstu.edu'
+    template-partials:
+      - cv/typst-template.typ
     font-size: 10pt
-    papersize: letter
-    geometry: margin=1in
-    italicquotes: true
-    pdfstandard: 
-      - ua-2
-      - a-4f
+    papersize: us-letter
+    margin:
+      x: 1in
+      y: 1in
+format-links:
+  - html
+  - format: typst
+    text: PDF
+    icon: file-pdf
 filters:
   - pandoc-labeled-lists.lua
   - pandoc-pagebreak.lua
 citeproc: true
 link-citations: false
 csl: chicago-notes-inline.csl
-bibliography: my_pubs.json
+bibliography: cv/mypubs.json
 ---
 
 ## Employment
