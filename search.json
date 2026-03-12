@@ -219,16 +219,30 @@
   {
     "objectID": "410.html",
     "href": "410.html",
-    "title": "Page Not Found!",
+    "title": "Page Gone!",
     "section": "",
     "text": "This page was, but is no more. The same thing is for browsing and for being."
   },
   {
     "objectID": "410.html#error",
     "href": "410.html#error",
-    "title": "Page Not Found!",
+    "title": "Page Gone!",
     "section": "",
     "text": "This page was, but is no more. The same thing is for browsing and for being."
+  },
+  {
+    "objectID": "403.html",
+    "href": "403.html",
+    "title": "Access Forbidden!",
+    "section": "",
+    "text": "This is, but is not for you. Not all that is is for browsing."
+  },
+  {
+    "objectID": "403.html#error",
+    "href": "403.html#error",
+    "title": "Access Forbidden!",
+    "section": "",
+    "text": "This is, but is not for you. Not all that is is for browsing."
   },
   {
     "objectID": "index.html",
