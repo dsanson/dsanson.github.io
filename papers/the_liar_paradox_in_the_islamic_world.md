@@ -12,24 +12,10 @@ format:
   html: default
   typst:
     papersize: us-letter
-  # pdf:
-  #   author:
-  #     - name: Ahmed Alwishah
-  #       affiliation: 
-  #         - name: Pitzer College
-  #     - name: David Sanson
-  #       affiliation: 
-  #         - name: Illinois State University
-  #   pdf-engine: lualatex
-  #   font-size: 10pt
-  #   papersize: letter
-  #   geometry: margin=1in
-  #   italicquotes: true
-  #   pdfstandard: 
-  #     - ua-2
-  #     - a-4f
+  epub: default
 format-links:
   - html
+  - epub
   - format: typst
     text: PDF
     icon: file-pdf
