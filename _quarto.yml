@@ -6,6 +6,13 @@ execute:
 
 website:
   title: "David Sanson"
+  site-url: "https://www.davidsanson.com"
+  image: "media/david.jpg"
+  favicon: "favicon.ico"
+  twitter-card: true
+  open-graph: true
+  body-footer: |
+    © 2026 David Sanson. Created using [Quarto](https://quarto.org/).
   navbar:
     aria-label: navigation
     left:
@@ -20,7 +27,7 @@ website:
     tools:
       - icon: github
         text: Github
-        href: https://github.com/dsanson/dsanson.github.io
+        href: "https://github.com/dsanson/dsanson.github.io"
 
 format:
   html:
