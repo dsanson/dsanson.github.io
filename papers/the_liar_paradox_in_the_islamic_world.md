@@ -20,13 +20,8 @@ format:
           - name: Illinois State University
     pdf-engine: lualatex
     font-size: 10pt
-    mainfont: Minion Pro
-    sansfont: Myriad Pro
-    mainfontfallback: 
-      - "Linux Libertine:"
-      - "Gentium:"
-    sansfontfallback:
-      - "Arial:"
+    mainfont: Linux Libertine
+    sansfont: Linux Biolinum
     papersize: letter
     geometry: margin=1in
     italicquotes: true
