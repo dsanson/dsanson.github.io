@@ -1,6 +1,11 @@
 project:
   type: website
-  resources: '.htaccess'
+  resources: 
+    - '.htaccess'
+    - 'bonjourr/*'
+    - 'bonjourr/*/*'
+    - 'bonjourr/*/*/*'
+    - 'bonjourr/*/*/*/*'
 
 execute:
   freeze: auto
