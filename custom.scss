@@ -1,5 +1,22 @@
 /*-- scss:rules --*/
 
+/* definition list formatting */
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  column-gap: 1em;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+
 /* accessibility tweaks */
 /* don't just use color to indicate to links */
 main a {
