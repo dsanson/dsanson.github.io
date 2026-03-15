@@ -10,10 +10,10 @@ format:
   epub: default
   html:
     number-sections: true
-  revealjs:
-    output-file: "-s.html"
-  typst:
-    papersize: us-letter
+  # revealjs:
+  #   output-file: "-s.html"
+  # typst:
+  #   papersize: us-letter
 format-links:
 - html
 nocite: "@sorensen2003; @cook2013a"
