@@ -14,12 +14,12 @@ about:
     - icon: envelope
       text: Email
       href: dsanson@gmail.com
-    - icon: mastodon
-      text: Mastodon
-      href: https://zirk.us/@dsanson
-    - icon: bluesky
-      text: BlueSky
-      href: https://bsky.app/profile/davsans.bsky.social
+    # - icon: mastodon
+    #   text: Mastodon
+    #   href: https://zirk.us/@dsanson
+    # - icon: bluesky
+    #   text: BlueSky
+    #   href: https://bsky.app/profile/davsans.bsky.social
 
 ---
 
