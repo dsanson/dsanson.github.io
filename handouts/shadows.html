@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,6 +11,9 @@
 
 <title>Notes on Shadows – David Sanson</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -61,7 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -90,19 +92,18 @@ div.csl-indent {
 <link href="../media/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b754b9fd3853d7e56faef54c29c5d52b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-de8274a4d1ecc1e6aaeaf6e5564b5074.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-b754b9fd3853d7e56faef54c29c5d52b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-975e726794ce811e14261b5ab5acfd7c.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-3ff4805f19b0085abba01199065d0a21.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-975e726794ce811e14261b5ab5acfd7c.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f186bedcd26263052f8cb866488aeaae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8c2bd839c9b3f1d83ce53f43563a45df.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f186bedcd26263052f8cb866488aeaae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-461aca5dab7cf07b42724c56dd36a3b0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-3fa7185451b956b1374b15f7494a4b11.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-461aca5dab7cf07b42724c56dd36a3b0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -469,7 +470,7 @@ div.csl-indent {
 </section>
 <section id="the-eclipse-riddle" class="level1">
 <h1>The Eclipse Riddle</h1>
-<p>It is not immediately obvious what this puzzle has to do with shadows. Instead, it seems to be about what you see when you see a backlit object. It is due to <span class="citation" data-cites="sorensen2008a">R. A. Sorensen (<a href="#ref-sorensen2008a" role="doc-biblioref">2008</a>)</span>.</p>
+<p>It is not immediately obvious what this puzzle has to do with shadows. Instead, it seems to be about what you see when you see a backlit object. It is due to <span class="citation" data-cites="sorensen2008a">Sorensen (<a href="#ref-sorensen2008a" role="doc-biblioref">2008</a>)</span>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode tikz code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tikzpicture</span>}[scale=1]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\draw</span> (-5,0) circle (1);</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\node</span> (sun) at (-5,0) {Sun};</span>
@@ -499,7 +500,7 @@ When you see something, what you see is the thing that causally affects the ligh
 <li>The only thing that causally affects the light that reaches my eye is the far surface of Far.</li>
 <li>So, I see the far surface of Far.</li>
 </ol>
-<p>This generalizes to all backlit objects: when you see a front-lit object, you see the surface near to you; but when you see a backlit object, you see the surface far from you. This is the view defended by <span class="citation" data-cites="sorensen2008a">R. A. Sorensen (<a href="#ref-sorensen2008a" role="doc-biblioref">2008</a>)</span>: he calls the far surface of a backlit object its “silhouette.”</p>
+<p>This generalizes to all backlit objects: when you see a front-lit object, you see the surface near to you; but when you see a backlit object, you see the surface far from you. This is the view defended by <span class="citation" data-cites="sorensen2008a">Sorensen (<a href="#ref-sorensen2008a" role="doc-biblioref">2008</a>)</span>: he calls the far surface of a backlit object its “silhouette.”</p>
 <p><span class="citation" data-cites="westphal2011a">Westphal (<a href="#ref-westphal2011a" role="doc-biblioref">2011</a>)</span> suggests instead that</p>
 <ol start="21" type="1">
 <li>What I see is <em>the shadow</em> cast by Far.</li>
@@ -535,7 +536,7 @@ When you see something, what you see is the thing that causally affects the ligh
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Further Reading</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Further Reading</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-aranyosi2010a" class="csl-entry" role="listitem">
 Aranyosi, István. 2010. <span>“The Nature of Shadows, From Yale to Bilkent.”</span> <em>Philosophy</em> 85 (332): 219–23.
 </div>
@@ -546,7 +547,7 @@ Fridugisus of Tours. 1995. <span>“On the Being of Nothingness and Shadows.”<
 Sorensen, Roy. 2006. <span>“Spinning Shadows.”</span> <em>Philosophy and Phenomenological Research</em> 72 (2): 345–65. <a href="http://www.jstor.org/stable/40040928">http://www.jstor.org/stable/40040928</a>.
 </div>
 <div id="ref-sorensen2008a" class="csl-entry" role="listitem">
-Sorensen, Roy A. 2008. <em>Seeing dark things: the philosophy of shadows</em>. New York: Oxford University Press.
+Sorensen, Roy A. 2008. <em>Seeing dark things: the philosophy of shadows</em>. Oxford University Press.
 </div>
 <div id="ref-westphal2011a" class="csl-entry" role="listitem">
 Westphal, Jonathan. 2011. <span>“Silhouettes Are Shadows.”</span> <em>Acta Analytica</em> 26 (2): 187–97. <a href="https://doi.org/10.1007/s12136-010-0102-0">https://doi.org/10.1007/s12136-010-0102-0</a>.
