@@ -1,0 +1,194 @@
+[
+  {
+    "id": "buridan2001a",
+    "author": [
+      {
+        "family": "Buridan",
+        "given": "Jean"
+      }
+    ],
+    "citation-key": "buridan2001a",
+    "ISBN": "0-300-08425-0",
+    "issued": {
+      "date-parts": [
+        [
+          "2001",
+          11
+        ]
+      ]
+    },
+    "language": "en-US",
+    "publisher": "Yale University Press",
+    "publisher-place": "New Haven",
+    "title": "Summulae de dialectica",
+    "translator": [
+      {
+        "family": "Klima",
+        "given": "Gyula"
+      }
+    ],
+    "type": "book"
+  },
+  {
+    "id": "cook2013a",
+    "author": [
+      {
+        "family": "Cook",
+        "given": "Roy T."
+      }
+    ],
+    "citation-key": "cook2013a",
+    "edition": "1",
+    "ISBN": "978-0-7456-6551-1",
+    "issued": {
+      "date-parts": [
+        [
+          "2013"
+        ]
+      ]
+    },
+    "publisher": "Polity Press",
+    "publisher-place": "Cambridge",
+    "title": "Paradoxes",
+    "type": "book"
+  },
+  {
+    "id": "frege1948a",
+    "author": [
+      {
+        "family": "Frege",
+        "given": "Gottlob"
+      }
+    ],
+    "citation-key": "frege1948a",
+    "container-title": "The Philosophical Review",
+    "DOI": "10.2307/2181485",
+    "ISSN": "0031-8108",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          "1948",
+          5
+        ]
+      ]
+    },
+    "page": "209–230",
+    "title": "Sense and Reference",
+    "translator": [
+      {
+        "family": "Geach",
+        "given": "Peter"
+      }
+    ],
+    "type": "article-journal",
+    "URL": "http://www.jstor.org/stable/2181485",
+    "volume": "57"
+  },
+  {
+    "id": "plutarch2016",
+    "author": [
+      {
+        "literal": "Plutarch"
+      }
+    ],
+    "citation-key": "plutarch2016",
+    "ISBN": "978-0-19-164120-6",
+    "issued": {
+      "date-parts": [
+        [
+          "2016"
+        ]
+      ]
+    },
+    "language": "en-US",
+    "number-of-pages": "1",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "source": "K10plus ISBN",
+    "title": "Hellenistic Lives: Including Alexander the Great",
+    "title-short": "Hellenistic Lives",
+    "translator": [
+      {
+        "family": "Waterfield",
+        "given": "Robin"
+      }
+    ],
+    "type": "book"
+  },
+  {
+    "id": "priest2005a",
+    "author": [
+      {
+        "family": "Priest",
+        "given": "Graham"
+      }
+    ],
+    "citation-key": "priest2005",
+    "ISBN": "0-19-926254-3",
+    "issued": {
+      "date-parts": [
+        [
+          "2005",
+          8
+        ]
+      ]
+    },
+    "language": "en-US",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "title": "Towards non-being: the logic and metaphysics of intentionality",
+    "type": "book",
+    "URL": "http://books.google.com/books?id=lq802KBV-B4C"
+  },
+  {
+    "id": "russell1905a",
+    "author": [
+      {
+        "family": "Russell",
+        "given": "Bertrand"
+      }
+    ],
+    "citation-key": "russell1905",
+    "container-title": "Mind",
+    "issued": {
+      "date-parts": [
+        [
+          "1905",
+          10
+        ]
+      ]
+    },
+    "page": "479–493",
+    "title": "On Denoting",
+    "type": "article-journal",
+    "URL": "http://www.jstor.org/stable/2248381",
+    "volume": "14"
+  },
+  {
+    "id": "sorensen2003",
+    "author": [
+      {
+        "family": "Sorensen",
+        "given": "Roy A."
+      }
+    ],
+    "citation-key": "sorensen2003",
+    "ISBN": "978-0-19-515903-5",
+    "issued": {
+      "date-parts": [
+        [
+          "2003"
+        ]
+      ]
+    },
+    "language": "en",
+    "number-of-pages": "394",
+    "publisher": "Oxford University Press",
+    "publisher-place": "New York, NY",
+    "source": "K10plus ISBN",
+    "title": "A brief history of the paradox: philosophy and the labyrinths of the mind",
+    "title-short": "A brief history of the paradox",
+    "type": "book"
+  }
+]

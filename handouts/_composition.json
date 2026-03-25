@@ -1,0 +1,126 @@
+[
+  {
+    "id": "dorr2002a",
+    "author": [
+      {
+        "family": "Dorr",
+        "given": "Cian"
+      },
+      {
+        "family": "Rosen",
+        "given": "Gideon"
+      }
+    ],
+    "citation-key": "dorr2002a",
+    "container-title": "Blackwell Guide to Metaphysics",
+    "editor": [
+      {
+        "family": "Gale",
+        "given": "Richard M."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2002"
+        ]
+      ]
+    },
+    "note": "Forthcoming in the <i>Blackwell Companion to Metaphysics</i>, ed. Richard Gale.",
+    "publisher": "Blackwell",
+    "publisher-place": "Oxford",
+    "title": "Composition as a Fiction",
+    "type": "chapter"
+  },
+  {
+    "id": "koslicki2008a",
+    "author": [
+      {
+        "family": "Koslicki",
+        "given": "Kathrin"
+      }
+    ],
+    "citation-key": "koslicki2008a",
+    "ISBN": "0-19-959251-9",
+    "issued": {
+      "date-parts": [
+        [
+          "2008"
+        ]
+      ]
+    },
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "title": "The Structure of Objects",
+    "type": "book"
+  },
+  {
+    "id": "simons2000",
+    "author": [
+      {
+        "family": "Simons",
+        "given": "Peter M."
+      }
+    ],
+    "call-number": "BD396 .S4 2000",
+    "citation-key": "simons2000",
+    "ISBN": "978-0-19-924146-0",
+    "issued": {
+      "date-parts": [
+        [
+          "2000"
+        ]
+      ]
+    },
+    "publisher": "Oxford University Press",
+    "publisher-place": "New York",
+    "source": "Library of Congress ISBN",
+    "title": "Parts: a study in ontology",
+    "title-short": "Parts",
+    "type": "book"
+  },
+  {
+    "id": "thomson1983a",
+    "author": [
+      {
+        "family": "Thomson",
+        "given": "Judith Jarvis"
+      }
+    ],
+    "citation-key": "thomson1983a",
+    "container-title": "Journal of Philosophy",
+    "issued": {
+      "date-parts": [
+        [
+          "1983"
+        ]
+      ]
+    },
+    "page": "201–220",
+    "title": "Parthood and Identity across Time",
+    "type": "article-journal",
+    "volume": "80"
+  },
+  {
+    "id": "van-inwagen1990a",
+    "author": [
+      {
+        "family": "Inwagen",
+        "given": "Peter",
+        "non-dropping-particle": "van"
+      }
+    ],
+    "citation-key": "van-inwagen1990a",
+    "issued": {
+      "date-parts": [
+        [
+          "1990"
+        ]
+      ]
+    },
+    "publisher": "Cornell University Press",
+    "publisher-place": "Ithaca, NY",
+    "title": "Material Beings",
+    "type": "book"
+  }
+]

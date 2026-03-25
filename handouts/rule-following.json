@@ -1,0 +1,225 @@
+[
+  {
+    "id": "augustine1995a",
+    "author": [
+      {
+        "literal": "Augustine"
+      }
+    ],
+    "citation-key": "augustine1995a",
+    "container-title": "Against the Academicians and The Teacher",
+    "editor": [
+      {
+        "family": "King",
+        "given": "Peter"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "1995"
+        ]
+      ]
+    },
+    "page": "94–146",
+    "publisher": "Hackett",
+    "publisher-place": "Indianapolis",
+    "title": "The Teacher",
+    "type": "chapter",
+    "URL": "http://books.google.com/books?id=egrsPJ2G4₀C"
+  },
+  {
+    "id": "boghossian1989a",
+    "author": [
+      {
+        "family": "Boghossian",
+        "given": "Paul A."
+      }
+    ],
+    "citation-key": "boghossian1989a",
+    "container-title": "Mind",
+    "issue": "392",
+    "issued": {
+      "date-parts": [
+        [
+          "1989"
+        ]
+      ]
+    },
+    "page": "507–49",
+    "title": "The rule-following considerations",
+    "type": "article-journal",
+    "volume": "98"
+  },
+  {
+    "id": "goodman1983a",
+    "author": [
+      {
+        "family": "Goodman",
+        "given": "Nelson"
+      }
+    ],
+    "citation-key": "goodman1983",
+    "edition": "4th",
+    "ISBN": "978-0-674-29071-6",
+    "issued": {
+      "date-parts": [
+        [
+          "1983",
+          4
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "Harvard University Press",
+    "publisher-place": "Cambridge, MA",
+    "title": "Fact, Fiction, and Forecast, Fourth Edition",
+    "type": "book"
+  },
+  {
+    "id": "hirsch1993a",
+    "author": [
+      {
+        "family": "Hirsch",
+        "given": "Eli"
+      }
+    ],
+    "citation-key": "hirsch1993a",
+    "issued": {
+      "date-parts": [
+        [
+          "1993"
+        ]
+      ]
+    },
+    "publisher": "Oxford University Press",
+    "title": "Dividing Reality",
+    "type": "book"
+  },
+  {
+    "id": "kripke1982a",
+    "author": [
+      {
+        "family": "Kripke",
+        "given": "Saul"
+      }
+    ],
+    "citation-key": "kripke1982a",
+    "issued": {
+      "date-parts": [
+        [
+          "1982"
+        ]
+      ]
+    },
+    "publisher": "Harvard University Press",
+    "publisher-place": "Cambridge, MA",
+    "title": "Wittgenstein on Rules and Private Language",
+    "type": "book"
+  },
+  {
+    "id": "quine1950a",
+    "author": [
+      {
+        "family": "Quine",
+        "given": "W. V."
+      }
+    ],
+    "citation-key": "quine1950a",
+    "container-title": "The Journal of Philosophy",
+    "ISSN": "0022362X",
+    "issue": "22",
+    "issued": {
+      "date-parts": [
+        [
+          "1950",
+          10
+        ]
+      ]
+    },
+    "page": "621–633",
+    "title": "Identity, ostension, and hypostasis",
+    "type": "article-journal",
+    "URL": "http://www.jstor.org/stable/2021795",
+    "volume": "47"
+  },
+  {
+    "id": "quine1960b",
+    "author": [
+      {
+        "family": "Quine",
+        "given": "Willard Van Orman"
+      }
+    ],
+    "citation-key": "quine1960b",
+    "ISBN": "978-0-262-51831-4",
+    "issued": {
+      "date-parts": [
+        [
+          "1960"
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "The MIT Press",
+    "publisher-place": "Cambridge, MA",
+    "title": "Word and Object",
+    "type": "book"
+  },
+  {
+    "id": "wittgenstein1960a",
+    "author": [
+      {
+        "family": "Wittgenstein",
+        "given": "Ludwig"
+      }
+    ],
+    "citation-key": "wittgenstein1960",
+    "edition": "2nd",
+    "ISBN": "978-0-06-131211-3",
+    "issued": {
+      "date-parts": [
+        [
+          "1960",
+          1
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "Harper Torchbooks",
+    "publisher-place": "New York",
+    "title": "The Blue and Brown Books",
+    "type": "book"
+  },
+  {
+    "id": "wittgenstein1973a",
+    "author": [
+      {
+        "family": "Wittgenstein",
+        "given": "Ludwig"
+      }
+    ],
+    "citation-key": "wittgenstein1973",
+    "edition": "3rd edition",
+    "ISBN": "978-0-02-428810-3",
+    "issued": {
+      "date-parts": [
+        [
+          "1973",
+          3
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "Pearson",
+    "publisher-place": "New York",
+    "title": "Philosophical Investigations",
+    "translator": [
+      {
+        "family": "Anscombe",
+        "given": "G. E. M."
+      }
+    ],
+    "type": "book"
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "casati1994a",
+    "author": [
+      {
+        "family": "Casati",
+        "given": "Roberto"
+      },
+      {
+        "family": "Varzi",
+        "given": "Achille C"
+      }
+    ],
+    "citation-key": "casati1994a",
+    "ISBN": "0-585-05399-5 978-0-585-05399-8",
+    "issued": {
+      "date-parts": [
+        [
+          "1994"
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "MIT Press",
+    "publisher-place": "Cambridge, Mass.",
+    "title": "Holes and Other Superficialities",
+    "type": "book"
+  },
+  {
+    "id": "casati2009a",
+    "author": [
+      {
+        "family": "Casati",
+        "given": "Roberto"
+      },
+      {
+        "family": "Varzi",
+        "given": "Achille"
+      }
+    ],
+    "citation-key": "casati2009a",
+    "container-title": "The Stanford Encyclopedia of Philosophy",
+    "edition": "Spring 2009",
+    "editor": [
+      {
+        "family": "Zalta",
+        "given": "Edward N."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "2009"
+        ]
+      ]
+    },
+    "title": "Holes",
+    "type": "entry-encyclopedia",
+    "URL": "http://plato.stanford.edu/archives/spr2009/entries/holes/"
+  },
+  {
+    "id": "sorensen2008a",
+    "author": [
+      {
+        "family": "Sorensen",
+        "given": "Roy A"
+      }
+    ],
+    "citation-key": "sorensen2008a",
+    "ISBN": "978-0-19-532657-4 0-19-532657-1",
+    "issued": {
+      "date-parts": [
+        [
+          "2008"
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "Oxford University Press",
+    "publisher-place": "New York",
+    "title": "Seeing dark things: the philosophy of shadows",
+    "title-short": "Seeing dark things",
+    "type": "book"
+  },
+  {
+    "id": "wake2007a",
+    "author": [
+      {
+        "family": "Wake",
+        "given": "Andrew"
+      },
+      {
+        "family": "Spencer",
+        "given": "Joshua"
+      },
+      {
+        "family": "Fowler",
+        "given": "Gregory"
+      }
+    ],
+    "citation-key": "wake2007a",
+    "container-title": "The Monist",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          "2007"
+        ]
+      ]
+    },
+    "page": "372–378",
+    "title": "Holes as regions of spacetime",
+    "type": "article-journal",
+    "volume": "90"
+  }
+]

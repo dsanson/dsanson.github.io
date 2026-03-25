@@ -1,0 +1,233 @@
+[
+  {
+    "id": "alwishah2009a",
+    "author": [
+      {
+        "family": "Alwishah",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Sanson",
+        "given": "David"
+      }
+    ],
+    "citation-key": "alwishah2009",
+    "container-title": "Vivarium",
+    "DOI": "10.1163/156853408X345909a",
+    "ISSN": "0042-7543",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          "2009"
+        ]
+      ]
+    },
+    "page": "97–127",
+    "title": "The Early Arabic Liar: The Liar Paradox in the Islamic World from the Mid-Ninth to the Mid-Thirteenth Centuries CE",
+    "type": "article-journal",
+    "volume": "47"
+  },
+  {
+    "id": "alwishah2026",
+    "author": [
+      {
+        "family": "Alwishah",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Sanson",
+        "given": "David"
+      }
+    ],
+    "citation-key": "alwishah2026",
+    "ISBN": "978-0-19-760994-1",
+    "issued": {
+      "date-parts": [
+        [
+          "2026",
+          2,
+          24
+        ]
+      ]
+    },
+    "number-of-pages": "232",
+    "publisher": "Oxford University Press",
+    "publisher-place": "Oxford",
+    "source": "Oxford University Press",
+    "title": "The Final Word: al-Dawani and the Liar Paradox in the Islamic World",
+    "title-short": "The Final Word",
+    "type": "book"
+  },
+  {
+    "id": "alwishahforthcominga",
+    "author": [
+      {
+        "family": "Alwishah",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Sanson",
+        "given": "David"
+      }
+    ],
+    "citation-key": "alwishahforthcominga",
+    "container-title": "Stanford Encyclopedia of Philosophy",
+    "editor": [
+      {
+        "family": "Zalta",
+        "given": "Edward N."
+      },
+      {
+        "family": "Nodelman",
+        "given": "Uri"
+      }
+    ],
+    "issued": {
+      "literal": "forthcoming"
+    },
+    "title": "The Liar Paradox in the Islamic World",
+    "type": "entry-encyclopedia"
+  },
+  {
+    "id": "caplan2011b",
+    "author": [
+      {
+        "family": "Caplan",
+        "given": "Ben"
+      },
+      {
+        "family": "Sanson",
+        "given": "David"
+      }
+    ],
+    "citation-key": "caplan2011",
+    "container-title": "Philosophy Compass",
+    "DOI": "10.1111/j.1747-9991.2010.00380.x",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          "2011",
+          3
+        ]
+      ]
+    },
+    "page": "196–208",
+    "title": "Presentism and Truthmaking",
+    "type": "article-journal",
+    "volume": "6"
+  },
+  {
+    "id": "sanson2010a",
+    "author": [
+      {
+        "family": "Sanson",
+        "given": "David"
+      },
+      {
+        "family": "Caplan",
+        "given": "Ben"
+      }
+    ],
+    "citation-key": "sanson2010",
+    "container-title": "Philosophy and Phenomenological Research",
+    "DOI": "10.1111/j.1933-1592.2010.00357.x",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          "2010"
+        ]
+      ]
+    },
+    "page": "24–39",
+    "title": "The way things were",
+    "type": "article-journal",
+    "volume": "81"
+  },
+  {
+    "id": "sanson2017a",
+    "author": [
+      {
+        "family": "Sanson",
+        "given": "David"
+      },
+      {
+        "family": "Caplan",
+        "given": "Ben"
+      },
+      {
+        "family": "Muller",
+        "given": "Cathleen"
+      }
+    ],
+    "citation-key": "sanson2017a",
+    "container-title": "Grazer Philosophische Studien",
+    "DOI": "10.1163/18756735-000017",
+    "ISSN": "1875-6735",
+    "issue": "1–2",
+    "issued": {
+      "date-parts": [
+        [
+          "2017"
+        ]
+      ]
+    },
+    "page": "69–82",
+    "title": "Counting Again",
+    "type": "article-journal",
+    "volume": "94"
+  },
+  {
+    "id": "sanson2017b",
+    "author": [
+      {
+        "family": "Sanson",
+        "given": "David"
+      },
+      {
+        "family": "Alwishah",
+        "given": "Ahmed"
+      }
+    ],
+    "citation-key": "sanson2017b",
+    "container-title": "Oxford Studies in Medieval Philosophy",
+    "DOI": "10.1093/acprof:oso/9780198786368.003.0005",
+    "issued": {
+      "date-parts": [
+        [
+          "2017"
+        ]
+      ]
+    },
+    "page": "100–124",
+    "title": "Al-Taftazani on the liar paradox",
+    "type": "article-journal",
+    "volume": "4"
+  },
+  {
+    "id": "sanson2017c",
+    "author": [
+      {
+        "family": "Sanson",
+        "given": "David"
+      }
+    ],
+    "citation-key": "sanson2017",
+    "container-title": "Australasian Journal of Philosophy",
+    "DOI": "10.1080/00048402.2017.1343858",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          "2017"
+        ]
+      ]
+    },
+    "page": "416–416",
+    "title": "Objects: nothing out of the ordinary, by Korman, Daniel Z.",
+    "type": "article-journal",
+    "volume": "96"
+  }
+]

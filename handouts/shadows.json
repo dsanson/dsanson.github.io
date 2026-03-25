@@ -1,0 +1,127 @@
+[
+  {
+    "id": "aranyosi2010a",
+    "author": [
+      {
+        "family": "Aranyosi",
+        "given": "István"
+      }
+    ],
+    "citation-key": "aranyosi2010a",
+    "container-title": "Philosophy",
+    "issue": "332",
+    "issued": {
+      "date-parts": [
+        [
+          "2010"
+        ]
+      ]
+    },
+    "page": "219–223",
+    "title": "The Nature of Shadows, From Yale to Bilkent",
+    "type": "article-journal",
+    "volume": "85"
+  },
+  {
+    "id": "sorensen2006a",
+    "author": [
+      {
+        "family": "Sorensen",
+        "given": "Roy"
+      }
+    ],
+    "citation-key": "sorensen2006a",
+    "container-title": "Philosophy and Phenomenological Research",
+    "ISSN": "0031-8205",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          "2006",
+          3
+        ]
+      ]
+    },
+    "note": "ArticleType: research-article / Full publication date: Mar., 2006 / Copyright  2006 International Phenomenological Society",
+    "page": "345–365",
+    "title": "Spinning Shadows",
+    "type": "article-journal",
+    "URL": "http://www.jstor.org/stable/40040928",
+    "volume": "72"
+  },
+  {
+    "id": "sorensen2008a",
+    "author": [
+      {
+        "family": "Sorensen",
+        "given": "Roy A"
+      }
+    ],
+    "citation-key": "sorensen2008a",
+    "ISBN": "978-0-19-532657-4 0-19-532657-1",
+    "issued": {
+      "date-parts": [
+        [
+          "2008"
+        ]
+      ]
+    },
+    "language": "English",
+    "publisher": "Oxford University Press",
+    "publisher-place": "New York",
+    "title": "Seeing dark things: the philosophy of shadows",
+    "title-short": "Seeing dark things",
+    "type": "book"
+  },
+  {
+    "id": "tours1995a",
+    "author": [
+      {
+        "literal": "Fridugisus of Tours"
+      }
+    ],
+    "citation-key": "tours1995a",
+    "issued": {
+      "date-parts": [
+        [
+          "1995"
+        ]
+      ]
+    },
+    "title": "On the being of nothingness and shadows",
+    "translator": [
+      {
+        "family": "Spade",
+        "given": "Paul Vincent"
+      }
+    ],
+    "type": "manuscript",
+    "URL": "http://pvspade.com/Logic/docs/fridugis.pdf"
+  },
+  {
+    "id": "westphal2011a",
+    "author": [
+      {
+        "family": "Westphal",
+        "given": "Jonathan"
+      }
+    ],
+    "citation-key": "westphal2011a",
+    "container-title": "Acta Analytica",
+    "DOI": "10.1007/s12136-010-0102-0",
+    "ISSN": "0353-5150, 1874-6349",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          "2011",
+          6
+        ]
+      ]
+    },
+    "page": "187–197",
+    "title": "Silhouettes are Shadows",
+    "type": "article-journal",
+    "volume": "26"
+  }
+]
