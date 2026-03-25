@@ -21,9 +21,8 @@ club.
 ## Double Dactyls
 
 The [double dactyl](https://en.wikipedia.org/wiki/Double_dactyl) is a highly
-structured form of biographical doggerel. Peter van Inwagen managed to
-published five of them in *Mind* in 2000. I've written a few, but I have not
-attempted to publish. Here is one about Quine:
+structured form of biographical doggerel. I've written a few, some of which
+bend the rules of the form a bit. Here is one about Quine:
 
 > | Gavagai Gavagai,
 > | Willard Van Orman Quine,
@@ -35,7 +34,7 @@ attempted to publish. Here is one about Quine:
 > | Should be at arm's length," he
 > | Said in a snit.
 
-And here is one about Kripke's "Humphrey Objection" to Lewis:
+Here is one about Kripke's "Humphrey Objection" to Lewis:
 
 
 > | Humpherus Hubertus,
