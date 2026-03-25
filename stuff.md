@@ -10,7 +10,7 @@ football, which I do. My Erdös-Bacon-Sabbath number remains undefined.
 ## Philosophy Club Handouts
 
 These are handouts that I've used to lead discussions with our undergraduate
-club, [philsoc](https://www.instagram.com/isu.philsoc/). 
+club.
 
 -   [Shadows](handouts/shadows.html) 
 -   [Music](handouts/music.html)
@@ -20,8 +20,10 @@ club, [philsoc](https://www.instagram.com/isu.philsoc/).
 
 ## Double Dactyls
 
-The [double dactyl](https://en.wikipedia.org/wiki/Double_dactyl) is a highly structured form of biographical doggerel. Peter van Inwagen managed to published five of them in *Mind* in 2000. I've written a few. Here is one about Quine:
-
+The [double dactyl](https://en.wikipedia.org/wiki/Double_dactyl) is a highly
+structured form of biographical doggerel. Peter van Inwagen managed to
+published five of them in *Mind* in 2000. I've written a few, but I have not
+attempted to publish. Here is one about Quine:
 
 > | Gavagai Gavagai,
 > | Willard Van Orman Quine,
@@ -48,7 +50,7 @@ And here is one about Kripke's "Humphrey Objection" to Lewis:
 
 ## Dr. Dre $\times$ Meinong
 
-Years ago, I was cleaning up some old notes on my laptop, and came upon this,
+Years ago, I was cleaning up some old notes on my laptop, and came upon this
 without explanation or source:
 
 > | So check the flava that I'm bringin'

@@ -5,44 +5,8 @@ author:
   name: David Sanson
 date: 2015-3-25
 draft: true
-references:
-- author:
-  - family: Simons
-    given: Peter M.
-  call-number: BD396 .S4 2000
-  citation-key: simons2000
-  file: /Users/desanso/Zotero/storage/W62QK77G/simons_2000_parts_a_study_in_ontology.pdf
-  id: simons2000
-  ISBN: 978-0-19-924146-0
-  issued:
-    date-parts:
-    - - 2000
-  open-in-zotero: "zotero://select/items/1_S7F6B35B"
-  publisher: Oxford University Press
-  publisher-place: New York
-  source: Library of Congress ISBN
-  tags: mereology,metaphysics,👀 Skimmed
-  title: "Parts: a study in ontology"
-  title-short: Parts
-  type: book
-- author:
-  - family: Inwagen
-    given: Peter
-    non-dropping-particle: van
-  citation-key: van-inwagen1990a
-  file: /Users/desanso/Zotero/storage/FNPUT6PE/van Inwagen_1990_Material
-    Beings2.pdf;/Users/desanso/Zotero/storage/8PCZSUWA/van_inwagen_1990_material_beings.pdf
-  id: van-inwagen1990a
-  issued:
-    date-parts:
-    - - 1990
-  open-in-zotero: "zotero://select/items/1_BC5ZWBV4"
-  publisher: Cornell University Press
-  publisher-place: Ithaca, NY
-  tags: mereology,metaphysics,✅ Read
-  title: Material Beings
-  type: book
-refs: |
+bibliography: _composition.json
+nocite: |
   @thomson1983a; @van-inwagen1990a; @simons2000; @koslicki2008a;
   @dorr2002a
 title: Composition
