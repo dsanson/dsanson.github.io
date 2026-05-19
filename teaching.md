@@ -2,13 +2,13 @@
 title: Teaching
 ---
 
-## Spring 2026
+## Fall 2026
 
--  [PHI 201: Introduction to Metaphysics and Epistemology][201s2026]
--  [PHI 112: Language, Logic, and Mathematics][112s2026]
+-  [PHI 205: Philosophy of Language][205f2026]
+-  [PHI 101: Introduction to Philosophy][101f2026]
 
- [201s2026]: https://canvas.illinoisstate.edu/courses/46971
- [112s2026]: https://canvas.illinoisstate.edu/courses/43279
+ [205f2026]: 205f2026
+ [101f2026]: 101f2026
 
 <!--
 

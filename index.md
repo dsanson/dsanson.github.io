@@ -32,7 +32,7 @@ of logic, medieval philosophy, and the philosophy of art. I have published
 work on the history of the Liar Paradox, time and change, essence and
 modality, and the ontological status of fictional characters.
 
-[Ahmed Alwishah] and I have published a book on the history of the Liar 
+[Ahmed Alwishah] and I wrote a book on the history of the Liar 
 Paradox, *The Final Word: al-Dawānī and the Liar Paradox in the Islamic World*.
 You can read the first 20 pages or so for free on [Google Books].
 You can find it in a library using [WorldCat].
