@@ -13,7 +13,7 @@ context of time and in the context of fiction.
 
 -   Ahmed Alwishah and David Sanson. Forthcoming. "The Liar Paradox in the Islamic
 World." In *Stanford Encyclopedia of Philosophy*, edited by Edward N.
-Zalta and Uri Nodelman. [DRAFT][SEP]
+Zalta and Uri Nodelman.
 
     This article covers the treatment of the Liar Paradox within the Arabic tradition from the
     10th century to the 15th century. In the earliest texts, the Liar occurs
@@ -134,7 +134,6 @@ and Phenomenological Research* 81 (1): 24--39.
 
 
   [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu
-  [SEP]: papers/the_liar_paradox_in_the_islamic_world.html
   [Counting Again]: papers/sanson_et_al._2017_counting_again.pdf
   [The Way Things Were]: papers/sanson_and_caplan_2010_the_way_things_were.pdf
   [Presentism and Truthmaking]: papers/caplan_and_sanson_2011_presentism_and_truthmaking.pdf

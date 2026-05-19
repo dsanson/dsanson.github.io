@@ -40,7 +40,7 @@ You can buy it from [Oxford University Press], [Bookshop.org], [Barnes & Noble],
 
 ![](media/final-word-cover.jpg){.lightbox fig-alt="Cover of our book, The Final Word" fig-align="center" width=15em}
 
-We also have [an entry on the topic][SEP] forthcoming in the *[Stanford Encyclopedia of Philosophy]*.
+We also have an entry on the topic forthcoming in the *[Stanford Encyclopedia of Philosophy]*.
 
 
 
