@@ -5,9 +5,9 @@ aliases:
 ---
 
 Some of my published research is in the history of philosophy---specifically,
-the history of the Liar Paradox in the Islamic World. The rest of it is in 
-contemporary philosophy, with a focus on puzzles about nonexistence, both in the
-context of time and in the context of fiction.
+the history of the Liar Paradox in the Islamic World. Some is in 
+contemporary philosophy---specifically, puzzles about time, nonexistence, identity, and 
+mereology.
 
 ## History of Philosophy
 
