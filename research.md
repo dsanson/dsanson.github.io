@@ -11,8 +11,8 @@ context of time and in the context of fiction.
 
 ## History of Philosophy
 
--   Ahmed Alwishah and David Sanson. Forthcoming. "The Liar Paradox in the Islamic
-World." In *Stanford Encyclopedia of Philosophy*, edited by Edward N.
+-   Ahmed Alwishah and David Sanson. 2026. "[The Liar Paradox in Arabic and Islamic
+Philosophy](https://plato.stanford.edu/entries/arabic-islamic-liar/)." In *Stanford Encyclopedia of Philosophy*, edited by Edward N.
 Zalta and Uri Nodelman.
 
     This article covers the treatment of the Liar Paradox within the Arabic tradition from the

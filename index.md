@@ -40,7 +40,7 @@ You can buy it from [Oxford University Press], [Bookshop.org], [Barnes & Noble],
 
 ![](media/final-word-cover.jpg){.lightbox fig-alt="Cover of our book, The Final Word" fig-align="center" width=15em}
 
-We also have an entry on the topic forthcoming in the *[Stanford Encyclopedia of Philosophy]*.
+We also have an entry on the topic in the *[Stanford Encyclopedia of Philosophy]*.
 
 
 
@@ -70,7 +70,6 @@ We also have an entry on the topic forthcoming in the *[Stanford Encyclopedia of
   [Bookshop.org]: https://bookshop.org/p/books/the-final-word-al-dawani-and-the-liar-paradox-in-the-islamic-world-associate-professor-of-philosophy-david-sanson/40159cb5696aae38
   [Barnes & Noble]: https://www.barnesandnoble.com/w/the-final-word-ahmed-alwishah/1148562805
   [WorldCat]: https://search.worldcat.org/title/The-final-word-:-al-Dawani-and-the-Liar-Paradox-in-the-Islamic-world/oclc/1551490690
-  [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu
-  [SEP]: papers/the_liar_paradox_in_the_islamic_world.html
+  [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu/entries/arabic-islamic-liar/
 
 
