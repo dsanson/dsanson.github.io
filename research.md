@@ -25,8 +25,8 @@ Zalta and Uri Nodelman.
     al-Dashtakī (d. 1498) and Jalāl al-Din al-Dawānī (d. 1502), who each
     wrote free-standing treatises on the topic.
 
--   Ahmed Alwishah and David Sanson. 2026. *The Final Word: Al-Dawānī and the
-    Liar Paradox in the Islamic World*. Oxford, New York: Oxford University
+-   Ahmed Alwishah and David Sanson. 2026. *[The Final Word: Al-Dawānī and the
+    Liar Paradox in the Islamic World](https://global.oup.com/academic/product/the-final-word-9780197609941)*. Oxford, New York: Oxford University
     Press.
 
     This book offers the first comprehensive study of the Liar Paradox in the

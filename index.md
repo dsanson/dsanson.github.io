@@ -72,4 +72,3 @@ We also have an entry on the topic in the *[Stanford Encyclopedia of Philosophy]
   [WorldCat]: https://search.worldcat.org/title/The-final-word-:-al-Dawani-and-the-Liar-Paradox-in-the-Islamic-world/oclc/1551490690
   [Stanford Encyclopedia of Philosophy]: https://plato.stanford.edu/entries/arabic-islamic-liar/
 
-
