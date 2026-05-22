@@ -5,7 +5,7 @@ title: Stuff
 ## Erdös-Bacon-Sabbath Number
 
 My [Erdös-Bacon] number is at most 10, if you count appearing together in local broadcasts of high school
-football, which I do. My Erdös-Bacon-Sabbath number remains undefined.
+football. Which I do. My Erdös-Bacon-Sabbath number remains unknown. It may be finite, if you count junior high jazz band. Which I do.
 
 ## Philosophy Club Handouts
 
@@ -21,8 +21,7 @@ club.
 ## Double Dactyls
 
 The [double dactyl](https://en.wikipedia.org/wiki/Double_dactyl) is a highly
-structured form of biographical doggerel. I've written a few, some of which
-bend the rules of the form a bit. Here is one about Quine:
+structured form of biographical doggerel. I've written a few. Here is one about Quine:
 
 > | Gavagai Gavagai,
 > | Willard Van Orman Quine,
@@ -34,8 +33,7 @@ bend the rules of the form a bit. Here is one about Quine:
 > | Should be at arm's length," he
 > | Said in a snit.
 
-Here is one about Kripke's "Humphrey Objection" to Lewis:
-
+Here is one about the "Humphrey Objection" to counterpart theory:
 
 > | Humpherus Hubertus,
 > | David K. Lewis's
@@ -47,10 +45,9 @@ Here is one about Kripke's "Humphrey Objection" to Lewis:
 > | Mere similarity?
 > | Then I don't care.
 
-## Dr. Dre $\times$ Meinong
+## Dr. Dre $\times$ Gegenstandtheorie
 
-Years ago, I was cleaning up some old notes on my laptop, and came upon this
-without explanation or source:
+Years ago, I was cleaning up some old notes on my laptop, and came upon this.
 
 > | So check the flava that I'm bringin'
 > | The motherfuckin' Gegenstandstheorie
