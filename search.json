@@ -1,5 +1,166 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David Sanson",
+    "section": "",
+    "text": "PhilPeople\n  \n  \n    \n     Github\n  \n  \n    \n     Email\n  \n\n  \n  \nI am an associate professor in the Philosophy Department at Illinois State University.\nI have research interests in metaphysics, philosophy of language, the history of logic, medieval philosophy, and the philosophy of art. I have published work on the history of the Liar Paradox, time and change, essence and modality, and the ontological status of fictional characters.\nAhmed Alwishah and I wrote a book on the history of the Liar Paradox, The Final Word: al-Dawānī and the Liar Paradox in the Islamic World. You can read the first 20 pages or so for free on Google Books. You can find it in a library using WorldCat. You can buy it from Oxford University Press, Bookshop.org, Barnes & Noble, or Amazon.\n\n\n\n\n\nWe also have an entry on the topic in the Stanford Encyclopedia of Philosophy.\n341 Stevenson Hall\nDepartment of Philosophy (4540)\nIllinois State University\nNormal, IL 61790"
+  },
+  {
+    "objectID": "handouts/rule-following.html",
+    "href": "handouts/rule-following.html",
+    "title": "Meaning and Rule-Following",
+    "section": "",
+    "text": "Each word is associated with an idea.\nIdeas are “mental pictures”.\nIdeas represent in virtue of “matching” or “resembling” things in the world.\n\nExamples: ‘green’, ‘square’, ‘horse’. For extended critical discussion, see the Wittgenstein (1960)."
+  },
+  {
+    "objectID": "handouts/rule-following.html#the-naïve-theory-of-meaning",
+    "href": "handouts/rule-following.html#the-naïve-theory-of-meaning",
+    "title": "Meaning and Rule-Following",
+    "section": "",
+    "text": "Each word is associated with an idea.\nIdeas are “mental pictures”.\nIdeas represent in virtue of “matching” or “resembling” things in the world.\n\nExamples: ‘green’, ‘square’, ‘horse’. For extended critical discussion, see the Wittgenstein (1960)."
+  },
+  {
+    "objectID": "handouts/rule-following.html#wittgenstein-on-representation-resemblance-and-rules",
+    "href": "handouts/rule-following.html#wittgenstein-on-representation-resemblance-and-rules",
+    "title": "Meaning and Rule-Following",
+    "section": "Wittgenstein on Representation, Resemblance, and Rules",
+    "text": "Wittgenstein on Representation, Resemblance, and Rules\n\n139(b). I see a picture; it represents an old man walking up a steep path leaning on a stick.—How? Might it not have looked just the same if he had been sliding downhill in that position? (Wittgenstein 1973, 139(b))\n\nWhat needs to be added to the account of representation to allow for this distinction?\n\nAdd more to the picture? (motion? arrows?)\n\n\n\nThen what sort of mistake did I make; was it what we should like to express by saying: I thought the picture forced a particular use on me? How could I think that? What did I think? Is there such a thing as a picture, or something like a picture, that forces a particular application on us; so that my mistake lies in confusing one picture with another?—For we might also be inclined to express ourselves like this: we are at most under a psychological, not a logical, compulsion. […] So our ‘belief that the picture forced a particular application on us’ consisted in the fact that only the one case and no other occurred to us. (Wittgenstein 1973, 54–55)\n\n\n\nResemblance is not enough to force one “application” rather than another.\nWhat we need is a rule that tells us how to interpret the picture."
+  },
+  {
+    "objectID": "handouts/rule-following.html#augustine-on-meaning-and-ostension",
+    "href": "handouts/rule-following.html#augustine-on-meaning-and-ostension",
+    "title": "Meaning and Rule-Following",
+    "section": "Augustine on Meaning and Ostension",
+    "text": "Augustine on Meaning and Ostension\n\nAugustine: Now do this: tell me—if I were completely ignorant of the meaning of the word ‘walking’ and were to ask you what walking is while you were walking, how would you teach me?\nAdeodatus: I would do it a little more quickly, so that after your question you would be prompted by something novel [in my behavior], and yet nothing would take place other than what was to be shown.\nAugustine: Don’t you know that walking is one thing and hurrying another? A person who is walking doesn’t necessarily hurry, and a person who is hurrying doesn’t necessarily walk. We speak of ‘hurrying’ in writing and reading and in countless other matters. Hence given that after my question you kept on doing what you were doing, [only] faster, I might have thought walking as precisely hurrying—for you added that as something new—and for that reason I would have been misled. (Augustine 1995, 3.6; see also Quine 1950, 622ff.)\n\n\nResemblance is not enough to force one interpretation of the demonstration rather than another.\nWhat we need is a rule that tells us how to interpret the demonstration."
+  },
+  {
+    "objectID": "handouts/rule-following.html#the-rule-theory-of-meaning",
+    "href": "handouts/rule-following.html#the-rule-theory-of-meaning",
+    "title": "Meaning and Rule-Following",
+    "section": "The “Rule” Theory of Meaning",
+    "text": "The “Rule” Theory of Meaning\n\nEach word is associated with a rule.\nTo know the meaning of a word is to grasp this rule.\n\nExamples: ‘green’, ‘square’, ‘horse’."
+  },
+  {
+    "objectID": "handouts/rule-following.html#the-rule-following-paradox",
+    "href": "handouts/rule-following.html#the-rule-following-paradox",
+    "title": "Meaning and Rule-Following",
+    "section": "The Rule Following Paradox",
+    "text": "The Rule Following Paradox\nBut switching to rules doesn’t make the basic problem go away:\n\nNo course of action could be determined by a rule, because every course of action can be made out to accord with the rule (Wittgenstein 1973, 201).\n\nThere is no unique correct answer to this “fill in the blanks” question: \\(2,4,6,8,\\underline{\\ \\ \\ },\\underline{\\ \\ \\ }\\).\nSuppose you use the word ‘bos’ in the past, and you have applied it to all and only cows. And suppose you have never before encountered a purple cow, until now. Does your word ‘bos’ apply to this cow? Does your word ‘bos’ mean “cow” or “purple cow”? Notice that the history of your usage of the word ‘bos’ does not answer this question. What does? What facts about you determine the meaning of your word, which rule you are following?"
+  },
+  {
+    "objectID": "handouts/rule-following.html#kripke-on-plus-and-quus.",
+    "href": "handouts/rule-following.html#kripke-on-plus-and-quus.",
+    "title": "Meaning and Rule-Following",
+    "section": "Kripke on plus and quus.",
+    "text": "Kripke on plus and quus.\n\nI […] use the word ‘plus’ and the symbol ‘\\(+\\)’ to denote a well-known mathematical function, addition. The function is defined for all pairs of positive integers. By means of my external symbolic representation and my internal mental representation, I ‘grasp’ the rule for addition. […] Although I myself have computed only finitely many sums in the past, the rule determines my answer for indefinitely many new sums that I have never previously considered. This is the whole point of the notion that in learning to add I grasp a rule: my past intentions regarding addition determine a unique answer for indefinitely many new cases in the future (Kripke 1982, 7–8).\n\nYou grasp the rule for addition, and you use ‘plus’ and ‘\\(+\\)’ to denote it. But for some \\(n\\), you have never attempted to add numbers larger than \\(n\\). Suppose \\(n\\) is 57. So what is:\n\\[68 + 57 =\\ \\line(1,0){40}\\]\nNote the analogy with ‘bos’. Just like the purple cow was a case you had never encountered, this sum is a case you have never encountered. This raises what Kripke calls a “metalinguistic” question: how do you know what you mean by ‘\\(+\\)’?\n\nThis sceptic questions my certainty about my answer, in what I just called the ‘metalinguistic’ sense. Perhaps, he suggests, as I used the term ‘plus’ in the past, the answer I intended for ‘\\(68 + 57\\)’ should have been ‘5’! […] perhaps I used ‘plus’ and ‘\\(+\\)’ to denote a function which I will call ‘quus’ and symbolize by ‘\\(\\oplus\\)’ (Kripke 1982, 8–9).\n\n\\[x\\oplus y = \\begin{cases} x + y & \\mbox{if } x,y &lt; 57 \\\\ 5 & \\mbox{otherwise} \\end{cases}\\]\nWhat facts about you determine which rule you are following, and so what you mean by ‘plus’?"
+  },
+  {
+    "objectID": "handouts/rule-following.html#dispositions",
+    "href": "handouts/rule-following.html#dispositions",
+    "title": "Meaning and Rule-Following",
+    "section": "Dispositions?",
+    "text": "Dispositions?\nProposal: You mean \\(+\\) not \\(\\oplus\\) by ‘plus’ because you are disposed, when asked to perform sums, to perform addition, not quaddition.\nThree objections:\n\nYour dispositions only determine a finite number of cases, and so cannot uniquely determine the function \\(+\\) as opposed to some \\(\\oplus\\)-like alternative.\nFor very large numbers, the idea that you have any disposition to respond one way or another is nonsense.\nYou can be disposed to make mistakes. But that means that the rule you are following is not determined exactly by your dispositions."
+  },
+  {
+    "objectID": "handouts/rule-following.html#goodman-on-green-and-grue-goodman1983a-p.-72ff",
+    "href": "handouts/rule-following.html#goodman-on-green-and-grue-goodman1983a-p.-72ff",
+    "title": "Meaning and Rule-Following",
+    "section": "Goodman on Green and Grue (Goodman 1983, 72ff):",
+    "text": "Goodman on Green and Grue (Goodman 1983, 72ff):\n\nGrue\n\n\\(x\\) is grue if and only \\(x\\) is green and first observed before 12/3/2014, or \\(x\\) is blue and not first observed before 12/3/2014.\n\n\nYou are disposed to accept the following inference:\n\nEvery emerald we have observed has been green.\nSo probably the next emerald we observe will be green.\n\nYou are not disposed to accept the following inference:\n\nEvery emerald we have observed has been grue.\nSo probably the next emerald we observe will be grue.\n\nBut\n\nWhat makes the first inference good and the second bad?\nCan you be sure that when you use the word ‘green’ you mean green and not grue?"
+  },
+  {
+    "objectID": "handouts/shadows.html",
+    "href": "handouts/shadows.html",
+    "title": "Notes on Shadows",
+    "section": "",
+    "text": "Materialism is the view that there are only material things. Here is an argument against materialism:\n\nThere are shadows.\nShadows are not material things.\nTherefore, not all things are material.\n\nWhat to make of this argument?\n\n\nMaybe you want to deny (1). You might argue that\n\nA shadow is not a positive thing; it is the absence of a positive thing, namely, light.\n\nBut (1) does not say that shadows are positive things; it just says that there are shadows. (Other putative examples of negative things: holes, ugliness, evil.) Here are some reasons for thinking there are shadows:\n\nWe can see shadows, and you can’t see things that don’t exist.\nWe can feel shadows, and you can’t feel things that don’t exist.\nShadows are located in specific places (“the shadows were over the deep”), and things that don’t exist aren’t located anywhere.\n\n\n\n\nHere is an argument for (2):\n\nA material thing has to be made of something (its matter).\nA shadow is not made of light: its presence requires the absence of light.\nA shadow is not made of any other kind of matter.\nSo shadows are not material things.\n\n\n\n\nEven if shadows are not material things, it seems that in some sense they depend on material things (think of the way that a hole depends on its host). But it is not quite right to say that a shadow depends for its existence on the object that casts it and on the object upon which it is cast. Light takes time to travel, so a shadow can outlast the object that casts it. (Can it also exist before the object upon which it is cast? What if it is being cast through fog or dust?)\n\n\n\nOptions:\n\nThe shadow is on the surface of the object upon which it is cast.\nThe shadow is on the surface of the dark side of the object that casts it.\nThe shadow is the entire three-dimensional region of darkness that extends between the object that casts it and the surface upon which it is cast."
+  },
+  {
+    "objectID": "handouts/shadows.html#premise-p1-why-think-there-are-shadows",
+    "href": "handouts/shadows.html#premise-p1-why-think-there-are-shadows",
+    "title": "Notes on Shadows",
+    "section": "",
+    "text": "Maybe you want to deny (1). You might argue that\n\nA shadow is not a positive thing; it is the absence of a positive thing, namely, light.\n\nBut (1) does not say that shadows are positive things; it just says that there are shadows. (Other putative examples of negative things: holes, ugliness, evil.) Here are some reasons for thinking there are shadows:\n\nWe can see shadows, and you can’t see things that don’t exist.\nWe can feel shadows, and you can’t feel things that don’t exist.\nShadows are located in specific places (“the shadows were over the deep”), and things that don’t exist aren’t located anywhere."
+  },
+  {
+    "objectID": "handouts/shadows.html#premise-p2-why-think-shadows-are-not-material-things",
+    "href": "handouts/shadows.html#premise-p2-why-think-shadows-are-not-material-things",
+    "title": "Notes on Shadows",
+    "section": "",
+    "text": "Here is an argument for (2):\n\nA material thing has to be made of something (its matter).\nA shadow is not made of light: its presence requires the absence of light.\nA shadow is not made of any other kind of matter.\nSo shadows are not material things."
+  },
+  {
+    "objectID": "handouts/shadows.html#are-shadows-dependent-things",
+    "href": "handouts/shadows.html#are-shadows-dependent-things",
+    "title": "Notes on Shadows",
+    "section": "",
+    "text": "Even if shadows are not material things, it seems that in some sense they depend on material things (think of the way that a hole depends on its host). But it is not quite right to say that a shadow depends for its existence on the object that casts it and on the object upon which it is cast. Light takes time to travel, so a shadow can outlast the object that casts it. (Can it also exist before the object upon which it is cast? What if it is being cast through fog or dust?)"
+  },
+  {
+    "objectID": "handouts/shadows.html#where-are-shadows",
+    "href": "handouts/shadows.html#where-are-shadows",
+    "title": "Notes on Shadows",
+    "section": "",
+    "text": "Options:\n\nThe shadow is on the surface of the object upon which it is cast.\nThe shadow is on the surface of the dark side of the object that casts it.\nThe shadow is the entire three-dimensional region of darkness that extends between the object that casts it and the surface upon which it is cast."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Some of my published research is in the history of philosophy—specifically, the history of the Liar Paradox in the Islamic World. Some is in contemporary philosophy—specifically, puzzles about time, nonexistence, identity, and mereology."
+  },
+  {
+    "objectID": "research.html#history-of-philosophy",
+    "href": "research.html#history-of-philosophy",
+    "title": "Research",
+    "section": "History of Philosophy",
+    "text": "History of Philosophy\n\nAhmed Alwishah and David Sanson. 2026. “The Liar Paradox in Arabic and Islamic Philosophy.” In Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta and Uri Nodelman.\nThis article covers the treatment of the Liar Paradox within the Arabic tradition from the 10th century to the 15th century. In the earliest texts, the Liar occurs either as a theological counterexample or as a logical sophisim. During the 13th century, it became a standard example discussed by logicians, and several distinct solutions were articulated and defended. And at the end of the 15th century, the Liar had its philosophical moment, as it became the subject of an extended debate between two rivals, Sadr al-Din al-Dashtakī (d. 1498) and Jalāl al-Din al-Dawānī (d. 1502), who each wrote free-standing treatises on the topic.\nAhmed Alwishah and David Sanson. 2026. The Final Word: Al-Dawānī and the Liar Paradox in the Islamic World. Oxford, New York: Oxford University Press.\nThis book offers the first comprehensive study of the Liar Paradox in the Islamic philosophical tradition, up to the fifteenth century. It traces the role the Liar played in debates in logic, philosophy of language, and theological ethics, and includes the first complete English translation of al-Dawānī’s treatise, The Final Word in Solving the Paradox of the Irrational Root.\nDavid Sanson and Ahmed Alwishah. 2017. “Al-Taftāzānī on the Liar Paradox.” Oxford Studies in Medieval Philosophy 4: 100–124. https://doi.org/10.1093/acprof:oso/9780198786368.003.0005.\nAl-Taftāzānī (1322–1390) was a Persian polymath who wrote on a wide range of subjects—grammar, logic, theology (kalām), jurisprudence (fiqh), and literature. Here we translate and discuss his remarks on the Liar Paradox, in which he (a) presents the first example of a “Liar Cycle” or “Deferred Liar” in the tradition, (b) gives the paradox a puzzling name—the fallacy of the “irrational root” (al-jadhr al-aṣamm)—which became the standard name for the paradox in the tradition, and (c) suggests a connection between the paradox and what it tells us about the nature of truth and falsehood, and related puzzles concerning reason and the nature of goodness and badness.\nAhmed Alwishah and David Sanson. 2009. “The Early Arabic Liar: The Liar Paradox in the Islamic World from the Mid-Ninth to the Mid-Thirteenth Centuries CE.” Vivarium 47 (1): 97–127. https://doi.org/10.1163/156853408X345909a.\nWe describe the earliest occurrences of the Liar Paradox in the Arabic tradition. The early Mutakallimūn claim the Liar Sentence is both true and false; they also associate the Liar with problems concerning plural subjects, which is somewhat puzzling. Al-Abharī (1200-1265) ascribes an unsatisfiable truth condition to the Liar Sentence—as he puts it, its being true is the conjunction of its being true and false—and so concludes that the sentence is not true. Al-Tūsī (1201-1274) argues that self-referential sentences, like the Liar, are not truth-apt, and defends this claim by appealing to a correspondence theory of truth. Translations of the texts are provided as an appendix."
+  },
+  {
+    "objectID": "research.html#contemporary-philosophy",
+    "href": "research.html#contemporary-philosophy",
+    "title": "Research",
+    "section": "Contemporary Philosophy",
+    "text": "Contemporary Philosophy\n\nDavid Sanson and Ben Caplan, and Cathleen Muller. 2017. “Counting Again.” Grazer Philosophische Studien 94 (1–2): 69–82. https://doi.org/10.1163/18756735-000017.\nWe consider a recurring objection to fictional realism, the view that (broadly speaking) fictional characters are objects. The authors call this the counting objection. Russell presses a version of the objection against Meinong’s view. Everett presses a version of the objection against contemporary fictional realist views, as (in effect) do Nolan and Sandgren. As the authors see it, the objection assumes that the fictional realist must provide criteria of identity for fictional characters, so its force depends on the plausibility of that assumption. Rather than coming up with such criteria, a fictional realist might argue that the demand is misplaced.\nDavid Sanson. 2016. “Worlds Enough For Junk.” Res Philosophica, January. https://doi.org/10.11612/resphil.2016.93.1.1.  PDF\nA cap is something that is not a proper part. A junky thing is something that is not part of any cap. Can there be junky things? The view that possible worlds are concrete cosmoi suggests not: every possibility involves the existence of a cosmos, and that cosmos is a cap. But this can be overcome by allowing that some parts of a cosmos may collectively represent a complete possibility. The resulting view helps cast light on some important features of the Modal Realist’s attitude toward modality.\nDavid Sanson. 2016. “Frivolous Fictions.” Res Philosophica 93 (2): 357–76. https://doi.org/10.11612/resphil.2016.93.2.8.  PDF\nWe want to say both that Sherlock Holmes does not exist, and that he is a fictional character. But how can we say these things without committing ourselves to the existence of Sherlock Holmes? Here I develop and defend a noncommital paraphrase of quantification over fictional characters, modeled on the noncommital paraphrase Kit Fine provides for quantification over possibilia. I also develop and defend the view that names for fictional characters are weakly non-referring, in Nathan Salmon’s sense, and so provide us with a noncommital means to express singular propositions. The resulting position allows us to reap the benefits of Fictional Realism without paying the associated ontological cost.\nBen Caplan and David Sanson. 2011. “Presentism and Truthmaking.” Philosophy Compass 6 (3): 196–208. https://doi.org/10.1111/j.1747-9991.2010.00380.x.\nPresentism, according to which reality is limited to the present, is a natural view, but it is incompatible with the claims that reality invariably has a say in which propositions are true and that not all truths about the past are made true by the present. We survey some responses to this incompatibility.\nDavid Sanson and Ben Caplan. 2010. “The Way Things Were.” Philosophy and Phenomenological Research 81 (1): 24–39. https://doi.org/10.1111/j.1933-1592.2010.00357.x.\nPresentists say that only the present is real.1 Saying that might seem like a pretty good way of accounting for what is special about the present, but it might also seem like a pretty bad way of accounting for anything about the past. The literature suggests a fairly straightforward solution: facts about how things once were, it turns out, just are special facts about how things are now (for example, facts about the present instantiation of primitive “tensed” properties). In this paper, we argue that solutions of this sort are wrong."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "PHI 205: Philosophy of Language\nPHI 101: Introduction to Philosophy"
+  },
+  {
+    "objectID": "teaching.html#fall-2026",
+    "href": "teaching.html#fall-2026",
+    "title": "Teaching",
+    "section": "",
+    "text": "PHI 205: Philosophy of Language\nPHI 101: Introduction to Philosophy"
+  },
+  {
+    "objectID": "teaching.html#handouts",
+    "href": "teaching.html#handouts",
+    "title": "Teaching",
+    "section": "Handouts",
+    "text": "Handouts\n\nShadows (Nov 8, 2016)\nMusic (Mar 28, 2016)\nMaterial Composition (Mar 25, 2015)\nThe Rule Following Paradox (Dec 3, 2014)\nParadoxes (Apr 15, 2014)\nHoles (Dec 3, 2013)"
+  },
+  {
+    "objectID": "403.html",
+    "href": "403.html",
+    "title": "Access Forbidden!",
+    "section": "",
+    "text": "This is, but is not for you. Not all being is for browsing."
+  },
+  {
+    "objectID": "403.html#error",
+    "href": "403.html#error",
+    "title": "Access Forbidden!",
+    "section": "",
+    "text": "This is, but is not for you. Not all being is for browsing."
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "David Sanson",
@@ -112,74 +273,60 @@
     "text": "Dr. Dre \\(\\times\\) Gegenstandtheorie\nYears ago, I was cleaning up some old notes on my laptop, and came upon this.\n\nSo check the flava that I’m bringin’\nThe motherfuckin’ Gegenstandstheorie\nI keep they motherfuckin’ heads ringin’\nRing ding dong, ring a ding ding Meinong\nKeep their heads ringin’\nRing ding dong, ring a ding ding Meinong"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "410.html",
+    "href": "410.html",
+    "title": "Page Gone!",
     "section": "",
-    "text": "Some of my published research is in the history of philosophy—specifically, the history of the Liar Paradox in the Islamic World. Some is in contemporary philosophy—specifically, puzzles about time, nonexistence, identity, and mereology."
+    "text": "This page was, but is no more. The same thing is for browsing and for being."
   },
   {
-    "objectID": "research.html#history-of-philosophy",
-    "href": "research.html#history-of-philosophy",
-    "title": "Research",
-    "section": "History of Philosophy",
-    "text": "History of Philosophy\n\nAhmed Alwishah and David Sanson. 2026. “The Liar Paradox in Arabic and Islamic Philosophy.” In Stanford Encyclopedia of Philosophy, edited by Edward N. Zalta and Uri Nodelman.\nThis article covers the treatment of the Liar Paradox within the Arabic tradition from the 10th century to the 15th century. In the earliest texts, the Liar occurs either as a theological counterexample or as a logical sophisim. During the 13th century, it became a standard example discussed by logicians, and several distinct solutions were articulated and defended. And at the end of the 15th century, the Liar had its philosophical moment, as it became the subject of an extended debate between two rivals, Sadr al-Din al-Dashtakī (d. 1498) and Jalāl al-Din al-Dawānī (d. 1502), who each wrote free-standing treatises on the topic.\nAhmed Alwishah and David Sanson. 2026. The Final Word: Al-Dawānī and the Liar Paradox in the Islamic World. Oxford, New York: Oxford University Press.\nThis book offers the first comprehensive study of the Liar Paradox in the Islamic philosophical tradition, up to the fifteenth century. It traces the role the Liar played in debates in logic, philosophy of language, and theological ethics, and includes the first complete English translation of al-Dawānī’s treatise, The Final Word in Solving the Paradox of the Irrational Root.\nDavid Sanson and Ahmed Alwishah. 2017. “Al-Taftāzānī on the Liar Paradox.” Oxford Studies in Medieval Philosophy 4: 100–124. https://doi.org/10.1093/acprof:oso/9780198786368.003.0005.\nAl-Taftāzānī (1322–1390) was a Persian polymath who wrote on a wide range of subjects—grammar, logic, theology (kalām), jurisprudence (fiqh), and literature. Here we translate and discuss his remarks on the Liar Paradox, in which he (a) presents the first example of a “Liar Cycle” or “Deferred Liar” in the tradition, (b) gives the paradox a puzzling name—the fallacy of the “irrational root” (al-jadhr al-aṣamm)—which became the standard name for the paradox in the tradition, and (c) suggests a connection between the paradox and what it tells us about the nature of truth and falsehood, and related puzzles concerning reason and the nature of goodness and badness.\nAhmed Alwishah and David Sanson. 2009. “The Early Arabic Liar: The Liar Paradox in the Islamic World from the Mid-Ninth to the Mid-Thirteenth Centuries CE.” Vivarium 47 (1): 97–127. https://doi.org/10.1163/156853408X345909a.\nWe describe the earliest occurrences of the Liar Paradox in the Arabic tradition. The early Mutakallimūn claim the Liar Sentence is both true and false; they also associate the Liar with problems concerning plural subjects, which is somewhat puzzling. Al-Abharī (1200-1265) ascribes an unsatisfiable truth condition to the Liar Sentence—as he puts it, its being true is the conjunction of its being true and false—and so concludes that the sentence is not true. Al-Tūsī (1201-1274) argues that self-referential sentences, like the Liar, are not truth-apt, and defends this claim by appealing to a correspondence theory of truth. Translations of the texts are provided as an appendix."
-  },
-  {
-    "objectID": "research.html#contemporary-philosophy",
-    "href": "research.html#contemporary-philosophy",
-    "title": "Research",
-    "section": "Contemporary Philosophy",
-    "text": "Contemporary Philosophy\n\nDavid Sanson and Ben Caplan, and Cathleen Muller. 2017. “Counting Again.” Grazer Philosophische Studien 94 (1–2): 69–82. https://doi.org/10.1163/18756735-000017.\nWe consider a recurring objection to fictional realism, the view that (broadly speaking) fictional characters are objects. The authors call this the counting objection. Russell presses a version of the objection against Meinong’s view. Everett presses a version of the objection against contemporary fictional realist views, as (in effect) do Nolan and Sandgren. As the authors see it, the objection assumes that the fictional realist must provide criteria of identity for fictional characters, so its force depends on the plausibility of that assumption. Rather than coming up with such criteria, a fictional realist might argue that the demand is misplaced.\nDavid Sanson. 2016. “Worlds Enough For Junk.” Res Philosophica, January. https://doi.org/10.11612/resphil.2016.93.1.1.  PDF\nA cap is something that is not a proper part. A junky thing is something that is not part of any cap. Can there be junky things? The view that possible worlds are concrete cosmoi suggests not: every possibility involves the existence of a cosmos, and that cosmos is a cap. But this can be overcome by allowing that some parts of a cosmos may collectively represent a complete possibility. The resulting view helps cast light on some important features of the Modal Realist’s attitude toward modality.\nDavid Sanson. 2016. “Frivolous Fictions.” Res Philosophica 93 (2): 357–76. https://doi.org/10.11612/resphil.2016.93.2.8.  PDF\nWe want to say both that Sherlock Holmes does not exist, and that he is a fictional character. But how can we say these things without committing ourselves to the existence of Sherlock Holmes? Here I develop and defend a noncommital paraphrase of quantification over fictional characters, modeled on the noncommital paraphrase Kit Fine provides for quantification over possibilia. I also develop and defend the view that names for fictional characters are weakly non-referring, in Nathan Salmon’s sense, and so provide us with a noncommital means to express singular propositions. The resulting position allows us to reap the benefits of Fictional Realism without paying the associated ontological cost.\nBen Caplan and David Sanson. 2011. “Presentism and Truthmaking.” Philosophy Compass 6 (3): 196–208. https://doi.org/10.1111/j.1747-9991.2010.00380.x.\nPresentism, according to which reality is limited to the present, is a natural view, but it is incompatible with the claims that reality invariably has a say in which propositions are true and that not all truths about the past are made true by the present. We survey some responses to this incompatibility.\nDavid Sanson and Ben Caplan. 2010. “The Way Things Were.” Philosophy and Phenomenological Research 81 (1): 24–39. https://doi.org/10.1111/j.1933-1592.2010.00357.x.\nPresentists say that only the present is real.1 Saying that might seem like a pretty good way of accounting for what is special about the present, but it might also seem like a pretty bad way of accounting for anything about the past. The literature suggests a fairly straightforward solution: facts about how things once were, it turns out, just are special facts about how things are now (for example, facts about the present instantiation of primitive “tensed” properties). In this paper, we argue that solutions of this sort are wrong."
-  },
-  {
-    "objectID": "403.html",
-    "href": "403.html",
-    "title": "Access Forbidden!",
+    "objectID": "410.html#error",
+    "href": "410.html#error",
+    "title": "Page Gone!",
     "section": "",
-    "text": "This is, but is not for you. Not all being is for browsing."
+    "text": "This page was, but is no more. The same thing is for browsing and for being."
   },
   {
-    "objectID": "403.html#error",
-    "href": "403.html#error",
-    "title": "Access Forbidden!",
+    "objectID": "handouts/music.html",
+    "href": "handouts/music.html",
+    "title": "Music: Some Philosophical Questions",
     "section": "",
-    "text": "This is, but is not for you. Not all being is for browsing."
+    "text": "A song includes both music and lyrics. Not all music takes the form of songs, and, when it does, the lyrics are not part of the music.\nMusic comes in many different genres. It is not clear what a genre is, or what we are doing when we divide music into genres. This is one of the questions a philosophy of music seeks to address."
   },
   {
-    "objectID": "handouts/shadows.html",
-    "href": "handouts/shadows.html",
-    "title": "Notes on Shadows",
+    "objectID": "handouts/music.html#some-initial-distinctions-and-observations",
+    "href": "handouts/music.html#some-initial-distinctions-and-observations",
+    "title": "Music: Some Philosophical Questions",
     "section": "",
-    "text": "Materialism is the view that there are only material things. Here is an argument against materialism:\n\nThere are shadows.\nShadows are not material things.\nTherefore, not all things are material.\n\nWhat to make of this argument?\n\n\nMaybe you want to deny (1). You might argue that\n\nA shadow is not a positive thing; it is the absence of a positive thing, namely, light.\n\nBut (1) does not say that shadows are positive things; it just says that there are shadows. (Other putative examples of negative things: holes, ugliness, evil.) Here are some reasons for thinking there are shadows:\n\nWe can see shadows, and you can’t see things that don’t exist.\nWe can feel shadows, and you can’t feel things that don’t exist.\nShadows are located in specific places (“the shadows were over the deep”), and things that don’t exist aren’t located anywhere.\n\n\n\n\nHere is an argument for (2):\n\nA material thing has to be made of something (its matter).\nA shadow is not made of light: its presence requires the absence of light.\nA shadow is not made of any other kind of matter.\nSo shadows are not material things.\n\n\n\n\nEven if shadows are not material things, it seems that in some sense they depend on material things (think of the way that a hole depends on its host). But it is not quite right to say that a shadow depends for its existence on the object that casts it and on the object upon which it is cast. Light takes time to travel, so a shadow can outlast the object that casts it. (Can it also exist before the object upon which it is cast? What if it is being cast through fog or dust?)\n\n\n\nOptions:\n\nThe shadow is on the surface of the object upon which it is cast.\nThe shadow is on the surface of the dark side of the object that casts it.\nThe shadow is the entire three-dimensional region of darkness that extends between the object that casts it and the surface upon which it is cast."
+    "text": "A song includes both music and lyrics. Not all music takes the form of songs, and, when it does, the lyrics are not part of the music.\nMusic comes in many different genres. It is not clear what a genre is, or what we are doing when we divide music into genres. This is one of the questions a philosophy of music seeks to address."
   },
   {
-    "objectID": "handouts/shadows.html#premise-p1-why-think-there-are-shadows",
-    "href": "handouts/shadows.html#premise-p1-why-think-there-are-shadows",
-    "title": "Notes on Shadows",
-    "section": "",
-    "text": "Maybe you want to deny (1). You might argue that\n\nA shadow is not a positive thing; it is the absence of a positive thing, namely, light.\n\nBut (1) does not say that shadows are positive things; it just says that there are shadows. (Other putative examples of negative things: holes, ugliness, evil.) Here are some reasons for thinking there are shadows:\n\nWe can see shadows, and you can’t see things that don’t exist.\nWe can feel shadows, and you can’t feel things that don’t exist.\nShadows are located in specific places (“the shadows were over the deep”), and things that don’t exist aren’t located anywhere."
+    "objectID": "handouts/music.html#what-is-music",
+    "href": "handouts/music.html#what-is-music",
+    "title": "Music: Some Philosophical Questions",
+    "section": "What is Music?",
+    "text": "What is Music?\nCan we provide necessary and sufficient conditions for something’s being music?\n\nNecessary Condition:\n\nA condition that something must satisfy in order to count as music.\n\nSufficient Condition:\n\nIf something satisfies this condition, that is enough to make it count as music.\n\n\n\nSome Proposals\n  Music is sound. \nCounterexamples to sufficiency?\n  Music is organized sound. \nCounterexamples to sufficiency?\n  Music is musically organized musical sound. \nThis might sound circular. But it isn’t if we can say something helpful about what makes some organizations of sounds “musical” and others not, and what makes some sounds “musical” and others not. Hard cases:\n\nGershwin, American in Paris (taxi horn)\nVaughn Williams, Sinfonia Antartica (wind machine)\nLeroy Anderson, The Typewriter https://youtu.be/g2LJ1i7222c\nYoko Ono, “Toilet Piece/Unknown” https://youtu.be/NiO1pevvUds\n\nReturning to (A1), is sound a necessary condition for music?\n\nJohn Cage’s 4’33” https://youtu.be/JTEFKFiXSx4\n\nMaybe it is a mistake to try to define music in terms of what it is like:\n  What makes something music is how it is meant to be experienced or judged. \n\nOno’s “Toilet Piece/Unknown” is music not because it has musical features (e.g., organized rhythm or pitch) but because you are supposed to listen for such features in order to appreciate it correctly.\nCage’s 4’33” is music not because it has musical features (e.g., organized sounds of the appropriate sorts), but because you are supposed to listen for musical features in order to appreciate it correctly.\n\nSo is being music a matter of the artist’s intention? Or does something else determine how something is meant to be experienced or judged?\n\n\nPoetry and Sound Poetry?\nPoetry usually consists of words. But it isn’t just about the words. It is also about the organization of the sounds those words make. Hence Sound Poetry:\n\nKurt Schwitters, Ursonate https://youtu.be/6X7E2i0KMqM\nChristian Bök’s works https://ubu.com/sound/bok.html"
   },
   {
-    "objectID": "handouts/shadows.html#premise-p2-why-think-shadows-are-not-material-things",
-    "href": "handouts/shadows.html#premise-p2-why-think-shadows-are-not-material-things",
-    "title": "Notes on Shadows",
-    "section": "",
-    "text": "Here is an argument for (2):\n\nA material thing has to be made of something (its matter).\nA shadow is not made of light: its presence requires the absence of light.\nA shadow is not made of any other kind of matter.\nSo shadows are not material things."
+    "objectID": "handouts/music.html#what-is-a-musical-work",
+    "href": "handouts/music.html#what-is-a-musical-work",
+    "title": "Music: Some Philosophical Questions",
+    "section": "What is a Musical Work?",
+    "text": "What is a Musical Work?\nMusic often involves the production or performance of a musical work—e.g., Beethoven’s 5th Symphony. Paradigm musical works have some interesting features:\n\nThey are composed and performed.\nThey are repeatable: the same work can be performed many times.\nThey are scored: the work can be presented not just in the form of a performance, but also in the form of a written score.\n\nGiven these facts, what kind of thing is a musical work? Is it a physical thing? A mental thing? Something else?\n\nMentalism\n\nA musical work is a mental thing that exist in minds. Performances and scores are physical expressions of this mental thing.\n\n\nLocke held that we use speech to physically express ideas in our mind. Mentalism says the same of musical performance, and so identifies the musical work as the mental thing (the idea) that the performance expresses.\n\nAbstract Structuralism\n\nA musical work is an abstract sound structure. A score describes this structure. A performance is a concrete instance of this abstract structure.\n\n\nPlato held that justice itself is an ideal abstract structure, and that a just city is a city that concretely realizes this structure (as best as possible) in the physical world. Abstract Structuralism says the same of musical works, identifying the work with the abstract structure and the performance with its realization in the physical world.\n\nConcrete Reductionism\n\nA musical work is nothing over and above the particular concrete copies of its score and its particular concrete performances.\n\n\nUnlike the Mentalist and the Abstract Structuralist, the Concrete Reductionism locates the work itself in the physical world. The work just is the collection of its performances, or the work just is the collection of the copies of its score.\n\nNihilism\n\nThere are no musical works.`\n\n\nUpon reflection, you might decide that we do not need to believe in the existence of musical works in order to understand our musical practices. You might suggest that we eliminate the phrase “musical work” from our vocabulary. Or you might suggest that we can keep it, so long as we understand that it is just loose talk, a kind of shorthand for more serious talk of artists, scores, and performances.\n\nSome Related Questions\n\nAre musical works created or discovered?\nCan a musical work exist even though it has never been performed? Never been performed or scored? Never been performed, scored, or composed?\nCan the same musical work be composed twice?\nCan two works agree note for note but have different aesthetic properties? (e.g., one, composed in the 1500s, is boldly original; the other, composed in 1988, is trite and outdated)\nIf you destroy all copies of the score, and nobody remembers how to perform it, have you destroyed the work?"
   },
   {
-    "objectID": "handouts/shadows.html#are-shadows-dependent-things",
-    "href": "handouts/shadows.html#are-shadows-dependent-things",
-    "title": "Notes on Shadows",
-    "section": "",
-    "text": "Even if shadows are not material things, it seems that in some sense they depend on material things (think of the way that a hole depends on its host). But it is not quite right to say that a shadow depends for its existence on the object that casts it and on the object upon which it is cast. Light takes time to travel, so a shadow can outlast the object that casts it. (Can it also exist before the object upon which it is cast? What if it is being cast through fog or dust?)"
+    "objectID": "handouts/music.html#authentic-performances",
+    "href": "handouts/music.html#authentic-performances",
+    "title": "Music: Some Philosophical Questions",
+    "section": "Authentic Performances",
+    "text": "Authentic Performances\nAuthenticity. What makes a performance an “authentic” performance? Is a performance of the Goldberg Concertos on the harpsichord more authentic than one on the piano?\n\npure sonicism: an authentic performance is one that produces all the right pitches in the right order.\ntimbral sonicism: also with the right timbre.\ninstrumentalism: also using the instruments specified in the score.\n\nThought experiment: Imagine a perfect synthesizer, that performs the entire work at the touch of a button. How does this differ from playing a recording?\n\nRelated Questions\n\nIs a less authentic performance always a worse performance?\nA performer can get some of the notes wrong, and play the work badly. How many do they have to get wrong to make it no longer a performance of the work?\nAre “less authentic” performances still performances of the work?\n\nLiszt’s transcription of Beethoven’s 5th Symphony for solo piano.\nWendy Carlos, “Switched on Bach”\nWalter Murphy and the Big Apple Band, “A Fifth of Beethoven”\n\nIs there a difference between a performance and a “cover”?\nCan a musical work be unperformable?"
   },
   {
-    "objectID": "handouts/shadows.html#where-are-shadows",
-    "href": "handouts/shadows.html#where-are-shadows",
-    "title": "Notes on Shadows",
-    "section": "",
-    "text": "Options:\n\nThe shadow is on the surface of the object upon which it is cast.\nThe shadow is on the surface of the dark side of the object that casts it.\nThe shadow is the entire three-dimensional region of darkness that extends between the object that casts it and the surface upon which it is cast."
+    "objectID": "handouts/music.html#genre",
+    "href": "handouts/music.html#genre",
+    "title": "Music: Some Philosophical Questions",
+    "section": "Genre",
+    "text": "Genre\nWhat are we doing when we divide music up into genres? Some ideas:\n\nTracking similarity of musical features (see the Music Genome Project)\nTracking facts about different aesthetic standards\nImposing aesthetic imperatives (think here especially about punk and country)\nMarketing"
   },
   {
     "objectID": "handouts/holes.html",
@@ -229,111 +376,6 @@
     "title": "Notes on Holes",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nFancy Latin for “of its own kind”.↩︎"
-  },
-  {
-    "objectID": "handouts/music.html",
-    "href": "handouts/music.html",
-    "title": "Music: Some Philosophical Questions",
-    "section": "",
-    "text": "A song includes both music and lyrics. Not all music takes the form of songs, and, when it does, the lyrics are not part of the music.\nMusic comes in many different genres. It is not clear what a genre is, or what we are doing when we divide music into genres. This is one of the questions a philosophy of music seeks to address."
-  },
-  {
-    "objectID": "handouts/music.html#some-initial-distinctions-and-observations",
-    "href": "handouts/music.html#some-initial-distinctions-and-observations",
-    "title": "Music: Some Philosophical Questions",
-    "section": "",
-    "text": "A song includes both music and lyrics. Not all music takes the form of songs, and, when it does, the lyrics are not part of the music.\nMusic comes in many different genres. It is not clear what a genre is, or what we are doing when we divide music into genres. This is one of the questions a philosophy of music seeks to address."
-  },
-  {
-    "objectID": "handouts/music.html#what-is-music",
-    "href": "handouts/music.html#what-is-music",
-    "title": "Music: Some Philosophical Questions",
-    "section": "What is Music?",
-    "text": "What is Music?\nCan we provide necessary and sufficient conditions for something’s being music?\n\nNecessary Condition:\n\nA condition that something must satisfy in order to count as music.\n\nSufficient Condition:\n\nIf something satisfies this condition, that is enough to make it count as music.\n\n\n\nSome Proposals\n  Music is sound. \nCounterexamples to sufficiency?\n  Music is organized sound. \nCounterexamples to sufficiency?\n  Music is musically organized musical sound. \nThis might sound circular. But it isn’t if we can say something helpful about what makes some organizations of sounds “musical” and others not, and what makes some sounds “musical” and others not. Hard cases:\n\nGershwin, American in Paris (taxi horn)\nVaughn Williams, Sinfonia Antartica (wind machine)\nLeroy Anderson, The Typewriter https://youtu.be/g2LJ1i7222c\nYoko Ono, “Toilet Piece/Unknown” https://youtu.be/NiO1pevvUds\n\nReturning to (A1), is sound a necessary condition for music?\n\nJohn Cage’s 4’33” https://youtu.be/JTEFKFiXSx4\n\nMaybe it is a mistake to try to define music in terms of what it is like:\n  What makes something music is how it is meant to be experienced or judged. \n\nOno’s “Toilet Piece/Unknown” is music not because it has musical features (e.g., organized rhythm or pitch) but because you are supposed to listen for such features in order to appreciate it correctly.\nCage’s 4’33” is music not because it has musical features (e.g., organized sounds of the appropriate sorts), but because you are supposed to listen for musical features in order to appreciate it correctly.\n\nSo is being music a matter of the artist’s intention? Or does something else determine how something is meant to be experienced or judged?\n\n\nPoetry and Sound Poetry?\nPoetry usually consists of words. But it isn’t just about the words. It is also about the organization of the sounds those words make. Hence Sound Poetry:\n\nKurt Schwitters, Ursonate https://youtu.be/6X7E2i0KMqM\nChristian Bök’s works https://ubu.com/sound/bok.html"
-  },
-  {
-    "objectID": "handouts/music.html#what-is-a-musical-work",
-    "href": "handouts/music.html#what-is-a-musical-work",
-    "title": "Music: Some Philosophical Questions",
-    "section": "What is a Musical Work?",
-    "text": "What is a Musical Work?\nMusic often involves the production or performance of a musical work—e.g., Beethoven’s 5th Symphony. Paradigm musical works have some interesting features:\n\nThey are composed and performed.\nThey are repeatable: the same work can be performed many times.\nThey are scored: the work can be presented not just in the form of a performance, but also in the form of a written score.\n\nGiven these facts, what kind of thing is a musical work? Is it a physical thing? A mental thing? Something else?\n\nMentalism\n\nA musical work is a mental thing that exist in minds. Performances and scores are physical expressions of this mental thing.\n\n\nLocke held that we use speech to physically express ideas in our mind. Mentalism says the same of musical performance, and so identifies the musical work as the mental thing (the idea) that the performance expresses.\n\nAbstract Structuralism\n\nA musical work is an abstract sound structure. A score describes this structure. A performance is a concrete instance of this abstract structure.\n\n\nPlato held that justice itself is an ideal abstract structure, and that a just city is a city that concretely realizes this structure (as best as possible) in the physical world. Abstract Structuralism says the same of musical works, identifying the work with the abstract structure and the performance with its realization in the physical world.\n\nConcrete Reductionism\n\nA musical work is nothing over and above the particular concrete copies of its score and its particular concrete performances.\n\n\nUnlike the Mentalist and the Abstract Structuralist, the Concrete Reductionism locates the work itself in the physical world. The work just is the collection of its performances, or the work just is the collection of the copies of its score.\n\nNihilism\n\nThere are no musical works.`\n\n\nUpon reflection, you might decide that we do not need to believe in the existence of musical works in order to understand our musical practices. You might suggest that we eliminate the phrase “musical work” from our vocabulary. Or you might suggest that we can keep it, so long as we understand that it is just loose talk, a kind of shorthand for more serious talk of artists, scores, and performances.\n\nSome Related Questions\n\nAre musical works created or discovered?\nCan a musical work exist even though it has never been performed? Never been performed or scored? Never been performed, scored, or composed?\nCan the same musical work be composed twice?\nCan two works agree note for note but have different aesthetic properties? (e.g., one, composed in the 1500s, is boldly original; the other, composed in 1988, is trite and outdated)\nIf you destroy all copies of the score, and nobody remembers how to perform it, have you destroyed the work?"
-  },
-  {
-    "objectID": "handouts/music.html#authentic-performances",
-    "href": "handouts/music.html#authentic-performances",
-    "title": "Music: Some Philosophical Questions",
-    "section": "Authentic Performances",
-    "text": "Authentic Performances\nAuthenticity. What makes a performance an “authentic” performance? Is a performance of the Goldberg Concertos on the harpsichord more authentic than one on the piano?\n\npure sonicism: an authentic performance is one that produces all the right pitches in the right order.\ntimbral sonicism: also with the right timbre.\ninstrumentalism: also using the instruments specified in the score.\n\nThought experiment: Imagine a perfect synthesizer, that performs the entire work at the touch of a button. How does this differ from playing a recording?\n\nRelated Questions\n\nIs a less authentic performance always a worse performance?\nA performer can get some of the notes wrong, and play the work badly. How many do they have to get wrong to make it no longer a performance of the work?\nAre “less authentic” performances still performances of the work?\n\nLiszt’s transcription of Beethoven’s 5th Symphony for solo piano.\nWendy Carlos, “Switched on Bach”\nWalter Murphy and the Big Apple Band, “A Fifth of Beethoven”\n\nIs there a difference between a performance and a “cover”?\nCan a musical work be unperformable?"
-  },
-  {
-    "objectID": "handouts/music.html#genre",
-    "href": "handouts/music.html#genre",
-    "title": "Music: Some Philosophical Questions",
-    "section": "Genre",
-    "text": "Genre\nWhat are we doing when we divide music up into genres? Some ideas:\n\nTracking similarity of musical features (see the Music Genome Project)\nTracking facts about different aesthetic standards\nImposing aesthetic imperatives (think here especially about punk and country)\nMarketing"
-  },
-  {
-    "objectID": "handouts/rule-following.html",
-    "href": "handouts/rule-following.html",
-    "title": "Meaning and Rule-Following",
-    "section": "",
-    "text": "Each word is associated with an idea.\nIdeas are “mental pictures”.\nIdeas represent in virtue of “matching” or “resembling” things in the world.\n\nExamples: ‘green’, ‘square’, ‘horse’. For extended critical discussion, see the Wittgenstein (1960)."
-  },
-  {
-    "objectID": "handouts/rule-following.html#the-naïve-theory-of-meaning",
-    "href": "handouts/rule-following.html#the-naïve-theory-of-meaning",
-    "title": "Meaning and Rule-Following",
-    "section": "",
-    "text": "Each word is associated with an idea.\nIdeas are “mental pictures”.\nIdeas represent in virtue of “matching” or “resembling” things in the world.\n\nExamples: ‘green’, ‘square’, ‘horse’. For extended critical discussion, see the Wittgenstein (1960)."
-  },
-  {
-    "objectID": "handouts/rule-following.html#wittgenstein-on-representation-resemblance-and-rules",
-    "href": "handouts/rule-following.html#wittgenstein-on-representation-resemblance-and-rules",
-    "title": "Meaning and Rule-Following",
-    "section": "Wittgenstein on Representation, Resemblance, and Rules",
-    "text": "Wittgenstein on Representation, Resemblance, and Rules\n\n139(b). I see a picture; it represents an old man walking up a steep path leaning on a stick.—How? Might it not have looked just the same if he had been sliding downhill in that position? (Wittgenstein 1973, 139(b))\n\nWhat needs to be added to the account of representation to allow for this distinction?\n\nAdd more to the picture? (motion? arrows?)\n\n\n\nThen what sort of mistake did I make; was it what we should like to express by saying: I thought the picture forced a particular use on me? How could I think that? What did I think? Is there such a thing as a picture, or something like a picture, that forces a particular application on us; so that my mistake lies in confusing one picture with another?—For we might also be inclined to express ourselves like this: we are at most under a psychological, not a logical, compulsion. […] So our ‘belief that the picture forced a particular application on us’ consisted in the fact that only the one case and no other occurred to us. (Wittgenstein 1973, 54–55)\n\n\n\nResemblance is not enough to force one “application” rather than another.\nWhat we need is a rule that tells us how to interpret the picture."
-  },
-  {
-    "objectID": "handouts/rule-following.html#augustine-on-meaning-and-ostension",
-    "href": "handouts/rule-following.html#augustine-on-meaning-and-ostension",
-    "title": "Meaning and Rule-Following",
-    "section": "Augustine on Meaning and Ostension",
-    "text": "Augustine on Meaning and Ostension\n\nAugustine: Now do this: tell me—if I were completely ignorant of the meaning of the word ‘walking’ and were to ask you what walking is while you were walking, how would you teach me?\nAdeodatus: I would do it a little more quickly, so that after your question you would be prompted by something novel [in my behavior], and yet nothing would take place other than what was to be shown.\nAugustine: Don’t you know that walking is one thing and hurrying another? A person who is walking doesn’t necessarily hurry, and a person who is hurrying doesn’t necessarily walk. We speak of ‘hurrying’ in writing and reading and in countless other matters. Hence given that after my question you kept on doing what you were doing, [only] faster, I might have thought walking as precisely hurrying—for you added that as something new—and for that reason I would have been misled. (Augustine 1995, 3.6; see also Quine 1950, 622ff.)\n\n\nResemblance is not enough to force one interpretation of the demonstration rather than another.\nWhat we need is a rule that tells us how to interpret the demonstration."
-  },
-  {
-    "objectID": "handouts/rule-following.html#the-rule-theory-of-meaning",
-    "href": "handouts/rule-following.html#the-rule-theory-of-meaning",
-    "title": "Meaning and Rule-Following",
-    "section": "The “Rule” Theory of Meaning",
-    "text": "The “Rule” Theory of Meaning\n\nEach word is associated with a rule.\nTo know the meaning of a word is to grasp this rule.\n\nExamples: ‘green’, ‘square’, ‘horse’."
-  },
-  {
-    "objectID": "handouts/rule-following.html#the-rule-following-paradox",
-    "href": "handouts/rule-following.html#the-rule-following-paradox",
-    "title": "Meaning and Rule-Following",
-    "section": "The Rule Following Paradox",
-    "text": "The Rule Following Paradox\nBut switching to rules doesn’t make the basic problem go away:\n\nNo course of action could be determined by a rule, because every course of action can be made out to accord with the rule (Wittgenstein 1973, 201).\n\nThere is no unique correct answer to this “fill in the blanks” question: \\(2,4,6,8,\\underline{\\ \\ \\ },\\underline{\\ \\ \\ }\\).\nSuppose you use the word ‘bos’ in the past, and you have applied it to all and only cows. And suppose you have never before encountered a purple cow, until now. Does your word ‘bos’ apply to this cow? Does your word ‘bos’ mean “cow” or “purple cow”? Notice that the history of your usage of the word ‘bos’ does not answer this question. What does? What facts about you determine the meaning of your word, which rule you are following?"
-  },
-  {
-    "objectID": "handouts/rule-following.html#kripke-on-plus-and-quus.",
-    "href": "handouts/rule-following.html#kripke-on-plus-and-quus.",
-    "title": "Meaning and Rule-Following",
-    "section": "Kripke on plus and quus.",
-    "text": "Kripke on plus and quus.\n\nI […] use the word ‘plus’ and the symbol ‘\\(+\\)’ to denote a well-known mathematical function, addition. The function is defined for all pairs of positive integers. By means of my external symbolic representation and my internal mental representation, I ‘grasp’ the rule for addition. […] Although I myself have computed only finitely many sums in the past, the rule determines my answer for indefinitely many new sums that I have never previously considered. This is the whole point of the notion that in learning to add I grasp a rule: my past intentions regarding addition determine a unique answer for indefinitely many new cases in the future (Kripke 1982, 7–8).\n\nYou grasp the rule for addition, and you use ‘plus’ and ‘\\(+\\)’ to denote it. But for some \\(n\\), you have never attempted to add numbers larger than \\(n\\). Suppose \\(n\\) is 57. So what is:\n\\[68 + 57 =\\ \\line(1,0){40}\\]\nNote the analogy with ‘bos’. Just like the purple cow was a case you had never encountered, this sum is a case you have never encountered. This raises what Kripke calls a “metalinguistic” question: how do you know what you mean by ‘\\(+\\)’?\n\nThis sceptic questions my certainty about my answer, in what I just called the ‘metalinguistic’ sense. Perhaps, he suggests, as I used the term ‘plus’ in the past, the answer I intended for ‘\\(68 + 57\\)’ should have been ‘5’! […] perhaps I used ‘plus’ and ‘\\(+\\)’ to denote a function which I will call ‘quus’ and symbolize by ‘\\(\\oplus\\)’ (Kripke 1982, 8–9).\n\n\\[x\\oplus y = \\begin{cases} x + y & \\mbox{if } x,y &lt; 57 \\\\ 5 & \\mbox{otherwise} \\end{cases}\\]\nWhat facts about you determine which rule you are following, and so what you mean by ‘plus’?"
-  },
-  {
-    "objectID": "handouts/rule-following.html#dispositions",
-    "href": "handouts/rule-following.html#dispositions",
-    "title": "Meaning and Rule-Following",
-    "section": "Dispositions?",
-    "text": "Dispositions?\nProposal: You mean \\(+\\) not \\(\\oplus\\) by ‘plus’ because you are disposed, when asked to perform sums, to perform addition, not quaddition.\nThree objections:\n\nYour dispositions only determine a finite number of cases, and so cannot uniquely determine the function \\(+\\) as opposed to some \\(\\oplus\\)-like alternative.\nFor very large numbers, the idea that you have any disposition to respond one way or another is nonsense.\nYou can be disposed to make mistakes. But that means that the rule you are following is not determined exactly by your dispositions."
-  },
-  {
-    "objectID": "handouts/rule-following.html#goodman-on-green-and-grue-goodman1983a-p.-72ff",
-    "href": "handouts/rule-following.html#goodman-on-green-and-grue-goodman1983a-p.-72ff",
-    "title": "Meaning and Rule-Following",
-    "section": "Goodman on Green and Grue (Goodman 1983, 72ff):",
-    "text": "Goodman on Green and Grue (Goodman 1983, 72ff):\n\nGrue\n\n\\(x\\) is grue if and only \\(x\\) is green and first observed before 12/3/2014, or \\(x\\) is blue and not first observed before 12/3/2014.\n\n\nYou are disposed to accept the following inference:\n\nEvery emerald we have observed has been green.\nSo probably the next emerald we observe will be green.\n\nYou are not disposed to accept the following inference:\n\nEvery emerald we have observed has been grue.\nSo probably the next emerald we observe will be grue.\n\nBut\n\nWhat makes the first inference good and the second bad?\nCan you be sure that when you use the word ‘green’ you mean green and not grue?"
   },
   {
     "objectID": "handouts/paradoxes.html",
@@ -418,47 +460,5 @@
     "title": "Some Paradoxes, Easy and Hard",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nI borrow this presentation from Priest (2005), p. 34ff.↩︎"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "David Sanson",
-    "section": "",
-    "text": "PhilPeople\n  \n  \n    \n     Github\n  \n  \n    \n     Email\n  \n\n  \n  \nI am an associate professor in the Philosophy Department at Illinois State University.\nI have research interests in metaphysics, philosophy of language, the history of logic, medieval philosophy, and the philosophy of art. I have published work on the history of the Liar Paradox, time and change, essence and modality, and the ontological status of fictional characters.\nAhmed Alwishah and I wrote a book on the history of the Liar Paradox, The Final Word: al-Dawānī and the Liar Paradox in the Islamic World. You can read the first 20 pages or so for free on Google Books. You can find it in a library using WorldCat. You can buy it from Oxford University Press, Bookshop.org, Barnes & Noble, or Amazon.\n\n\n\n\n\nWe also have an entry on the topic in the Stanford Encyclopedia of Philosophy.\n341 Stevenson Hall\nDepartment of Philosophy (4540)\nIllinois State University\nNormal, IL 61790"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "PHI 205: Philosophy of Language\nPHI 101: Introduction to Philosophy"
-  },
-  {
-    "objectID": "teaching.html#fall-2026",
-    "href": "teaching.html#fall-2026",
-    "title": "Teaching",
-    "section": "",
-    "text": "PHI 205: Philosophy of Language\nPHI 101: Introduction to Philosophy"
-  },
-  {
-    "objectID": "teaching.html#handouts",
-    "href": "teaching.html#handouts",
-    "title": "Teaching",
-    "section": "Handouts",
-    "text": "Handouts\n\nShadows (Nov 8, 2016)\nMusic (Mar 28, 2016)\nMaterial Composition (Mar 25, 2015)\nThe Rule Following Paradox (Dec 3, 2014)\nParadoxes (Apr 15, 2014)\nHoles (Dec 3, 2013)"
-  },
-  {
-    "objectID": "410.html",
-    "href": "410.html",
-    "title": "Page Gone!",
-    "section": "",
-    "text": "This page was, but is no more. The same thing is for browsing and for being."
-  },
-  {
-    "objectID": "410.html#error",
-    "href": "410.html#error",
-    "title": "Page Gone!",
-    "section": "",
-    "text": "This page was, but is no more. The same thing is for browsing and for being."
   }
 ]
