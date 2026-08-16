@@ -12,7 +12,6 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; 
             [ 
-              quarto
               inkscape
             ];
         };

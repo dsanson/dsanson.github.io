@@ -6,9 +6,11 @@ title: Teaching
 
 -  [PHI 205: Philosophy of Language][205f2026]
 -  [PHI 101: Introduction to Philosophy][101f2026]
+-  [PHI 101: Introduction to Philosophy (Honors)][101f2026H]
 
  [205f2026]: 205f2026
  [101f2026]: 101f2026
+ [101f2026H]: 101f2026H
 
 <!--
 
@@ -119,15 +121,5 @@ Past Courses
     -   Symbolic Logic (31)
 
 -->
-
-## Handouts
-
--   [Shadows](/files/shadows.pdf) (Nov 8, 2016)
--   [Music](/files/music.pdf) (Mar 28, 2016)
--   [Material Composition](/files/composition.pdf) (Mar 25, 2015)
--   [The Rule Following Paradox](/files/rule-following.pdf) (Dec 3, 2014)
--   [Paradoxes](/files/paradoxes.pdf) (Apr 15, 2014)
--   [Holes](/files/holes.pdf) (Dec 3, 2013)
-
 
 

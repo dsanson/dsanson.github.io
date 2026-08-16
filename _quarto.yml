@@ -24,6 +24,8 @@ website:
         text: Home
       - href: research.md
         text: Research 
+      - href: teaching.md
+        text: Teaching
       - href: stuff.md
         text: Other Stuff
       - href: cv.md
