@@ -148,7 +148,7 @@ link-citations: false
 
 - Robert Pasnau, "Ibn Sīnā's Infinitely Deep Pool of Necessarily
   Possible Objects."
-  - Central APA, Chicago, Feburary 2026
+  - Central APA, Chicago, February 2026
 - Mika Perälä, "Aristotle on Incidental Perception"
   - Workshop for the *Representation and Reality: Historical and
     Contemporary Perspectives on the Aristotelian Tradition* Research
