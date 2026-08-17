@@ -4,13 +4,13 @@ title: Teaching
 
 ## Fall 2026
 
--  [PHI 205: Philosophy of Language][205f2026]
 -  [PHI 101: Introduction to Philosophy][101f2026]
 -  [PHI 101: Introduction to Philosophy (Honors)][101f2026H]
+-  [PHI 205: Philosophy of Language][205f2026]
 
- [205f2026]: 205f2026
  [101f2026]: 101f2026
  [101f2026H]: 101f2026H
+ [205f2026]: 205f2026
 
 <!--
 
