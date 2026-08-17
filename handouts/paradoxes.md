@@ -7,7 +7,7 @@ date: April 15, 2014
 filters:
 - ../pandoc-labeled-lists.lua
 format:
-  epub: default
+  # epub: default
   html:
     number-sections: true
   # revealjs:

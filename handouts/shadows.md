@@ -82,6 +82,8 @@ Instead, it seems to be about what you see when you see a backlit
 object. It is due to @sorensen2008a.
 
 ``` tikz
+%%| fig-alt: "Two planets, Near and Far, between the observer and the sun, each perfectly occluding the other"
+%%| fig-cap: "Me, Near, Far, and the Sun"
 \begin{tikzpicture}[scale=1]
 \draw (-5,0) circle (1);
 \node (sun) at (-5,0) {Sun};
