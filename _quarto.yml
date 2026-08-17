@@ -39,6 +39,7 @@ format:
     theme:
       light: 
         - cosmo
+        - theme-light.scss
         - custom.scss
       dark: 
         - darkly
