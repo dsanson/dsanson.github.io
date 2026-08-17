@@ -8,15 +8,16 @@ execute:
 
 website:
   title: "David Sanson"
+  description: "A Philosopher's Homepage"
   site-url: "https://www.davidsanson.com"
+  repo-url: https://github.com/dsanson/dsanson.github.io
+  repo-actions: [source, issue]
   image: "media/david.jpg"
   favicon: "media/favicon.png"
   twitter-card: true
   open-graph: true
   page-footer: |
     © 2026 David Sanson. Created using [Quarto](https://quarto.org/).
-  repo-url: https://github.com/dsanson/dsanson.github.io
-  repo-actions: [source, issue]
   navbar:
     aria-label: navigation
     left:
@@ -33,6 +34,7 @@ website:
 
 format:
   html:
+    axe: true
     highlight-style: a11y
     theme:
       light: 
