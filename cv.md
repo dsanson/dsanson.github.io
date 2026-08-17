@@ -234,8 +234,8 @@ link-citations: false
 - 205: Philosophy of Language (Fall 2024, Spring 2021, Spring 2017)
 - 201: Introduction to Metaphysics and Epistemology (Spring 2026, Spring
   2023, Spring 2022, Spring 2019, Spring 2018, Fall 2016)
-- 112: Symbolic Logic (every term since Spring 2013)
-- 101: Introduction to Philosophy (Fall 2025, Summer 2013)
+- 112: Symbolic Logic (every term from Spring 2013 to Spring 2026)
+- 101: Introduction to Philosophy (Fall 2026, Fall 2025, Summer 2013)
 
 ### Undergraduate Courses (at OSU)
 

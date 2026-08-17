@@ -114,3 +114,8 @@
   inset: 6pt,
   stroke: none
 )
+
+#set list(
+  marker: ([∙], [‣], [–]),
+  indent: .2cm
+)
